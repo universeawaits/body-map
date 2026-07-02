@@ -1,0 +1,736 @@
+/* Body Map — chrome in the Ф design language; the map is the hero.
+   Every color/font/space value comes from css/tokens.css. The ONLY raw
+   hexes allowed here are the four category pin colors below. */
+
+:root {
+  /* Category colors — the CSS side of the two-place definition
+     (JS side: js/categories.js). Nothing else hardcodes these hexes. */
+  --cat-social: #F2B134;
+  --cat-marathon: #7A1E2B;
+  --cat-festival: #6F2DA8;
+  --cat-class: #2B5FD9;
+
+  /* Flowing gradient speed on multi-category pins — fast. */
+  --pin-flow-duration: 1.2s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font: var(--body);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:is(button, a):focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+/* --- top bar ------------------------------------------------------------- */
+
+.topbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  z-index: 1000; /* above Leaflet panes */
+}
+
+.topbar-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  min-width: 0;
+}
+
+.brand {
+  margin: 0;
+  font: var(--h3);
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* --- category tabs --------------------------------------------------------- */
+
+.tabs {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: var(--space-1);
+  min-width: 0;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: none;
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink-2);
+  font: var(--body); /* §6: tab chips are sans --body */
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
+}
+
+.tab:hover {
+  background: var(--surface-hover);
+}
+
+.tab[aria-pressed="true"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tab[aria-pressed="false"] .tab-dot {
+  opacity: 0.35;
+}
+
+.tab-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--r-pill);
+  flex: none;
+}
+
+.tab-count {
+  font: var(--mono-sm);
+  min-width: var(--space-5);
+  padding: 1px var(--space-1);
+  border-radius: var(--r-pill);
+  background: var(--surface-sunken);
+  color: var(--ink-2);
+  text-align: center;
+}
+
+.tab[aria-pressed="true"] .tab-count {
+  background: var(--surface);
+  color: var(--accent);
+}
+
+/* --- date strip -------------------------------------------------------------- */
+
+.datebar {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.today-pill {
+  flex: none;
+  align-self: center;
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink-2);
+  font: var(--small);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.today-pill:hover {
+  background: var(--surface-hover);
+}
+
+.datestrip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  min-width: 0;
+  flex: 1;
+  padding: var(--space-1) 0;
+}
+
+.datestrip::-webkit-scrollbar {
+  display: none;
+}
+
+.strip-clear {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--accent);
+  border-radius: var(--r-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font: var(--small);
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+}
+
+/* inline-flex above would override the UA's [hidden] rule — restate it
+   (same footgun as .dance-menu[hidden] below) */
+.strip-clear[hidden] {
+  display: none;
+}
+
+.strip-clear svg {
+  display: block;
+}
+
+.strip-month {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex: none;
+}
+
+.strip-month-label {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  flex: none;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--r-sm);
+  background: var(--paper);
+  color: var(--ink-3);
+  font: var(--label);
+  letter-spacing: var(--label-track);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.day-chip {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  min-width: var(--space-10);
+  min-height: var(--space-10);
+  padding: var(--space-1);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
+}
+
+.day-chip:hover {
+  background: var(--surface-hover);
+}
+
+.day-chip .day-wd {
+  font: var(--micro);
+  letter-spacing: var(--micro-track);
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.day-chip .day-num {
+  font: var(--mono-sm);
+  color: var(--ink);
+}
+
+.day-chip.is-today {
+  border-color: var(--line-strong);
+  box-shadow: inset 0 0 0 1px var(--line-strong);
+}
+
+.day-chip[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.day-chip[aria-pressed="true"] .day-wd,
+.day-chip[aria-pressed="true"] .day-num {
+  color: var(--accent-ink);
+}
+
+/* --- map + dance switcher ------------------------------------------------------ */
+
+.map-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--surface-sunken);
+}
+
+.dance-switcher {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  z-index: 1100; /* above Leaflet controls */
+}
+
+.dance-btn {
+  width: var(--space-12);
+  height: var(--space-12);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink);
+  font: var(--h4);
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.dance-btn:hover {
+  background: var(--surface-hover);
+}
+
+.dance-menu {
+  position: absolute;
+  top: calc(var(--space-12) + var(--space-2));
+  left: 0;
+  min-width: 160px;
+  padding: var(--space-1);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-2);
+}
+
+.dance-menu[hidden] {
+  display: none;
+}
+
+.dance-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: none;
+  border-radius: var(--r-sm);
+  background: none;
+  color: var(--ink);
+  font: var(--small);
+  text-align: left;
+  cursor: pointer;
+}
+
+.dance-option:hover {
+  background: var(--surface-hover);
+}
+
+.dance-option[aria-checked="true"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.dance-option .dance-check {
+  visibility: hidden;
+  display: block;
+}
+
+.dance-option[aria-checked="true"] .dance-check {
+  visibility: visible;
+}
+
+/* --- pins ----------------------------------------------------------------------
+   Google-style teardrop: a 34px rounded square with one sharp corner,
+   rotated -45° about that corner so the tip sits exactly on the lat/lng
+   (icon anchor = bottom center of the 34×42 icon box). No border; soft
+   shadow only. Hover scales from the tip. */
+
+.pin-anchor {
+  background: transparent;
+  border: none;
+}
+
+.pin {
+  position: absolute;
+  left: 17px;
+  bottom: 0;
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%; /* the tip */
+  box-shadow: var(--shadow-2);
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+.pin-anchor:hover .pin {
+  transform: rotate(-45deg) scale(1.12);
+}
+
+.pin-multi {
+  /* background-image + background-size 300% 300% set inline from JS
+     (colors come from categories.js). The ONE sanctioned gradient. */
+  animation: pin-flow var(--pin-flow-duration) linear infinite;
+}
+
+@keyframes pin-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.pin-badge {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%) rotate(45deg); /* counter-rotated upright */
+  min-width: 18px;
+  height: 18px;
+  padding: 0 var(--space-1);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink);
+  font: var(--mono-sm);
+  line-height: 18px;
+  text-align: center;
+  box-shadow: var(--shadow-1);
+}
+
+/* --- popup ----------------------------------------------------------------------- */
+
+.leaflet-popup-content-wrapper {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-3);
+}
+
+.leaflet-popup-tip {
+  background: var(--surface);
+  box-shadow: var(--shadow-1);
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: var(--ink-3);
+}
+
+.leaflet-popup-content {
+  margin: var(--space-4);
+  font: var(--body);
+}
+
+.popup {
+  font-family: var(--font-sans);
+}
+
+.popup-divider {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: var(--space-3) 0;
+}
+
+.popup-name {
+  margin: 0 0 var(--space-2);
+  font: var(--h4);
+  color: var(--ink);
+}
+
+.popup-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink-2);
+  font: var(--caption);
+}
+
+.chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--r-pill);
+  flex: none;
+}
+
+.popup-place {
+  margin: 0 0 var(--space-1);
+  font: var(--caption);
+  color: var(--ink-3);
+}
+
+.popup-schedule {
+  margin: 0 0 var(--space-2);
+  font: var(--small);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.popup-desc {
+  margin: 0 0 var(--space-2);
+  font: var(--prose);
+  font-size: 15px;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.popup-eyebrow {
+  margin: var(--space-2) 0 var(--space-1);
+  font: var(--label);
+  letter-spacing: var(--label-track);
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.popup-music,
+.popup-organizer {
+  margin: 0;
+  font: var(--small);
+  color: var(--ink-2);
+}
+
+.music-row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-right: var(--space-2);
+}
+
+.music-type {
+  padding: 0 var(--space-1);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xs);
+  font: var(--micro);
+  letter-spacing: var(--micro-track);
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.popup-music a,
+.popup-organizer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.popup-music a:hover,
+.popup-organizer a:hover {
+  text-decoration: underline;
+}
+
+.popup-artists {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.artist-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+
+.artist-photo {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+  background: var(--surface-sunken);
+}
+
+.artist-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.artist-name {
+  margin: 0;
+  font: var(--small);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.artist-name a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+}
+
+.artist-role {
+  margin: 0;
+  font: var(--caption);
+  color: var(--ink-3);
+}
+
+.artist-video {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--accent);
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.artist-video:hover {
+  background: var(--surface-hover);
+}
+
+.artist-video svg {
+  display: block;
+}
+
+.popup-thumbs {
+  display: flex;
+  gap: var(--space-1);
+  margin: var(--space-2) 0;
+}
+
+.popup-thumb {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+  background: var(--surface-sunken);
+}
+
+.popup-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.popup-link {
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--accent);
+  font: var(--caption);
+  text-decoration: none;
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.popup-link:hover {
+  background: var(--surface-hover);
+}
+
+/* --- corner chip + attribution ---------------------------------------------------- */
+
+.updated-chip {
+  position: fixed;
+  left: var(--space-3);
+  bottom: var(--space-3);
+  z-index: 1100;
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  box-shadow: var(--shadow-1);
+  font: var(--caption);
+  color: var(--ink-3);
+}
+
+.error-chip {
+  color: var(--incorrect);
+  font-weight: 600;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: var(--paper);
+  font: var(--caption);
+  color: var(--ink-3);
+}
+
+.leaflet-container .leaflet-control-attribution a {
+  color: var(--accent);
+}
+
+.leaflet-bar a {
+  background: var(--surface);
+  color: var(--ink);
+  border-bottom-color: var(--line);
+}
+
+.leaflet-bar a:hover {
+  background: var(--surface-hover);
+}
+
+/* --- narrow screens ------------------------------------------------------------------ */
+
+@media (max-width: 640px) {
+  .topbar {
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .topbar-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-2);
+  }
+
+  .brand {
+    font: var(--h4);
+  }
+}

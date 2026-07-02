@@ -1,0 +1,47 @@
+# Deploys web/ to GitHub Pages.
+#
+# workflow_call is required in addition to push: commits made by the scrape
+# workflow with the automatic GITHUB_TOKEN do NOT trigger `on: push`, so
+# scrape.yml chains into this workflow explicitly
+# (uses: ./.github/workflows/deploy.yml).
+
+name: Deploy to GitHub Pages
+
+# EVERY push to main deploys — no paths filter (CONTRACT.md §6).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# A newer push supersedes an in-flight deploy (CONTRACT.md §6).
+concurrency:
+  group: deploy-web
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

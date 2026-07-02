@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Hoy Milonga (Buenos Aires)",
+    "url": "https://www.hoy-milonga.com/buenos-aires/es",
+    "type": "listing",
+    "dances": ["tango"],
+    "categories_hint": ["social"],
+    "enabled": true,
+    "notes": "Daily milonga/practica listings for Buenos Aires, server-rendered HTML (one h2 heading per milonga with venue and time). No JSON-LD. Also serves other cities (berlin, paris respond 200; new-york 404). Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Hoy Milonga (Berlin)",
+    "url": "https://www.hoy-milonga.com/berlin/es",
+    "type": "listing",
+    "dances": ["tango"],
+    "categories_hint": ["social"],
+    "enabled": true,
+    "notes": "Same engine as the Buenos Aires page, daily milonga listings for Berlin. Server-rendered HTML. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Tangocat (worldwide festivals & marathons, 2026)",
+    "url": "https://tangocat.net/2026/",
+    "type": "directory",
+    "dances": ["tango"],
+    "categories_hint": ["festival", "marathon"],
+    "enabled": true,
+    "notes": "Largest crowd-maintained catalogue of tango festivals/marathons (361 events for 2026). Server-rendered: each event is a btn-tc-link anchor to /go/<Event+Name>/<id>, an outbound redirect to the event's own site - good both for names/dates on-page and as a seed of official event URLs. No JSON-LD. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "DanceUS - Tango festivals & marathons worldwide",
+    "url": "https://www.danceus.org/events/argentine-tango/tango-festivals-marathons-worldwide/",
+    "type": "directory",
+    "dances": ["tango"],
+    "categories_hint": ["festival", "marathon"],
+    "enabled": true,
+    "notes": "Server-rendered worldwide 2026 festival/marathon list WITH schema.org Event JSON-LD including GeoCoordinates and PostalAddress - ideal for the JSON-LD-first extractor. DanceUS also has per-city tango calendars (milongas/classes) that search discovery will surface. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Tango Kalender (Germany)",
+    "url": "https://tango-calendar.de/events/",
+    "type": "calendar",
+    "dances": ["tango"],
+    "categories_hint": ["social", "festival", "class"],
+    "enabled": true,
+    "notes": "Germany-wide WordPress 'The Events Calendar' site with categories for milongas, festivals, workshops, live music. Emits schema.org JSON-LD on event list pages; per-event pages under /veranstaltung/. Also offers ?ical=1 feed. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "London Milongas",
+    "url": "https://londonmilongas.co.uk/calendar/",
+    "type": "calendar",
+    "dances": ["tango"],
+    "categories_hint": ["social"],
+    "enabled": true,
+    "notes": "Free listings service for all social tango in London and the SE, grouped by zone (Inner/Outer London). WordPress Modern Events Calendar, server-rendered month grid with one JSON-LD block. Milongas only, no classes by policy. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Milongas Berlin",
+    "url": "https://www.milongas-berlin.de/en/",
+    "type": "listing",
+    "dances": ["tango"],
+    "categories_hint": ["social"],
+    "enabled": true,
+    "notes": "Regularly updated Berlin weekly schedule, server-rendered h3 per weekday with venues/times; companion venue directory at /tanzorte/ with addresses. English version. No JSON-LD. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "European Encuentro Calendar (tango-international.eu)",
+    "url": "https://www.tango-international.eu/",
+    "type": "listing",
+    "dances": ["tango"],
+    "categories_hint": ["marathon"],
+    "enabled": true,
+    "notes": "Plain-HTML list of European encuentros milongueros (we map encuentros to the marathon category), grouped by month, updated about once a month, non-private events only. Minimal markup, heuristics extraction. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Milongas-in (worldwide milonga directory)",
+    "url": "https://milongas-in.com/",
+    "type": "directory",
+    "dances": ["tango"],
+    "categories_hint": ["social"],
+    "enabled": true,
+    "notes": "Old-school worldwide 'find a milonga in any city' directory with outbound links to organizer sites. Useful as a seed of venue websites, but the HTML is dated and carries some ad junk - expect low-confidence candidates that land in the review queue. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Tangopolix (events calendar)",
+    "url": "https://www.tangopolix.com/tango-events-calendar",
+    "type": "calendar",
+    "dances": ["tango"],
+    "categories_hint": ["festival", "marathon"],
+    "enabled": false,
+    "notes": "Big festivals/marathons/encuentros calendar, but list pages render client-side (Rails + Stimulus infinite scroll) so a no-JS fetch yields no events; no XML sitemap. Individual event pages ARE server-rendered and rank well in DuckDuckGo, so discovery still harvests them - do not blocklist the domain. Responds 200 (verified 2026-07-02); disabled because direct crawling this URL extracts nothing."
+  },
+  {
+    "name": "TangoFestivals.net",
+    "url": "https://tangofestivals.net/",
+    "type": "directory",
+    "dances": ["tango"],
+    "categories_hint": ["festival", "marathon"],
+    "enabled": false,
+    "notes": "Festival/marathon/encuentro directory with category indexes (/events/festivals/, /events/marathons/, /events/encuentros/), but the event lists load client-side and sitemap.xml is 404 - nothing for a static crawler to extract. Responds 200 (verified 2026-07-02); keep disabled unless they add SSR. Individual event pages still arrive via search discovery."
+  },
+  {
+    "name": "Tango Marathon Directory (tangomarathons.com)",
+    "url": "https://www.tangomarathons.com/",
+    "type": "directory",
+    "dances": ["tango"],
+    "categories_hint": ["marathon"],
+    "enabled": false,
+    "notes": "THE community marathon/encuentro directory, but the site returns HTTP 418 to every curl request (bot/WAF block, even with a browser User-Agent; verified 2026-07-02). Disabled until it becomes fetchable; its event names still surface indirectly through the standing marathon queries."
+  },
+  {
+    "name": "Latin Dance Calendar - salsa festivals worldwide",
+    "url": "https://latindancecalendar.com/festivals/style/salsa/",
+    "type": "directory",
+    "dances": ["salsa"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "WordPress, fully server-rendered ~1 MB listing page with ~455 anchors to per-festival detail pages under /festivals/<slug>/ (names, dates, cities on-page). List page JSON-LD is only CollectionPage/Organization - extract via heuristics on the list, detail pages via crawl. Sibling style pages exist for every dance. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Latin Dance Calendar - bachata festivals worldwide",
+    "url": "https://latindancecalendar.com/festivals/style/bachata/",
+    "type": "directory",
+    "dances": ["bachata"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "Same engine as the salsa style page (server-rendered ~1.1 MB, /festivals/<slug>/ detail anchors, no Event JSON-LD on the list). Bachata-filtered worldwide festival catalogue updated for 2026. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Latin Dance Calendar - kizomba festivals worldwide",
+    "url": "https://latindancecalendar.com/festivals/style/kizomba/",
+    "type": "directory",
+    "dances": ["kizomba"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "Same engine as the other style pages (server-rendered ~0.9 MB, /festivals/<slug>/ detail anchors, no Event JSON-LD on the list). Kizomba-filtered worldwide festival catalogue updated for 2026. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "DanceUS - Latin & salsa festivals/congresses worldwide",
+    "url": "https://www.danceus.org/events/salsa/latin-salsa-festivals-congresses-worldwide/",
+    "type": "directory",
+    "dances": ["salsa", "bachata"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "Same engine as the tango DanceUS source: server-rendered 2026-2027 worldwide congress/festival list with schema.org Event JSON-LD (15 Event blocks incl. dates and addresses) - ideal for the JSON-LD-first extractor. Congresses map to the festival category. Covers salsa and the bachata tracks of the same congresses. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "DanceUS - London salsa & bachata calendar",
+    "url": "https://www.danceus.org/events/salsa/london-uk-salsa-calendar/",
+    "type": "calendar",
+    "dances": ["salsa", "bachata"],
+    "categories_hint": ["social", "class"],
+    "enabled": true,
+    "notes": "Per-city DanceUS calendar: 27 schema.org Event JSON-LD blocks for London socials/classes/club nights. Other city calendars on the same engine (Miami, NYC, LA, Berlin...) will surface via search discovery. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "DanceUS - Paris salsa & bachata calendar",
+    "url": "https://www.danceus.org/events/salsa/paris-france-salsa-calendar/",
+    "type": "calendar",
+    "dances": ["salsa", "bachata"],
+    "categories_hint": ["social", "class"],
+    "enabled": true,
+    "notes": "Same engine as the London city calendar: 11 schema.org Event JSON-LD blocks for Paris socials and Latin club nights. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Salsa Vida - festivals worldwide",
+    "url": "https://www.salsavida.com/guides/festivals/",
+    "type": "directory",
+    "dances": ["salsa", "bachata"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "Claims the largest salsa events calendar on the web (5,500+ events, 129 countries). Server-rendered ~830 KB WordPress listing, NO JSON-LD - heuristics extraction. Also valuable: per-city guides under /guides/<country>/<region>/<city>/ with socials and classes (e.g. /guides/united-kingdom/england/london/). Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "London Salsa Events",
+    "url": "https://londonsalsaevents.uk/",
+    "type": "calendar",
+    "dances": ["salsa", "bachata"],
+    "categories_hint": ["social", "class"],
+    "enabled": true,
+    "notes": "Community calendar of London salsa/bachata parties and club nights. WordPress with 36 schema.org Event JSON-LD blocks incl. Place + PostalAddress + Offers - best-in-class extraction for weekly London socials. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "go&dance - dancing festivals",
+    "url": "https://www.goandance.com/en/festivals",
+    "type": "directory",
+    "dances": ["salsa", "bachata", "kizomba"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "Spain-based portal listing ~248 festivals across salsa/bachata/kizomba. Server-rendered cards with ItemList JSON-LD (19 ListItems per page) linking to /en/event/<slug> detail pages, which are also server-rendered. Per-dance list pages at /en/events/salsa|bachata|kizomba. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "FindBachata - festivals worldwide",
+    "url": "https://findbachata.com/festivals",
+    "type": "directory",
+    "dances": ["bachata"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "418+ bachata festivals across 37 countries for 2026-2027. Fully server-rendered (~1.7 MB): month h2 headings grouping event cards, 418 anchors to /events/<slug> detail pages. No Event JSON-LD on the list page. Also has per-city social listings under /cities/. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Kizomba Embassy - events calendar",
+    "url": "https://kizombaembassy.com/events-calendar-kizomba/",
+    "type": "calendar",
+    "dances": ["kizomba"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "Daily-updated worldwide kizomba festival calendar (covers Angolan kizomba, urban kiz, semba, tarraxinha). WordPress + WP Event Manager: server-rendered, one h3.wpem-heading-text per event with dates and venue below. No Event JSON-LD. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Where To Dance Salsa - kizomba festivals",
+    "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
+    "type": "directory",
+    "dances": ["kizomba"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "Astro static site, fully server-rendered (~650 KB): ~105 kizomba festivals for 2026 as h3 titles (120 h3 blocks) with dates/locations adjacent and ~159 anchors to detail pages under /festivals/<slug>/. No Event JSON-LD on the list. Sibling pages /festivals/salsa/ and /festivals/bachata/ (verified 200) run the same layout if more coverage is wanted. Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Danceplace - kizomba events 2026",
+    "url": "https://www.danceplace.com/events/in/2026/Kizomba",
+    "type": "directory",
+    "dances": ["kizomba"],
+    "categories_hint": ["festival"],
+    "enabled": true,
+    "notes": "Server-rendered listing (~490 KB) with 230 anchors to event detail pages under /index/<id>-<slug>. No JSON-LD on the list page. YEAR-PINNED URL: bump /in/2026/ to the new year each January (same yearly chore as the standing queries). Verified 200 on 2026-07-02."
+  },
+  {
+    "name": "Kizz Calendar (kizzcalendar.com)",
+    "url": "https://www.kizzcalendar.com/",
+    "type": "calendar",
+    "dances": ["kizomba"],
+    "categories_hint": ["festival"],
+    "enabled": false,
+    "notes": "2026 kizomba festival calendar, but the page is a 3.7 KB shell that renders everything client-side with TOAST UI Calendar - nothing for cheerio. Responds 200 (verified 2026-07-02); keep disabled unless they ship server-rendered markup. Do not blocklist."
+  },
+  {
+    "name": "Salsa New York",
+    "url": "https://www.salsanewyork.com/",
+    "type": "listing",
+    "dances": ["salsa"],
+    "categories_hint": ["social"],
+    "enabled": false,
+    "notes": "The classic NYC salsa social calendar, but rebuilt as a Vue single-page app (14 KB shell, calendar rendered client-side) - nothing for a no-JS crawler. Responds 200 (verified 2026-07-02). NYC coverage rides on the query plan and DanceUS city calendars instead. Do not blocklist."
+  }
+]

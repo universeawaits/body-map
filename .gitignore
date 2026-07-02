@@ -1,0 +1,17 @@
+# Dependencies (restored by `npm ci` from the committed package-lock.json —
+# never ignore package-lock.json itself).
+node_modules/
+
+# OS noise
+.DS_Store
+
+# Scratch / editor leftovers
+*.log
+npm-debug.log*
+*.tmp
+*.swp
+*.bak
+scratch/
+
+# NOTE: data/ is deliberately NOT ignored — it is the database
+# (audit log, review queue, rejected list, geocode cache) and must be committed.

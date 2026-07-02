@@ -1,0 +1,19 @@
+{
+  "name": "body-map-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Search-driven scraper that discovers and refreshes social-dance entities (tango, salsa, bachata, kizomba) for Body Map",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dry-run": "node src/index.js --dry-run",
+    "admin": "node src/admin.js",
+    "test": "node test/extract.test.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

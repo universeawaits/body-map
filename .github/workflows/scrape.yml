@@ -1,0 +1,78 @@
+name: Scrape
+
+on:
+  schedule:
+    # ~every 2 days at 03:00 UTC. Day-of-month based, so month boundaries may
+    # give a 1-day gap (e.g. the 31st is followed by the 1st).
+    - cron: '0 3 */2 * *'
+  workflow_dispatch:
+
+concurrency: scrape
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    defaults:
+      run:
+        working-directory: scraper
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: scraper/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run scraper
+        id: run
+        run: node src/index.js
+
+      - name: Commit data changes
+        id: commit
+        working-directory: .
+        # Step outputs go through env, never inlined into the script —
+        # inlining would become a shell-injection vector if an output ever
+        # carried scraped text.
+        env:
+          CREATED: ${{ steps.run.outputs.created || 0 }}
+          UPDATED: ${{ steps.run.outputs.updated || 0 }}
+          ARCHIVED: ${{ steps.run.outputs.archived || 0 }}
+          QUEUED: ${{ steps.run.outputs.queued || 0 }}
+        run: |
+          git add web/data/entities.json data/audit-log.jsonl data/review-queue.json data/rejected.json data/geocode-cache.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "scrape: ${CREATED} created, ${UPDATED} updated, ${ARCHIVED} archived, ${QUEUED} queued"
+            git pull --rebase
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  # Pushes made with the automatic GITHUB_TOKEN do not trigger `on: push`
+  # workflows, so deploy is invoked explicitly via workflow_call (§2).
+  deploy:
+    needs: scrape
+    if: needs.scrape.outputs.changed == 'true'
+    # deploy.yml's workflow-level concurrency is ignored when invoked via
+    # workflow_call, so the deploy-web group is mirrored here: a direct push
+    # deploy supersedes a scrape-triggered one and vice versa.
+    concurrency:
+      group: deploy-web
+      cancel-in-progress: true
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+    uses: ./.github/workflows/deploy.yml

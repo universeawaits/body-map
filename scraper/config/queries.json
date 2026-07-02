@@ -1,0 +1,153 @@
+{
+  "cities": [
+    "Buenos Aires",
+    "Montevideo",
+    "Rosario",
+    "Santiago de Chile",
+    "Sao Paulo",
+    "Medellin",
+    "Berlin",
+    "Paris",
+    "London",
+    "Rome",
+    "Barcelona",
+    "Amsterdam",
+    "Istanbul",
+    "Moscow",
+    "Budapest",
+    "Lisbon",
+    "Warsaw",
+    "New York",
+    "San Francisco",
+    "Chicago",
+    "Montreal",
+    "Seoul",
+    "Tokyo",
+    "Taipei",
+    "Singapore",
+    "Cali",
+    "Havana",
+    "Santo Domingo",
+    "San Juan",
+    "Miami",
+    "Madrid",
+    "Los Angeles",
+    "Mexico City",
+    "Toronto",
+    "Luanda"
+  ],
+  "max_results_per_query": 8,
+  "max_pages_per_run": 200,
+  "domain_blocklist": [
+    "facebook.com",
+    "instagram.com",
+    "tiktok.com",
+    "pinterest.com",
+    "tripadvisor.com",
+    "reddit.com",
+    "youtube.com",
+    "youtu.be",
+    "twitter.com",
+    "x.com",
+    "linkedin.com",
+    "vk.com",
+    "t.me",
+    "telegram.me",
+    "whatsapp.com",
+    "meetup.com",
+    "yelp.com",
+    "groupon.com",
+    "quora.com",
+    "spotify.com",
+    "allevents.in",
+    "10times.com",
+    "classpass.com",
+    "feverup.com"
+  ],
+  "dances": {
+    "tango": {
+      "templates": [
+        "milonga {city}",
+        "milongas in {city}",
+        "tango classes {city}",
+        "argentine tango lessons {city}",
+        "tango marathon {city}",
+        "tango festival {city} 2026"
+      ],
+      "standing_queries": [
+        "tango marathon 2026 registration",
+        "tango marathon 2026 Europe",
+        "encuentro milonguero 2026",
+        "encuentro milonguero 2026 registration",
+        "international tango festival 2026",
+        "tango festival 2026 dates program",
+        "tango festivalito 2026",
+        "tango milonga weekend 2026",
+        "queer tango festival 2026",
+        "Buenos Aires tango festival 2026",
+        "tango marathon 2027",
+        "encuentro milonguero 2027",
+        "international tango festival 2027",
+        "tango festival 2028"
+      ]
+    },
+    "salsa": {
+      "templates": [
+        "salsa social {city}",
+        "salsa night {city}",
+        "where to dance salsa in {city}",
+        "salsa classes {city}",
+        "salsa congress {city}",
+        "salsa festival {city} 2026"
+      ],
+      "standing_queries": [
+        "salsa congress 2026",
+        "salsa congress 2026 registration",
+        "international salsa congress 2027",
+        "salsa festival Europe 2027",
+        "world salsa festival Cali 2026",
+        "Puerto Rico salsa congress 2026",
+        "cuban salsa festival 2026",
+        "salsa congress 2028"
+      ]
+    },
+    "bachata": {
+      "templates": [
+        "bachata social {city}",
+        "bachata night {city}",
+        "bachata classes {city}",
+        "bachata congress {city}",
+        "bachata weekender {city}",
+        "bachata festival {city} 2026"
+      ],
+      "standing_queries": [
+        "bachata festival 2026",
+        "bachata festival 2027",
+        "bachata congress 2026 registration",
+        "bachata weekender 2026",
+        "sensual bachata festival 2027",
+        "dominican bachata festival 2026",
+        "bachata festival 2028"
+      ]
+    },
+    "kizomba": {
+      "templates": [
+        "kizomba social {city}",
+        "kizomba party {city}",
+        "urban kiz party {city}",
+        "kizomba classes {city}",
+        "kizomba weekender {city}",
+        "kizomba festival {city} 2026"
+      ],
+      "standing_queries": [
+        "kizomba festival 2026",
+        "kizomba festival 2027",
+        "urban kiz festival 2026",
+        "urban kiz festival 2027",
+        "kizomba congress 2026 registration",
+        "semba festival 2026",
+        "kizomba festival 2028"
+      ]
+    }
+  }
+}

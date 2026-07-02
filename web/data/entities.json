@@ -1,0 +1,1712 @@
+{
+  "schema_version": 2,
+  "generated": "2026-07-02T00:00:00Z",
+  "entities": [
+    {
+      "id": "acb1a5b5-c2c5-47d7-9537-bf6810a9605e",
+      "name": "La Viruta Tango Club",
+      "categories": [
+        "social",
+        "class"
+      ],
+      "description": "Legendary Palermo basement milonga with classes every night before the dancing starts, famous for its late-night medialunas at dawn. (sample data)",
+      "lat": -34.5885,
+      "lng": -58.4303,
+      "address": "Armenia 1366",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "schedule": "Wed-Sun, classes from 19:00, milonga from 23:30",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/la-viruta-1/400/300",
+        "https://picsum.photos/seed/la-viruta-2/400/300",
+        "https://picsum.photos/seed/la-viruta-3/400/300"
+      ],
+      "socials": {
+        "website": "https://www.lavirutatangoclub.com"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "la-viruta",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "organizer": {
+        "name": "La Viruta Tango Club",
+        "url": "https://www.lavirutatangoclub.com"
+      },
+      "music": [
+        {
+          "name": "DJ Gabriel Sodini",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Cecilia Troncoso",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/cecilia-troncoso/80/80",
+          "video": "https://www.youtube.com/watch?v=virutaclase1",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "e0942403-30e6-4a9e-bcaf-7a94bd1c26a8",
+      "name": "Milonga Parakultural at Salón Canning",
+      "categories": [
+        "social"
+      ],
+      "description": "One of the most iconic traditional milongas in Buenos Aires, hosted in the classic Salón Canning ballroom with its renowned dance floor. (sample data)",
+      "lat": -34.5906,
+      "lng": -58.4212,
+      "address": "Av. Raúl Scalabrini Ortiz 1331",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "schedule": "Mon, Tue, Fri and Sat from 23:00",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/salon-canning-1/400/300",
+        "https://picsum.photos/seed/salon-canning-2/400/300"
+      ],
+      "socials": {
+        "website": "https://parakultural.com.ar"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "salon-canning-parakultural",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "mon",
+        "tue",
+        "fri",
+        "sat"
+      ],
+      "organizer": {
+        "name": "Omar Viola",
+        "url": "https://parakultural.com.ar"
+      },
+      "music": [
+        {
+          "name": "DJ Vivi La Falce",
+          "type": "dj",
+          "url": null
+        },
+        {
+          "name": "Orquesta Típica Misteriosa Buenos Aires",
+          "type": "orchestra",
+          "url": "https://www.misteriosabuenosaires.com"
+        }
+      ],
+      "artists": [
+        {
+          "name": "Virginia Gómez",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/virginia-gomez/80/80",
+          "video": "https://www.youtube.com/watch?v=lostotiscanning",
+          "url": null
+        },
+        {
+          "name": "Christian Márquez",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/christian-marquez/80/80",
+          "video": "https://www.youtube.com/watch?v=lostotiscanning",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "b66f3bb5-23e5-471c-87c6-809249428a60",
+      "name": "Cachirulo at El Beso",
+      "categories": [
+        "social"
+      ],
+      "description": "Strictly traditional milonga at the intimate El Beso club, known for its codes, cabeceo and top-level social dancing. (sample data)",
+      "lat": -34.6042,
+      "lng": -58.3925,
+      "address": "Riobamba 416",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "schedule": "Saturdays from 22:30",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/cachirulo-1/400/300",
+        "https://picsum.photos/seed/cachirulo-2/400/300"
+      ],
+      "socials": {
+        "email": "cachirulo@example.com"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "cachirulo-el-beso",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "sat"
+      ],
+      "organizer": {
+        "name": "Héctor y Norma"
+      },
+      "music": [
+        {
+          "name": "DJ Dany Borelli",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": []
+    },
+    {
+      "id": "401030a1-c6ac-4e42-afdd-89b6aa2c286c",
+      "name": "Lujos at El Beso",
+      "categories": [
+        "social"
+      ],
+      "description": "Elegant afternoon-into-evening milonga sharing the El Beso dance floor, a favourite of experienced Buenos Aires social dancers. (sample data)",
+      "lat": -34.6042,
+      "lng": -58.3925,
+      "address": "Riobamba 416",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "schedule": "Thursdays and Sundays from 18:00",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/lujos-1/400/300",
+        "https://picsum.photos/seed/lujos-2/400/300"
+      ],
+      "socials": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "lujos-el-beso",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "thu",
+        "sun"
+      ],
+      "organizer": {
+        "name": "Lucía y Oscar"
+      },
+      "music": [
+        {
+          "name": "DJ Marcelo Rojas",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": []
+    },
+    {
+      "id": "27f3caed-4979-4575-962d-bcd85e758c15",
+      "name": "La Catedral Club",
+      "categories": [
+        "social",
+        "class"
+      ],
+      "description": "Bohemian converted warehouse in Almagro with nightly classes and a relaxed alternative milonga under towering candle-lit ceilings. (sample data)",
+      "lat": -34.6046,
+      "lng": -58.4204,
+      "address": "Sarmiento 4006",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "schedule": "Daily, classes from 19:00, milonga until late",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/la-catedral-1/400/300",
+        "https://picsum.photos/seed/la-catedral-2/400/300",
+        "https://picsum.photos/seed/la-catedral-3/400/300"
+      ],
+      "socials": {
+        "website": "https://lacatedralclub.com",
+        "instagram": "https://www.instagram.com/lacatedralclub"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "la-catedral",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "organizer": {
+        "name": "La Catedral Club",
+        "url": "https://lacatedralclub.com"
+      },
+      "music": [
+        {
+          "name": "DJ La Catedral",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Valentina Villarreal",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/valentina-villarreal/80/80",
+          "video": null,
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "4685923f-53c0-4ed4-83af-9c3f384296d6",
+      "name": "DNI Tango",
+      "categories": [
+        "class"
+      ],
+      "description": "Well-known tango school in Almagro offering structured group classes from beginner to advanced, plus private lessons and prácticas. (sample data)",
+      "lat": -34.6091,
+      "lng": -58.4238,
+      "address": "Bulnes 1011",
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "schedule": "Mon-Sat, group classes 10:00-21:00",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/dni-tango-1/400/300",
+        "https://picsum.photos/seed/dni-tango-2/400/300"
+      ],
+      "socials": {
+        "website": "https://www.dni-tango.com",
+        "email": "info@dni-tango.com"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "dni-tango",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ],
+      "organizer": {
+        "name": "DNI Tango",
+        "url": "https://www.dni-tango.com"
+      },
+      "music": [],
+      "artists": [
+        {
+          "name": "Dana Frígoli",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/dana-frigoli/80/80",
+          "video": "https://www.youtube.com/watch?v=dnifrigoli",
+          "url": "https://www.dni-tango.com"
+        }
+      ]
+    },
+    {
+      "id": "1d7082ad-08e5-4530-9d64-a2fa5e499321",
+      "name": "Tango Buenos Aires Festival y Mundial de Baile",
+      "categories": [
+        "festival"
+      ],
+      "description": "The city's flagship tango festival and world championship: two weeks of free concerts, classes, exhibitions and the Mundial finals. (sample data)",
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "address": null,
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "schedule": null,
+      "start_date": "2026-08-19",
+      "end_date": "2026-09-01",
+      "images": [
+        "https://picsum.photos/seed/tango-ba-festival-1/400/300",
+        "https://picsum.photos/seed/tango-ba-festival-2/400/300",
+        "https://picsum.photos/seed/tango-ba-festival-3/400/300"
+      ],
+      "socials": {
+        "website": "https://festivales.buenosaires.gob.ar"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "tango-ba-festival",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [],
+      "organizer": {
+        "name": "Ministerio de Cultura de la Ciudad de Buenos Aires",
+        "url": "https://festivales.buenosaires.gob.ar"
+      },
+      "music": [
+        {
+          "name": "Orquesta El Arranque",
+          "type": "orchestra",
+          "url": null
+        },
+        {
+          "name": "DJ Mariano Otero",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Maja Petrović",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/maja-petrovic/80/80",
+          "video": "https://www.youtube.com/watch?v=majamarkomundial",
+          "url": null
+        },
+        {
+          "name": "Marko Miljević",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/marko-miljevic/80/80",
+          "video": "https://www.youtube.com/watch?v=majamarkomundial",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "c60eb786-746f-4a25-8278-b8770da6130b",
+      "name": "Tango at Clärchens Ballhaus",
+      "categories": [
+        "social"
+      ],
+      "description": "Historic 1913 Berlin ballroom hosting a beloved weekly tango night under the mirrored hall's faded chandeliers. (sample data)",
+      "lat": 52.5266,
+      "lng": 13.3956,
+      "address": "Auguststraße 24",
+      "city": "Berlin",
+      "country": "Germany",
+      "schedule": "Wednesdays from 21:00",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/claerchens-1/400/300",
+        "https://picsum.photos/seed/claerchens-2/400/300"
+      ],
+      "socials": {
+        "website": "https://www.claerchensballhaus.de"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "claerchens-ballhaus",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "wed"
+      ],
+      "organizer": {
+        "name": "Clärchens Ballhaus",
+        "url": "https://www.claerchensballhaus.de"
+      },
+      "music": [
+        {
+          "name": "DJ Leone",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": []
+    },
+    {
+      "id": "8141ccb9-7b2e-44af-91f5-89df26ee0f3c",
+      "name": "Nou Tango Berlin",
+      "categories": [
+        "social",
+        "class"
+      ],
+      "description": "Large tango school and dance hall in Friedrichshain with a full weekly class programme and regular milongas and prácticas. (sample data)",
+      "lat": 52.5061,
+      "lng": 13.4318,
+      "address": "Eisenbahnstraße 21",
+      "city": "Berlin",
+      "country": "Germany",
+      "schedule": "Classes Mon-Fri, milonga on Saturdays from 21:00",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/nou-tango-1/400/300",
+        "https://picsum.photos/seed/nou-tango-2/400/300",
+        "https://picsum.photos/seed/nou-tango-3/400/300"
+      ],
+      "socials": {
+        "website": "https://www.tangoberlin.de",
+        "instagram": "https://www.instagram.com/noutangoberlin"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "nou-tango-berlin",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ],
+      "organizer": {
+        "name": "Nou Tango Berlin",
+        "url": "https://www.tangoberlin.de"
+      },
+      "music": [
+        {
+          "name": "DJ Anna Sol",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Juan Villarreal",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/juan-villarreal/80/80",
+          "video": null,
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "21627843-3447-42cb-ae46-d37b4228ec00",
+      "name": "Embrace Berlin Tango Marathon",
+      "categories": [
+        "marathon"
+      ],
+      "description": "Popular international tango marathon: three days of non-stop social dancing with curated DJs and dancers from all over Europe. (sample data)",
+      "lat": 52.4934,
+      "lng": 13.4529,
+      "address": null,
+      "city": "Berlin",
+      "country": "Germany",
+      "schedule": null,
+      "start_date": "2026-10-09",
+      "end_date": "2026-10-11",
+      "images": [
+        "https://picsum.photos/seed/embrace-berlin-1/400/300",
+        "https://picsum.photos/seed/embrace-berlin-2/400/300"
+      ],
+      "socials": {
+        "website": "https://www.embraceberlin.de",
+        "facebook": "https://www.facebook.com/embraceberlintangomarathon"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "embrace-berlin",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [],
+      "organizer": {
+        "name": "Embrace Berlin team",
+        "url": "https://www.embraceberlin.de"
+      },
+      "music": [
+        {
+          "name": "DJ Serkan Gökçesu",
+          "type": "dj",
+          "url": null
+        },
+        {
+          "name": "DJ Lampis Zalavras",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": []
+    },
+    {
+      "id": "a6834430-248b-4c76-b54d-d9ee1c1f4a62",
+      "name": "La Milonga du Quai Saint-Bernard",
+      "categories": [
+        "social"
+      ],
+      "description": "Famous open-air summer milonga on the Seine: dancers fill the riverside amphitheatres of the Jardin Tino-Rossi every warm evening. (sample data)",
+      "lat": 48.8479,
+      "lng": 2.3585,
+      "address": "Quai Saint-Bernard, Jardin Tino-Rossi",
+      "city": "Paris",
+      "country": "France",
+      "schedule": "June-September, daily from 19:00 (weather permitting)",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/quai-saint-bernard-1/400/300",
+        "https://picsum.photos/seed/quai-saint-bernard-2/400/300"
+      ],
+      "socials": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "quai-saint-bernard",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "organizer": {
+        "name": "Association Tango de Soie"
+      },
+      "music": [
+        {
+          "name": "DJ du quai",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": []
+    },
+    {
+      "id": "5a0c6c2c-eb3a-48fd-905c-153cbb01455f",
+      "name": "Academia de Tango Amsterdam",
+      "categories": [
+        "social",
+        "class"
+      ],
+      "description": "Amsterdam's long-running Argentine tango school, with weekly courses at every level and a monthly salon milonga in the city centre. (sample data)",
+      "lat": 52.3667,
+      "lng": 4.8945,
+      "address": null,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "schedule": "Classes Mon-Thu, salon milonga first Saturday of the month",
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/academia-amsterdam-1/400/300",
+        "https://picsum.photos/seed/academia-amsterdam-2/400/300"
+      ],
+      "socials": {
+        "website": "https://www.academiadetango.nl",
+        "email": "info@academiadetango.nl"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "academia-de-tango-amsterdam",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "sat"
+      ],
+      "organizer": {
+        "name": "Academia de Tango",
+        "url": "https://www.academiadetango.nl"
+      },
+      "music": [
+        {
+          "name": "DJ Arjan Sikking",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Marianne van Berlo",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/marianne-van-berlo/80/80",
+          "video": null,
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "7e3be6b6-9db7-484d-89b5-94e4301208bd",
+      "name": "Brussels Tango Festival",
+      "categories": [
+        "festival"
+      ],
+      "description": "One of Europe's biggest tango festivals: a long weekend of milongas, workshops and performances across venues in the Belgian capital. (sample data)",
+      "lat": 50.8467,
+      "lng": 4.3525,
+      "address": null,
+      "city": "Brussels",
+      "country": "Belgium",
+      "schedule": null,
+      "start_date": "2026-05-01",
+      "end_date": "2026-05-03",
+      "images": [
+        "https://picsum.photos/seed/brussels-tango-1/400/300",
+        "https://picsum.photos/seed/brussels-tango-2/400/300",
+        "https://picsum.photos/seed/brussels-tango-3/400/300"
+      ],
+      "socials": {
+        "website": "https://www.brusselstangofestival.be",
+        "facebook": "https://www.facebook.com/brusselstangofestival"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "brussels-tango-festival",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [],
+      "organizer": {
+        "name": "Brussels Tango Festival vzw",
+        "url": "https://www.brusselstangofestival.be"
+      },
+      "music": [
+        {
+          "name": "Solo Tango Orquesta",
+          "type": "orchestra",
+          "url": null
+        },
+        {
+          "name": "DJ Théo Chatzipetros",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Noelia Hurtado",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/noelia-hurtado/80/80",
+          "video": "https://www.youtube.com/watch?v=noeliabrussels",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "2b2381f8-b11c-4861-994c-aec361e61bdc",
+      "name": "tanGOTOistanbul",
+      "categories": [
+        "festival"
+      ],
+      "description": "International tango festival on the Bosphorus, drawing maestros and dancers from both continents for workshops, shows and all-night milongas. (sample data)",
+      "lat": 41.0369,
+      "lng": 28.985,
+      "address": null,
+      "city": "Istanbul",
+      "country": "Turkey",
+      "schedule": null,
+      "start_date": "2027-10-13",
+      "end_date": "2027-10-17",
+      "images": [
+        "https://picsum.photos/seed/tangoto-istanbul-1/400/300",
+        "https://picsum.photos/seed/tangoto-istanbul-2/400/300"
+      ],
+      "socials": {
+        "website": "https://www.tangotoistanbul.com",
+        "instagram": "https://www.instagram.com/tangotoistanbul"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "tangoto-istanbul",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [],
+      "organizer": {
+        "name": "tanGOTOistanbul",
+        "url": "https://www.tangotoistanbul.com"
+      },
+      "music": [
+        {
+          "name": "Sexteto Milonguero",
+          "type": "band",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Sebastián Achaval",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/sebastian-achaval/80/80",
+          "video": "https://www.youtube.com/watch?v=achavalistanbul",
+          "url": null
+        },
+        {
+          "name": "Roxana Suárez",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/roxana-suarez/80/80",
+          "video": "https://www.youtube.com/watch?v=achavalistanbul",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": "95049dd6-4387-404b-9f7c-34f4522157bd",
+      "name": "Yes Tango Marathon Torino",
+      "categories": [
+        "marathon"
+      ],
+      "description": "Turin's international tango marathon: a full weekend of continuous milongas with an international crowd in Italy's elegant northern capital. (sample data)",
+      "lat": 45.0703,
+      "lng": 7.6869,
+      "address": null,
+      "city": "Turin",
+      "country": "Italy",
+      "schedule": null,
+      "start_date": "2026-09-18",
+      "end_date": "2026-09-20",
+      "images": [
+        "https://picsum.photos/seed/yes-tango-torino-1/400/300",
+        "https://picsum.photos/seed/yes-tango-torino-2/400/300"
+      ],
+      "socials": {
+        "facebook": "https://www.facebook.com/yestangomarathon"
+      },
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "yes-tango-marathon-torino",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z",
+      "dances": [
+        "tango"
+      ],
+      "days_of_week": [],
+      "organizer": {
+        "name": "Yes Tango Marathon crew"
+      },
+      "music": [
+        {
+          "name": "DJ Paola Zampini",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": []
+    },
+    {
+      "id": "65193cbd-e57c-49b9-b882-ed6089539ff1",
+      "name": "La Topa Tolondra",
+      "dances": [
+        "salsa"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "Cali’s most beloved salsa social club: a packed dance floor of caleño footwork, live pachanga nights and visitors from all over the world. (sample data)",
+      "lat": 3.4486,
+      "lng": -76.5312,
+      "address": "Calle 5 #13-27",
+      "city": "Cali",
+      "country": "Colombia",
+      "schedule": "Mon-Sat from 21:00",
+      "days_of_week": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/la-topa-1/400/300",
+        "https://picsum.photos/seed/la-topa-2/400/300"
+      ],
+      "socials": {
+        "instagram": "https://www.instagram.com/latopatolondra"
+      },
+      "organizer": {
+        "name": "La Topa Tolondra"
+      },
+      "music": [
+        {
+          "name": "DJ El Mulato",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "la-topa-tolondra",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "afbe9ded-ac71-467c-8571-13480363660b",
+      "name": "Casa de la Música Miramar",
+      "dances": [
+        "salsa"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "Havana institution where Cuba’s top timba bands play live and locals dance casino until the early hours. (sample data)",
+      "lat": 23.1136,
+      "lng": -82.4144,
+      "address": "Calle 20 esquina 35, Miramar",
+      "city": "Havana",
+      "country": "Cuba",
+      "schedule": "Thu-Sun, matinée 17:00 and night show 23:00",
+      "days_of_week": [
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/casa-musica-1/400/300",
+        "https://picsum.photos/seed/casa-musica-2/400/300"
+      ],
+      "socials": {},
+      "organizer": {
+        "name": "EGREM"
+      },
+      "music": [
+        {
+          "name": "Los Van Van",
+          "type": "band",
+          "url": null
+        }
+      ],
+      "artists": [],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "casa-de-la-musica-miramar",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "81f02266-2a15-4261-a07e-3a565e672b0a",
+      "name": "New York International Salsa Congress",
+      "dances": [
+        "salsa"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "Four days of mambo on2 workshops, showcase performances and grand ballroom socials in the city that shaped modern salsa. (sample data)",
+      "lat": 40.7595,
+      "lng": -73.9845,
+      "address": "Midtown Manhattan",
+      "city": "New York",
+      "country": "United States",
+      "schedule": null,
+      "days_of_week": [],
+      "start_date": "2026-08-27",
+      "end_date": "2026-08-30",
+      "images": [
+        "https://picsum.photos/seed/ny-salsa-congress-1/400/300",
+        "https://picsum.photos/seed/ny-salsa-congress-2/400/300",
+        "https://picsum.photos/seed/ny-salsa-congress-3/400/300"
+      ],
+      "socials": {
+        "website": "https://www.newyorksalsacongress.com"
+      },
+      "organizer": {
+        "name": "NYISC productions",
+        "url": "https://www.newyorksalsacongress.com"
+      },
+      "music": [
+        {
+          "name": "Spanish Harlem Orchestra",
+          "type": "orchestra",
+          "url": null
+        },
+        {
+          "name": "DJ Steve Rodriguez",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Eddie Torres",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/eddie-torres/80/80",
+          "video": "https://www.youtube.com/watch?v=eddietorresmambo",
+          "url": null
+        }
+      ],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "new-york-salsa-congress",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "34013da3-963f-4928-bfb2-3cd6637140bf",
+      "name": "Festival Mundial de Salsa Cali",
+      "dances": [
+        "salsa"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "Past edition of Cali’s world salsa festival: open-air competition rounds and shows by the city’s famous salsa schools. (sample data)",
+      "lat": 3.4372,
+      "lng": -76.5225,
+      "address": "Teatro al aire libre Los Cristales",
+      "city": "Cali",
+      "country": "Colombia",
+      "schedule": null,
+      "days_of_week": [],
+      "start_date": "2024-09-12",
+      "end_date": "2024-09-15",
+      "images": [
+        "https://picsum.photos/seed/mundial-salsa-cali-1/400/300",
+        "https://picsum.photos/seed/mundial-salsa-cali-2/400/300"
+      ],
+      "socials": {
+        "website": "https://www.cali.gov.co"
+      },
+      "organizer": {
+        "name": "Alcaldía de Santiago de Cali",
+        "url": "https://www.cali.gov.co"
+      },
+      "music": [
+        {
+          "name": "Orquesta Guayacán",
+          "type": "orchestra",
+          "url": null
+        }
+      ],
+      "artists": [],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "festival-mundial-de-salsa-cali",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "4bd0e39b-e770-40ba-afef-7edaaf058aca",
+      "name": "Berlin Salsa Congress",
+      "dances": [
+        "salsa",
+        "bachata"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "Past edition of Berlin’s international salsa and bachata congress: two ballrooms, artist showcases and late-night socials. (sample data)",
+      "lat": 52.52,
+      "lng": 13.405,
+      "address": null,
+      "city": "Berlin",
+      "country": "Germany",
+      "schedule": null,
+      "days_of_week": [],
+      "start_date": "2021-09-03",
+      "end_date": "2021-09-05",
+      "images": [
+        "https://picsum.photos/seed/berlin-salsa-congress-1/400/300",
+        "https://picsum.photos/seed/berlin-salsa-congress-2/400/300"
+      ],
+      "socials": {
+        "facebook": "https://www.facebook.com/berlinsalsacongress"
+      },
+      "organizer": {
+        "name": "Berlin Salsa Congress team"
+      },
+      "music": [
+        {
+          "name": "DJ Mauri",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "berlin-salsa-congress",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "6a8c281e-b33a-4263-b67d-c1996edf1ae2",
+      "name": "BKS Festival Paris",
+      "dances": [
+        "salsa",
+        "bachata",
+        "kizomba"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "Three-floor Paris festival covering bachata, kizomba and salsa: international artist line-up, themed parties and workshops all weekend. (sample data)",
+      "lat": 48.8792,
+      "lng": 2.2846,
+      "address": "3 Place du Général Kœnig",
+      "city": "Paris",
+      "country": "France",
+      "schedule": null,
+      "days_of_week": [],
+      "start_date": "2027-02-19",
+      "end_date": "2027-02-21",
+      "images": [
+        "https://picsum.photos/seed/bks-paris-1/400/300",
+        "https://picsum.photos/seed/bks-paris-2/400/300",
+        "https://picsum.photos/seed/bks-paris-3/400/300"
+      ],
+      "socials": {
+        "website": "https://www.bksfestival.com",
+        "instagram": "https://www.instagram.com/bksfestival"
+      },
+      "organizer": {
+        "name": "BKS events",
+        "url": "https://www.bksfestival.com"
+      },
+      "music": [
+        {
+          "name": "DJ Tronky",
+          "type": "dj",
+          "url": null
+        },
+        {
+          "name": "Grupo Extra",
+          "type": "band",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Daniel y Desirée",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/daniel-desiree/80/80",
+          "video": "https://www.youtube.com/watch?v=danieldesireebks",
+          "url": null
+        }
+      ],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "bks-festival-paris",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "159214e3-2f02-4e85-b98e-d01697b5772e",
+      "name": "Academia Dominicana de Baile",
+      "dances": [
+        "salsa",
+        "bachata"
+      ],
+      "categories": [
+        "class",
+        "social"
+      ],
+      "description": "Santo Domingo school teaching authentic Dominican bachata and salsa caleña, with a lively students’ social every Friday night. (sample data)",
+      "lat": 18.4861,
+      "lng": -69.9312,
+      "address": "Av. 27 de Febrero 224",
+      "city": "Santo Domingo",
+      "country": "Dominican Republic",
+      "schedule": "Classes Mon-Fri 18:00-21:00, social on Fridays from 21:00",
+      "days_of_week": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/academia-dominicana-1/400/300",
+        "https://picsum.photos/seed/academia-dominicana-2/400/300"
+      ],
+      "socials": {
+        "instagram": "https://www.instagram.com/academiadominicanadebaile",
+        "email": "clases@academiadominicana.do"
+      },
+      "organizer": {
+        "name": "Academia Dominicana de Baile"
+      },
+      "music": [],
+      "artists": [
+        {
+          "name": "Yudelka Santana",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/yudelka-santana/80/80",
+          "video": "https://www.youtube.com/watch?v=bachatadominicana",
+          "url": null
+        }
+      ],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "academia-dominicana-de-baile",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "b8a6c715-1b1f-4ae5-86e8-4aeea3e862d3",
+      "name": "Latin nights at Barrio Latino",
+      "dances": [
+        "salsa",
+        "bachata"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "Four floors of Latin music near Bastille: salsa and bachata socials with resident DJs and a beginners’ taster before the party. (sample data)",
+      "lat": 48.8531,
+      "lng": 2.3708,
+      "address": "46-48 Rue du Faubourg Saint-Antoine",
+      "city": "Paris",
+      "country": "France",
+      "schedule": "Thu-Sun from 20:00",
+      "days_of_week": [
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/barrio-latino-1/400/300",
+        "https://picsum.photos/seed/barrio-latino-2/400/300"
+      ],
+      "socials": {
+        "facebook": "https://www.facebook.com/barriolatinoparis"
+      },
+      "organizer": {
+        "name": "Barrio Latino"
+      },
+      "music": [
+        {
+          "name": "DJ La Clave",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "barrio-latino-paris",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "6ec492e2-5b1a-49af-9230-adced44df3f9",
+      "name": "B.Leza club nights",
+      "dances": [
+        "kizomba"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "Lisbon’s legendary African club on the riverfront: kizomba and semba socials with live bands from the lusophone world. (sample data)",
+      "lat": 38.7071,
+      "lng": -9.1449,
+      "address": "Cais da Ribeira Nova, Armazém B, Cais do Sodré",
+      "city": "Lisbon",
+      "country": "Portugal",
+      "schedule": "Wed-Sun from 23:00",
+      "days_of_week": [
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/b-leza-1/400/300",
+        "https://picsum.photos/seed/b-leza-2/400/300"
+      ],
+      "socials": {
+        "facebook": "https://www.facebook.com/blezalisboa"
+      },
+      "organizer": {
+        "name": "B.Leza"
+      },
+      "music": [
+        {
+          "name": "Banda Maravilha",
+          "type": "band",
+          "url": null
+        }
+      ],
+      "artists": [],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "b-leza-club-nights",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "cded29ba-0f92-45d8-9b41-546566041667",
+      "name": "Kizomba foundations at B.Leza",
+      "dances": [
+        "kizomba"
+      ],
+      "categories": [
+        "class"
+      ],
+      "description": "Weekly kizomba and semba technique class on the B.Leza floor before the club night takes over — ginga, saídas and musicality. (sample data)",
+      "lat": 38.7071,
+      "lng": -9.1449,
+      "address": "Cais da Ribeira Nova, Armazém B, Cais do Sodré",
+      "city": "Lisbon",
+      "country": "Portugal",
+      "schedule": "Wednesdays 21:00-23:00",
+      "days_of_week": [
+        "wed"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/b-leza-class-1/400/300"
+      ],
+      "socials": {
+        "facebook": "https://www.facebook.com/blezalisboa"
+      },
+      "organizer": {
+        "name": "B.Leza"
+      },
+      "music": [],
+      "artists": [
+        {
+          "name": "Petchu Miguel",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/petchu-miguel/80/80",
+          "video": "https://www.youtube.com/watch?v=petchusemba",
+          "url": null
+        }
+      ],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "b-leza-kizomba-foundations",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "5e4099b4-74c4-4bd2-8f50-df8b26e7a55a",
+      "name": "Feeling Kizomba Festival",
+      "dances": [
+        "kizomba"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "Lisbon kizomba festival weekend: urban kiz and traditional rooms, taxi dancers, artist shows and sunrise socials over the Tejo. (sample data)",
+      "lat": 38.7223,
+      "lng": -9.1393,
+      "address": null,
+      "city": "Lisbon",
+      "country": "Portugal",
+      "schedule": null,
+      "days_of_week": [],
+      "start_date": "2028-03-10",
+      "end_date": "2028-03-12",
+      "images": [
+        "https://picsum.photos/seed/feeling-kizomba-1/400/300",
+        "https://picsum.photos/seed/feeling-kizomba-2/400/300"
+      ],
+      "socials": {
+        "instagram": "https://www.instagram.com/feelingkizombafestival"
+      },
+      "organizer": {
+        "name": "Feeling events"
+      },
+      "music": [
+        {
+          "name": "Mika Mendes",
+          "type": "band",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Curtis Seldon",
+          "role": "performer",
+          "photo": "https://picsum.photos/seed/curtis-seldon/80/80",
+          "video": "https://www.youtube.com/watch?v=curtisurbankiz",
+          "url": null
+        }
+      ],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "feeling-kizomba-festival",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "7583560b-eb85-4860-b521-726af179d00e",
+      "name": "Kizomba fusion classes in Soho",
+      "dances": [
+        "kizomba"
+      ],
+      "categories": [
+        "class"
+      ],
+      "description": "Central London kizomba programme: fundamentals on Tuesdays, urban kiz and tarraxinha styling on Thursdays, with a guided práctica after class. (sample data)",
+      "lat": 51.5136,
+      "lng": -0.1321,
+      "address": "96 Charing Cross Road",
+      "city": "London",
+      "country": "United Kingdom",
+      "schedule": "Tuesdays and Thursdays 19:00-22:00",
+      "days_of_week": [
+        "tue",
+        "thu"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://picsum.photos/seed/kizomba-soho-1/400/300"
+      ],
+      "socials": {
+        "website": "https://www.kizombafusion.co.uk",
+        "email": "hello@kizombafusion.co.uk"
+      },
+      "organizer": {
+        "name": "Kizomba Fusion London",
+        "url": "https://www.kizombafusion.co.uk"
+      },
+      "music": [],
+      "artists": [
+        {
+          "name": "Iris De Brito",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/iris-de-brito/80/80",
+          "video": "https://www.youtube.com/watch?v=irislondonkiz",
+          "url": null
+        }
+      ],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "kizomba-fusion-soho",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    },
+    {
+      "id": "935012f7-c80f-40af-88b2-57b628c98b60",
+      "name": "London Kizomba Festival",
+      "dances": [
+        "kizomba"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "Bank-holiday kizomba weekender on the South Bank: workshops from urban kiz to semba roots, three party rooms and a Sunday riverside social. (sample data)",
+      "lat": 51.5033,
+      "lng": -0.1196,
+      "address": null,
+      "city": "London",
+      "country": "United Kingdom",
+      "schedule": null,
+      "days_of_week": [],
+      "start_date": "2023-05-26",
+      "end_date": "2023-05-28",
+      "images": [
+        "https://picsum.photos/seed/london-kizomba-1/400/300",
+        "https://picsum.photos/seed/london-kizomba-2/400/300"
+      ],
+      "socials": {
+        "website": "https://www.londonkizombafestival.co.uk",
+        "instagram": "https://www.instagram.com/londonkizombafestival"
+      },
+      "organizer": {
+        "name": "Kizomba London crew"
+      },
+      "music": [
+        {
+          "name": "DJ Snakes",
+          "type": "dj",
+          "url": null
+        }
+      ],
+      "artists": [
+        {
+          "name": "Laurent Kongo",
+          "role": "teacher",
+          "photo": "https://picsum.photos/seed/laurent-kongo/80/80",
+          "video": "https://www.youtube.com/watch?v=laurentkizlondon",
+          "url": null
+        }
+      ],
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "seed",
+          "ref": "london-kizomba-festival",
+          "url": null,
+          "first_seen": "2026-07-02T00:00:00Z",
+          "last_seen": "2026-07-02T00:00:00Z"
+        }
+      ],
+      "created_at": "2026-07-02T00:00:00Z",
+      "updated_at": "2026-07-02T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+/* =====================================================================
+   Body Map — Design foundations, adopted from the Ф Design System
+   (colors_and_type.css) with the user's approval. Warm paper, warm ink,
+   one ink-blue accent. Newsreader (serif headlines) · Hanken Grotesk (UI
+   sans) · IBM Plex Mono (data). Category PIN colors are defined in
+   categories.js/style.css and are NOT part of this sheet — they are the
+   one deliberate exception to this palette.
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Hanken+Grotesk:wght@400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ---- Font families ------------------------------------------------ */
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono:  'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* ---- Paper / surfaces --------------------------------------------- */
+  --paper:           #FBF9F4;
+  --surface:         #FFFFFF;
+  --surface-sunken:  #F1EDE3;
+  --surface-hover:   #F5F1E8;
+
+  /* ---- Ink / text ---------------------------------------------------- */
+  --ink:    #1C1B18;
+  --ink-2:  #57534B;
+  --ink-3:  #8C867A;
+  --ink-4:  #B6AF9F;
+
+  /* ---- Hairlines & borders ------------------------------------------ */
+  --line:        #E6E1D5;
+  --line-strong: #D6CEBE;
+
+  /* ---- Accent — ink blue (interactive) ------------------------------- */
+  --accent:        #29487B;
+  --accent-strong: #1D3559;
+  --accent-soft:   #E9EDF4;
+  --accent-ink:    #FFFFFF;
+  --accent-ring:   rgba(41, 72, 123, 0.30);
+
+  /* ---- Semantic ------------------------------------------------------ */
+  --attention:      #B5862F;
+  --attention-soft: #F6EFD8;
+  --correct:        #2E6F4E;
+  --correct-soft:   #E5EFE6;
+  --incorrect:      #B23A33;
+  --incorrect-soft: #F7E8E5;
+
+  /* ---- Spacing — 4px base -------------------------------------------- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px; --space-20: 80px; --space-24: 96px;
+
+  /* ---- Radii — crisp, editorial --------------------------------------- */
+  --r-xs: 4px; --r-sm: 6px; --r-md: 10px; --r-lg: 14px; --r-xl: 20px;
+  --r-pill: 999px;
+
+  /* ---- Elevation — hairlines first, soft warm shadows ------------------ */
+  --shadow-1: 0 1px 2px rgba(28,27,24,.06), 0 1px 1px rgba(28,27,24,.04);
+  --shadow-2: 0 2px 8px rgba(28,27,24,.06), 0 10px 24px rgba(28,27,24,.05);
+  --shadow-3: 0 18px 48px rgba(28,27,24,.14), 0 4px 12px rgba(28,27,24,.06);
+  --ring:     0 0 0 3px var(--accent-ring);
+
+  /* ---- Motion — restrained -------------------------------------------- */
+  --ease:        cubic-bezier(0.2, 0, 0, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.15, 1);
+  --dur-fast: 140ms; --dur: 200ms; --dur-slow: 280ms;
+
+  /* ---- Type scale — headlines serif, UI chrome sans -------------------- */
+  --h1:          400 40px/1.10 var(--font-serif);
+  --h1-track:    -0.015em;
+  --h2:          400 30px/1.16 var(--font-serif);
+  --h2-track:    -0.01em;
+  --h3:          500 23px/1.25 var(--font-serif);
+  --h4:          600 19px/1.35 var(--font-serif);
+  --prose:       400 17px/1.65 var(--font-serif);
+  --body:        400 16px/1.5  var(--font-sans);
+  --body-strong: 600 16px/1.5  var(--font-sans);
+  --small:       400 14px/1.45 var(--font-sans);
+  --label:       600 13px/1.3  var(--font-sans);
+  --label-track: 0.06em;
+  --caption:     400 13px/1.4 var(--font-sans);
+  --micro:       500 11px/1.2 var(--font-sans);
+  --micro-track: 0.08em;
+  --mono:        400 14px/1.5 var(--font-mono);
+  --mono-sm:     400 12px/1.4 var(--font-mono);
+}
+
+/* ---- Dark theme — warm charcoal paper; auto-applied via
+        prefers-color-scheme by main.js setting data-theme ---------------- */
+[data-theme="dark"] {
+  --paper:          #181713;
+  --surface:        #211F1A;
+  --surface-sunken: #14130F;
+  --surface-hover:  #29261F;
+
+  --ink:    #F3EFE5;
+  --ink-2:  #C0BAAC;
+  --ink-3:  #8C867A;
+  --ink-4:  #5E5A50;
+
+  --line:        #312E27;
+  --line-strong: #423E34;
+
+  --accent:        #8FAEDC;
+  --accent-strong: #AAC2E6;
+  --accent-soft:   #232A35;
+  --accent-ink:    #14130F;
+  --accent-ring:   rgba(143, 174, 220, 0.34);
+
+  --attention:      #D9AE5A;
+  --attention-soft: #2C2616;
+  --correct:        #79B894;
+  --correct-soft:   #1B2A20;
+  --incorrect:      #DD8077;
+  --incorrect-soft: #2C1B18;
+
+  --shadow-1: 0 1px 2px rgba(0,0,0,.40);
+  --shadow-2: 0 2px 8px rgba(0,0,0,.40), 0 10px 24px rgba(0,0,0,.34);
+  --shadow-3: 0 18px 48px rgba(0,0,0,.52), 0 4px 12px rgba(0,0,0,.40);
+}
