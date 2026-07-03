@@ -1,4 +1,6120 @@
 {
-  "generated": null,
-  "items": []
+  "generated": "2026-07-03T01:27:16Z",
+  "items": [
+    {
+      "key": "nou die freitagsmilonga|hoy-milonga.com",
+      "candidate": {
+        "name": "NOU - Die Freitagsmilonga",
+        "categories": [
+          "social"
+        ],
+        "description": "milonga: Milonga ---------- Safer Space Wir dulden im Nou Mitte keine Form der Belästigung und Diskriminierung. Wenn Du diesbezüglich ein Anliegen hast wende dich bitte an Thomas Rieser. Soziales Tanzen Alle Teilnehmer:innen einer Milonga wollen tanzen und einen schönen Abend erleben. Wenn jede:r Tänzer:in im Laufe des Abends eine Tanda mit einer Person tanzt, mit der man noch nie getanzt hat, durchmischt sich der Raum erheblich. Das soziale Miteinander und der Austausch werden gefördert und wi…",
+        "lat": null,
+        "lng": null,
+        "address": "Chausseestraße 102 (rechter Seitenflügel)",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML789.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP789.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/471050/NOU---Die-Freitagsmilonga"
+        },
+        "organizer": {
+          "name": "Thomas Rieser"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 1,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "strong category keyword (+0.15)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "mj u50 praktika|hoy-milonga.com",
+      "candidate": {
+        "name": "MJ Ü50 Praktika",
+        "categories": [
+          "social"
+        ],
+        "description": "práctica de tango: Tango für Tänzer über 50 Jahre ---------- \"Es ist nie zu spät\" - Tango Praktika samstags für alle Begeisterten über 50 Jahre jung im Mala Junta. Samstags 12:00 - 13:30 Bitte meldet euch gern an unter: anmeldung@malajunta.de Selbstverständlich sind alle TeilnehmerInnen auch in unseren regulären Kursen herzlich willkommen. PREISE unter: https://malajunta.de/unterricht/tango-fuer-taenzerinnen-ueber-50-jahre anmeldung@malajunta.de ---------- Quelle: https://www.malajunta.de",
+        "lat": null,
+        "lng": null,
+        "address": "Kolonnenstraße 29, (2.Aufg, Gittertür, 3.Hinterhof",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "sat"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML171553.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP171553.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/469338/MJ-U50-Praktika"
+        },
+        "organizer": {
+          "name": "Mala Junta Berlin"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "praktica tango technik solo|hoy-milonga.com",
+      "candidate": {
+        "name": "Praktica - Tango Technik Solo",
+        "categories": [
+          "social"
+        ],
+        "description": "práctica de tango: Praktica ---------- Samstags 13:00 Tango Technik Solo - Preis bitte beim Veranstalter erfragen ! - Anmeldung erfoderlich ! im Phynix tanzt Hasenheide 54 ---------- Quelle: Veranstalter",
+        "lat": null,
+        "lng": null,
+        "address": "Hasenheide 54, (Durchgang zum 3. Hof)",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "sat"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML394008.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP394008.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/469280/Praktica---Tango-Technik-Solo"
+        },
+        "organizer": {
+          "name": "Berlin Tango Academy"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "tango in monbijou park|hoy-milonga.com",
+      "candidate": {
+        "name": "Tango in Monbijou Park",
+        "categories": [
+          "social",
+          "class"
+        ],
+        "description": "milonga: Every Saturday ---------- Open-air tango afternoons - with María Mondino. - 14:00–15:00 – Introductory class (adapted to all levels) - 15:00–18:00 – Milonga (traditional tango music) A relaxed and welcoming space to discover tango. - Monbijou Park, Berlin - María Mondino (Argentina) - Organized by Zapatissimo www.zapatissimo.de www.mariamondinotango.com ---------- Quelle: Veranstalter",
+        "lat": null,
+        "lng": null,
+        "address": "Monbijou Str. 3, (gegenüber dem Bode Museum)",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "sat"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML472120.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP472120.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/472129/Tango-in-Monbijou-Park"
+        },
+        "organizer": {
+          "name": "Zapatissimo"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sonntags tango praktika|hoy-milonga.com",
+      "candidate": {
+        "name": "Sonntags Tango Praktika",
+        "categories": [
+          "social"
+        ],
+        "description": "práctica de tango: Sonntags Tango Praktika ---------- Jeden Sonntag von 11 - 13 Uhr könnt ihr bei uns das Tanzbein schwingen! Raus aus dem Unterricht und ab auf die Tanzfläche! Die Sonntags-Tango Praktika ist die ideale Gelegenheit für TänzerInnen aller Niveaus, um auf lustige und entspannte Art und Weise Neues zu lernen sowie das Gelernte zu verinnerlichen. Ob alleine oder zu zweit – durch wiederholten Partnerwechsel im Unterricht habt ihr die Möglichkeit, mit mehreren Partnern zu tanzen. Scha…",
+        "lat": null,
+        "lng": null,
+        "address": "Kolonnenstraße 29, (2.Aufg, Gittertür, 3.Hinterhof",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "sun"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML2510.png"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/469445/Sonntags-Tango-Praktika"
+        },
+        "organizer": {
+          "name": "Mala Junta Berlin"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "cafe dominguez|hoy-milonga.com",
+      "candidate": {
+        "name": "Café Domínguez",
+        "categories": [
+          "social"
+        ],
+        "description": "milonga: Milonga ---------- Sonntag ist Café Domínguez Tag. Wir treffen uns 15:00h im wunderschönen Nou Mitte und tanzen zu bester Tangomusik von Wechselnde Tango DJs , in aufmerksamer Ronda. Dazu gibt es hausgemachten Kuchen und Kaffee. Wir freuen uns auf die freundliche Ronda mit Euch? In der ersten Stunde gibt es ermäßigten Eintritt. ---------- Quelle: https://www.facebook.com/groups/233590990008044",
+        "lat": null,
+        "lng": null,
+        "address": "Chausseestraße 102 (rechter Seitenflügel)",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "sun"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML825.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP825.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/469436/Cafe-Dominguez"
+        },
+        "organizer": {
+          "name": "Frank Seifart, Daniela Feilcke-Wolff"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "tangoloft sunday|hoy-milonga.com",
+      "candidate": {
+        "name": "Tangoloft Sunday",
+        "categories": [
+          "social"
+        ],
+        "description": "milonga: Tangoloft Sunday --------- Live-Musik im TANGOLOFT – EL FARABUTE mit James Ogle & Pablo Citarella Heute, Sonntag, 5. Juli 2026 Liebe Tangotänzerinnen, liebe Tangotänzer, ihr habt es euch so sehr gewünscht: Sonntags endlich wieder Live-Musik im TANGOLOFT! Und natürlich können wir euch diesen Wunsch nicht abschlagen. Deshalb freuen wir uns riesig, EL FARABUTE wieder bei uns im TANGOLOFT begrüßen zu dürfen – das außergewöhnliche Duo James Ogle (Violine) und Pablo Citarella (Klavier), das…",
+        "lat": null,
+        "lng": null,
+        "address": "Pfuelstraße 5, Etage 0",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "sun"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML451730.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP451730.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/479042/Tangoloft-Sunday"
+        },
+        "organizer": {
+          "name": "Tangoloft Berlin"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "open air milonga senda florida|hoy-milonga.com",
+      "candidate": {
+        "name": "Open Air Milonga - Senda Florida",
+        "categories": [
+          "social",
+          "class"
+        ],
+        "description": "milonga: Open Air Milonga ---------- Hallo alle zusammen, ihr seid alle herzlich willkommen heute, am Montag, den 06. Juli, wieder auf der Milonga „Senda Florida“ auf dem Tempelhofer Feld, Stadtacker zu tanzen. 18:00 - 19:00 Uhr: Tango Argentino Tanzkurs für alle Niveaus von Nico und Lena. - mit oder ohne PartnerIn - auch ohne Vorerfahrung - Drop-in class ohne Voranmeldung - Kulturbeitrag / Spendenbasis - Urban Sports Club Ihr seid alle willkommen!! 19:00 - ca. 23:00 Uhr: Milonga (freies Tanzen…",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Berlin",
+        "country": "Germany",
+        "schedule": null,
+        "days_of_week": [
+          "mon"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML354393.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP354393.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/482236/Open-Air-Milonga----Senda-Florida"
+        },
+        "organizer": {
+          "name": "Una Emoción Tango und Open Air Milonga"
+        },
+        "music": [
+          {
+            "name": "TDJ Nico Trian",
+            "type": "dj"
+          }
+        ],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.8,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "milonga popular tangoloft|hoy-milonga.com",
+      "candidate": {
+        "name": "Milonga Popular @Tangoloft",
+        "categories": [
+          "social",
+          "class"
+        ],
+        "description": "milonga: Milonga Popular ---------- Get into Tango! Weekly Monday Milonga Popular at new Tangoloft! Class & Party - 19:00 Tango classes No partner needed No dance shoes needed No previous knowledge needed Drop in... come as you are - 21:00 Milonga Party Classes on donation Milonga 10 Euro / 5 Euro low budget - USC accepted Tangoloft Berlin Pfuelstr. 5, 10997 Berlin Kreuzberg U1 Schlesisches Tor ---------- Quellen: https://www.instagram.com/tango.rouge/ https://www.facebook.com/tango.rouge.berlin",
+        "lat": null,
+        "lng": null,
+        "address": "Pfuelstraße 5, Etage 0",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "mon"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML2051.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP2051.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/471046/Milonga-Popular-@Tangoloft"
+        },
+        "organizer": {
+          "name": "Tango Rouge und Tangoloft Berlin"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 1,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "strong category keyword (+0.15)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "praktica tango y vals|hoy-milonga.com",
+      "candidate": {
+        "name": "Praktica - Tango y Vals",
+        "categories": [
+          "social"
+        ],
+        "description": "práctica de tango: Praktika ---------- Dienstags 20:30-22:00 Tango und Vals ab Mittelstufe - Preis bitte beim Veranstalter erfragen ! - Anmeldung erfoderlich ! Studio \"Phynix tanzt\" Hasenheide 54 ---------- Quelle: Veranstalter",
+        "lat": null,
+        "lng": null,
+        "address": "Hasenheide 54, (Durchgang zum 3. Hof)",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "tue"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML393991.png"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/474881/Praktica---Tango-y-Vals"
+        },
+        "organizer": {
+          "name": "Berlin Tango Academy"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "clarchens ballhaus|hoy-milonga.com",
+      "candidate": {
+        "name": "Clärchens Ballhaus",
+        "categories": [
+          "social"
+        ],
+        "description": "milonga: Tango-Unterricht und Milonga ---------- Genieße einen einzigartigen Abend in Berlin. Wir laden dich ein, ein unvergessliches Erlebnis in einem der charmantesten Orte Berlins zu erleben! Jeden Mittwoch bist du herzlich eingeladen, uns im ersten Stock des Clärchens Ballhaus zu besuchen, wo sich der Spiegelsaal befindet. Dieser bezaubernde Saal hat seine originale Ästhetik aus den Anfängen des letzten Jahrhunderts bewahrt und schafft eine magische Atmosphäre zum Tanzen. Seit 1913 ist dies…",
+        "lat": null,
+        "lng": null,
+        "address": "Auguststraße 24 (Spiegelsaal)",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "wed"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML165640.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP165640.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/475714/Clarchens-Ballhaus"
+        },
+        "organizer": {
+          "name": "Tango Berlin"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "mala junta milonga|hoy-milonga.com",
+      "candidate": {
+        "name": "Mala Junta Milonga",
+        "categories": [
+          "social"
+        ],
+        "description": "milonga: Milonga ---------- Erlebe die Magie des Tango Argentino bei unserer wöchentlichen Milonga im Mala Junta! Seit über 20 Jahren lädt unsere Milonga jeden Mittwoch Abend Tangotänzer und -tänzerinnen aus Berlin und der ganzen Welt ein, gemeinsam die Leidenschaft des Tango zu feiern. Diese besondere Tango Veranstaltung in Berlin hat sich zu einem festen Treffpunkt für alle entwickelt, die Tango Argentino lieben und erleben möchten. mit wechselnden lokalen / internationalen DJs (Raum 1) und G…",
+        "lat": null,
+        "lng": null,
+        "address": "Kolonnenstraße 29, (2.Aufg, Gittertür, 3.Hinterhof",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "wed"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML2800.png"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/476730/Mala-Junta-Milonga"
+        },
+        "organizer": {
+          "name": "Mala Junta Berlin"
+        },
+        "music": [
+          {
+            "name": "DJ Kim Dai PREISE",
+            "type": "dj"
+          }
+        ],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 1,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "strong category keyword (+0.15)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "praktika am donnerstag|hoy-milonga.com",
+      "candidate": {
+        "name": "Praktika am Donnerstag",
+        "categories": [
+          "social"
+        ],
+        "description": "milonga: Praktika am Donnerstag im Nou ---------- Alle Niveaus/Für Paare In dieser Praktika hast du viel Zeit und Raum zu tanzen und zu trainieren so wie es dir entspricht. Gustavo beantwortet deine Fragen, hilft dir mit technischen Details und gibt auch gerne Ideen und Anregungen für Neues. Die Musik ist gemischt traditionell und modern, es wird gespielt, was die Teilnehmenden sich wünschen. ---------- - Hast du keinen festen Tanzpartner? Du kannst unserer WhatsApp-Gruppe beitreten und fragen,…",
+        "lat": null,
+        "lng": null,
+        "address": "Chausseestraße 102 (rechter Seitenflügel)",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [
+          "thu"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML456308.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP456308.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/477870/Praktika-am-Donnerstag"
+        },
+        "organizer": {
+          "name": "Gustavo Bro"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "get the step practica|hoy-milonga.com",
+      "candidate": {
+        "name": "Get the step - Práctica",
+        "categories": [
+          "social"
+        ],
+        "description": "práctica de tango: Praktika (all levels) ---------- - In dieser Praktika könnt ihr auch allein teilnehmen und mit den Lehrer*innen eure Frage klären Wir spielen Musik wie in einer Milonga und ihr könnt üben und euch austauschen. Gökce und Emre stehen für eure Fragen zur Verfügung und inspirieren euch kurz mit einer Sequenz, die sie ein paar Mal vorzeigen ohne sie zu erklären. Denn wir wollen den Fluss der Veranstaltung nicht länger unterbrechen! U30 Tänzer*innen können hier für 10 Euro teilnehm…",
+        "lat": null,
+        "lng": null,
+        "address": "Kolonnenstraße 29, (2.Aufg, Gittertür, 3.Hinterhof",
+        "city": "Berlin",
+        "country": "Deutschland",
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://www.hoy-milonga.com/data_images/event/logo/ML331070.png",
+          "https://www.hoy-milonga.com/data_images/event/photo/MP331070.jpg"
+        ],
+        "socials": {
+          "website": "https://www.hoy-milonga.com/berlin/es/milonga/474382/Get-the-step---Practica"
+        },
+        "organizer": {
+          "name": "Mala Junta Berlin"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 1,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "strong category keyword (+0.15)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.hoy-milonga.com/berlin/es",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "london milongas|londonmilongas.co.uk",
+      "candidate": {
+        "name": "London Milongas",
+        "categories": [
+          "social"
+        ],
+        "description": "Your 1-stop guide to dancing tango",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [],
+        "socials": {
+          "website": "https://londonmilongas.co.uk/",
+          "facebook": "https://www.facebook.com/londonmilongas"
+        },
+        "organizer": null,
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "images/socials (+0.1)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://londonmilongas.co.uk/calendar/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "milongas berlin|milongas-berlin.de",
+      "candidate": {
+        "name": "Milongas Berlin",
+        "categories": [
+          "social"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [],
+        "socials": {},
+        "organizer": null,
+        "music": [],
+        "artists": [],
+        "dances": [
+          "tango"
+        ]
+      },
+      "confidence": 0.65,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://www.milongas-berlin.de/en/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "latin dance calendar|latindancecalendar.com",
+      "candidate": {
+        "name": "Latin Dance Calendar",
+        "categories": [
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [],
+        "socials": {
+          "website": "https://latindancecalendar.com/"
+        },
+        "organizer": null,
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa"
+        ]
+      },
+      "confidence": 0.6,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://latindancecalendar.com/festivals/style/salsa/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "london salsa events|londonsalsaevents.uk",
+      "candidate": {
+        "name": "London Salsa Events",
+        "categories": [
+          "social",
+          "marathon",
+          "festival",
+          "class"
+        ],
+        "description": "Your calendar of salsa parties and clubs across London and beyond",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [],
+        "socials": {
+          "website": "https://londonsalsaevents.uk/",
+          "instagram": "https://www.instagram.com/londonsalsaevents/"
+        },
+        "organizer": null,
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.6,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://londonsalsaevents.uk/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "viva esencia|londonsalsaevents.uk",
+      "candidate": {
+        "name": "Viva Esencia",
+        "categories": [
+          "social",
+          "marathon",
+          "festival",
+          "class"
+        ],
+        "description": "&lt;p&gt;With Dj Rupert from 2pm till 6pm.&lt;br /&gt;\\nPlease note the change to the usual times.&lt;/p&gt;\\n",
+        "lat": null,
+        "lng": null,
+        "address": "134 Charlton street, Euston",
+        "city": "London",
+        "country": "United Kingdom",
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-05",
+        "end_date": "2026-07-05",
+        "images": [
+          "https://londonsalsaevents.uk/wp-content/uploads/2026/02/IMG-20260115-WA0013.webp"
+        ],
+        "socials": {
+          "website": "https://londonsalsaevents.uk/event/viva-esencia-14/"
+        },
+        "organizer": {
+          "name": "Esencia Libre",
+          "url": "http://www.esencialibre.co.uk/"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.95,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://londonsalsaevents.uk/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sweetlead salsa|londonsalsaevents.uk",
+      "candidate": {
+        "name": "Sweetlead Salsa",
+        "categories": [
+          "social",
+          "class"
+        ],
+        "description": "&lt;p&gt;Every Wednesday with the Sweetlead Salsa team. Weekly social £7, Drop- in classes available. Four week courses -£45&lt;/p&gt;\\n",
+        "lat": null,
+        "lng": null,
+        "address": "Christ&#039;s College, East End Road, Finchley",
+        "city": "LONDON",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [
+          "wed"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://londonsalsaevents.uk/wp-content/uploads/2025/11/FB_IMG_1764501908944.jpg"
+        ],
+        "socials": {
+          "website": "https://londonsalsaevents.uk/event/sweetlead-salsa-3/2026-07-08/"
+        },
+        "organizer": {
+          "name": "Sweetlead salsa",
+          "url": "https://www.northlondonsalsaclub.com/"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.85,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://londonsalsaevents.uk/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "ss london dance school|londonsalsaevents.uk",
+      "candidate": {
+        "name": "SS London Dance School",
+        "categories": [
+          "class"
+        ],
+        "description": "&lt;p&gt;2026 End of Term Showcase *1:30PM-7:00PM* *Mossbourne Communitv Academv,E5 8JY Music by DJ Santee Hernandez Get ready for a full day of: 4 *Incredible performances* and Awards O Delicious food [&hellip;]&lt;/p&gt;\\n",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "London",
+        "country": "United Kingdom",
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [],
+        "socials": {
+          "website": "https://londonsalsaevents.uk/event/ss-london-dance-school/"
+        },
+        "organizer": null,
+        "music": [
+          {
+            "name": "DJ Santee Hernandez Get",
+            "type": "dj"
+          }
+        ],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.8,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://londonsalsaevents.uk/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "esencia libre 8211 sunday social|londonsalsaevents.uk",
+      "candidate": {
+        "name": "Esencia Libre &#8211; Sunday Social",
+        "categories": [
+          "social"
+        ],
+        "description": "&lt;p&gt;Two powerhouses Dj Eric and Jeff. £15 on the door&lt;/p&gt;\\n",
+        "lat": null,
+        "lng": null,
+        "address": "134 Charlton street, Euston",
+        "city": "London",
+        "country": "United Kingdom",
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [
+          "https://londonsalsaevents.uk/wp-content/uploads/2026/05/IMG-20260115-WA0004.jpg"
+        ],
+        "socials": {
+          "website": "https://londonsalsaevents.uk/event/esencia-libre-sunday-social-5/"
+        },
+        "organizer": {
+          "name": "Esencia Libre",
+          "url": "http://www.esencialibre.co.uk/"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 1,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "address or coordinates (+0.2)",
+        "strong category keyword (+0.15)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://londonsalsaevents.uk/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "findbachata|findbachata.com",
+      "candidate": {
+        "name": "FindBachata",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "Every bachata festival, verified. Worldwide directory of bachata festivals, classes, and socials.",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [],
+        "socials": {
+          "website": "https://findbachata.com/",
+          "instagram": "https://www.instagram.com/findbachata",
+          "facebook": "https://www.facebook.com/findbachata"
+        },
+        "organizer": null,
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.6,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "helsingborg bachata weekend 2026|findbachata.com",
+      "candidate": {
+        "name": "Helsingborg Bachata Weekend 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Skåne län",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-03",
+        "end_date": "2026-07-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/helsingborg-bachata-weekend-2026-skane-lan-9b0dd0"
+        },
+        "organizer": {
+          "name": "Helsingborg Bachata Weekend 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "love dance festival 14th edition 3 4 5 6 julio 2026|findbachata.com",
+      "candidate": {
+        "name": "Love Dance Festival 14th Edition - 3-4-5-6 Julio 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Barcelona",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-03",
+        "end_date": "2026-07-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/love-dance-festival-14th-edition-3-4-5-6-julio-2026-barcelona-8ccca7"
+        },
+        "organizer": {
+          "name": "Love Dance Festival 14th Edition - 3-4-5-6 Julio 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "lovin bachata festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Lovin Bachata Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Toulouse",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-03",
+        "end_date": "2026-07-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/lovin-bachata-festival-2026-toulouse-1ntvno"
+        },
+        "organizer": {
+          "name": "Lovin Bachata Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "love dance festival july 2026 event|findbachata.com",
+      "candidate": {
+        "name": "Love Dance Festival July 2026 Event!",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Santa Susana, Barcelona",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-03",
+        "end_date": "2026-07-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/love-dance-festival-july-2026-event-santa-susana-barcelona-260a87"
+        },
+        "organizer": {
+          "name": "Love Dance Festival July 2026 Event!"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "lovin bachata festival 3 4 5 july 2026 toulouse pool party xxl 3 nights 3 days hotels|findbachata.com",
+      "candidate": {
+        "name": "LOVIN BACHATA FESTIVAL 3-4-5 JULY 2026 🇫🇷 TOULOUSE💦 POOL PARTY XXL💦🔥 3 NIGHTS & 3 DAYS🔥HOTELS",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Toulouse",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-03",
+        "end_date": "2026-07-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/lovin-bachata-festival-3-4-5-july-2026-toulouse-pool-party-xxl-3-nights-3-dayshotels-toulouse-s4ic2n"
+        },
+        "organizer": {
+          "name": "LOVIN BACHATA FESTIVAL 3-4-5 JULY 2026 🇫🇷 TOULOUSE💦 POOL PARTY XXL💦🔥 3 NIGHTS & 3 DAYS🔥HOTELS"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "love dance festival 14edition 2026|findbachata.com",
+      "candidate": {
+        "name": "Love Dance Festival 14Edition 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Santa Susanna",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-03",
+        "end_date": "2026-07-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/love-dance-festival-14edition-2026-santa-susanna-a03709"
+        },
+        "organizer": {
+          "name": "Love Dance Festival 14Edition 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "salsa feel the heat summer salsa weekender|findbachata.com",
+      "candidate": {
+        "name": "Salsa...feel the heat Summer Salsa Weekender",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "UK",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-03",
+        "end_date": "2026-07-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/salsafeel-the-heat-summer-salsa-weekender-uk-efc2a1"
+        },
+        "organizer": {
+          "name": "Salsa...feel the heat Summer Salsa Weekender"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sicilia salsa sensual festival 2026 12th edition|findbachata.com",
+      "candidate": {
+        "name": "Sicilia Salsa Sensual Festival 2026 (12th Edition)",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Alì Terme",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-06",
+        "end_date": "2026-07-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/sicilia-salsa-sensual-festival-2026-12th-edition-ali-terme-j7tq5w"
+        },
+        "organizer": {
+          "name": "Sicilia Salsa Sensual Festival 2026 (12th Edition)"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "hungarian summer salsa sensual festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Hungarian Summer Salsa-Sensual Festival 2026.",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Hungary",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-07",
+        "end_date": "2026-07-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/hungarian-summer-salsa-sensual-festival-2026-hungary-39ac58"
+        },
+        "organizer": {
+          "name": "Hungarian Summer Salsa-Sensual Festival 2026."
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "k sensual summer edition 2026|findbachata.com",
+      "candidate": {
+        "name": "K-Sensual Summer Edition 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Jeju",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-09",
+        "end_date": "2026-07-09",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/k-sensual-summer-edition-2026-jeju-hkapai"
+        },
+        "organizer": {
+          "name": "K-Sensual Summer Edition 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "street symphony 10 years anniversary latin urban dance festival|findbachata.com",
+      "candidate": {
+        "name": "Street Symphony 10 Years Anniversary Latin & Urban Dance Festival",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Hannover",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-09",
+        "end_date": "2026-07-10",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/street-symphony-10-years-anniversary-latin-urban-dance-festival-hannover-oo0fqw"
+        },
+        "organizer": {
+          "name": "Street Symphony 10 Years Anniversary Latin & Urban Dance Festival"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "picante salsa bachata weekender 26|findbachata.com",
+      "candidate": {
+        "name": "Picante Salsa Bachata Weekender 26",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Warwick",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-10",
+        "end_date": "2026-07-11",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/picante-salsa-bachata-weekender-26-warwick-6jtjco"
+        },
+        "organizer": {
+          "name": "Picante Salsa Bachata Weekender 26"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "strasbourg bachata festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Strasbourg Bachata Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Alsace",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-10",
+        "end_date": "2026-07-10",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/strasbourg-bachata-festival-2026-alsace-0c5c1f"
+        },
+        "organizer": {
+          "name": "Strasbourg Bachata Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sheraton golden lake congress 2026|findbachata.com",
+      "candidate": {
+        "name": "Sheraton & Golden lake Congress 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Valladolid",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-10",
+        "end_date": "2026-07-10",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/sheraton-golden-lake-congress-2026-valladolid-26ed9b"
+        },
+        "organizer": {
+          "name": "Sheraton & Golden lake Congress 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bailame cracow bachata festival 2026|findbachata.com",
+      "candidate": {
+        "name": "BáilaMe Cracow Bachata Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Cracow",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-10",
+        "end_date": "2026-07-10",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bailame-cracow-bachata-festival-2026-cracow-78655e"
+        },
+        "organizer": {
+          "name": "BáilaMe Cracow Bachata Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "cote d azur summer festival dancefit by zumba menton 2026|findbachata.com",
+      "candidate": {
+        "name": "CÔTE D´ÁZUR SUMMER FESTIVAL DANCEFIT by ZUMBA® – Menton 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Mentone",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-11",
+        "end_date": "2026-07-11",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/cote-d-azur-summer-festival-dancefit-by-zumba-menton-2026-mentone-oyjo74"
+        },
+        "organizer": {
+          "name": "CÔTE D´ÁZUR SUMMER FESTIVAL DANCEFIT by ZUMBA® – Menton 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata day konstanz|findbachata.com",
+      "candidate": {
+        "name": "BACHATA DAY KONSTANZ",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Konstanz",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-11",
+        "end_date": "2026-07-12",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-day-konstanz-konstanz-lfy910"
+        },
+        "organizer": {
+          "name": "BACHATA DAY KONSTANZ"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "riviera latin fest|findbachata.com",
+      "candidate": {
+        "name": "RIVIERA LATIN FEST",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Alpes-Maritimes",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-13",
+        "end_date": "2026-07-13",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/riviera-latin-fest-alpes-maritimes-885211"
+        },
+        "organizer": {
+          "name": "RIVIERA LATIN FEST"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "riviera latin fest 2026|findbachata.com",
+      "candidate": {
+        "name": "RIVIERA LATIN FEST 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "MANDELIEU LA NAPOULE",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-13",
+        "end_date": "2026-07-14",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/riviera-latin-fest-2026-mandelieu-la-napoule-mbrysy"
+        },
+        "organizer": {
+          "name": "RIVIERA LATIN FEST 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "caribe salsa bachata congres rd|findbachata.com",
+      "candidate": {
+        "name": "CARIBE SALSA & BACHATA CONGRES RD",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Elías Piña",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-16",
+        "end_date": "2026-07-16",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/caribe-salsa-bachata-congres-rd-elias-pina-904d71"
+        },
+        "organizer": {
+          "name": "CARIBE SALSA & BACHATA CONGRES RD"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "escape salsa bachata festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Escape Salsa & Bachata festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Cathedral City",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-17",
+        "end_date": "2026-07-17",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/escape-salsa-bachata-festival-2026-cathedral-city-a9c5c6"
+        },
+        "organizer": {
+          "name": "Escape Salsa & Bachata festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata weekend portoroz|findbachata.com",
+      "candidate": {
+        "name": "Bachata Weekend Portoroz",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Portoroz",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-17",
+        "end_date": "2026-07-17",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-weekend-portoroz-portoroz-cc83be"
+        },
+        "organizer": {
+          "name": "Bachata Weekend Portoroz"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "2k festival 2026 salsa bachata kizomba co|findbachata.com",
+      "candidate": {
+        "name": "2K FESTIVAL 2026 – SALSA BACHATA KIZOMBA & CO",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "France",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-17",
+        "end_date": "2026-07-17",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/2k-festival-2026-salsa-bachata-kizomba-co-france-6d5bdc"
+        },
+        "organizer": {
+          "name": "2K FESTIVAL 2026 – SALSA BACHATA KIZOMBA & CO"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata",
+          "kizomba"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "diamond summer lyon 2026|findbachata.com",
+      "candidate": {
+        "name": "Diamond Summer Lyon 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Lyon",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-17",
+        "end_date": "2026-07-17",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/diamond-summer-lyon-2026-lyon-75a7db"
+        },
+        "organizer": {
+          "name": "Diamond Summer Lyon 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bubalu fest iii edicion|findbachata.com",
+      "candidate": {
+        "name": "✨🥳BUBALU FEST III EDICIÓN🥳✨",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Zaragoza",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-18",
+        "end_date": "2026-07-19",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bubalu-fest-iii-edicion-zaragoza-6q8qhr"
+        },
+        "organizer": {
+          "name": "✨🥳BUBALU FEST III EDICIÓN🥳✨"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "latin legends vol 1 2026|findbachata.com",
+      "candidate": {
+        "name": "Latin Legends Vol.1 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Dublin",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-18",
+        "end_date": "2026-07-18",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/latin-legends-vol1-2026-dublin-99c81e"
+        },
+        "organizer": {
+          "name": "Latin Legends Vol.1 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "amsterdam sensual dance fest 2026|findbachata.com",
+      "candidate": {
+        "name": "Amsterdam Sensual Dance Fest 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Amsterdam",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-18",
+        "end_date": "2026-07-18",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/amsterdam-sensual-dance-fest-2026-amsterdam-8zpbhl"
+        },
+        "organizer": {
+          "name": "Amsterdam Sensual Dance Fest 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "adelaide sensual weekend 2026|findbachata.com",
+      "candidate": {
+        "name": "Adelaide Sensual Weekend 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Adelaide",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-23",
+        "end_date": "2026-07-23",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/adelaide-sensual-weekend-2026-adelaide-a57313"
+        },
+        "organizer": {
+          "name": "Adelaide Sensual Weekend 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "the big salsa fest|findbachata.com",
+      "candidate": {
+        "name": "The BIG Salsa Fest",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "San Antonio",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-23",
+        "end_date": "2026-07-23",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/the-big-salsa-fest-san-antonio-j0uyb2"
+        },
+        "organizer": {
+          "name": "The BIG Salsa Fest"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bcn dance life hot weekend july 2026 discount passess|findbachata.com",
+      "candidate": {
+        "name": "BCN DANCE LIFE HOT WEEKEND – JULY 2026 DISCOUNT PASSESS!",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Santa Susana, Barcelona",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-24",
+        "end_date": "2026-07-24",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bcn-dance-life-hot-weekend-july-2026-discount-passess-santa-susana-barcelona-01ed19"
+        },
+        "organizer": {
+          "name": "BCN DANCE LIFE HOT WEEKEND – JULY 2026 DISCOUNT PASSESS!"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "hello dance fest|findbachata.com",
+      "candidate": {
+        "name": "Hello! Dance Fest",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "San Francisco",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-24",
+        "end_date": "2026-07-24",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/hello-dance-fest-san-francisco-7buzvk"
+        },
+        "organizer": {
+          "name": "Hello! Dance Fest"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "san francisco s hello bachata salsa zouk kizomba dance festival|findbachata.com",
+      "candidate": {
+        "name": "San Francisco’s Hello! Bachata / Salsa / Zouk / Kizomba Dance Festival",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "San Francisco",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-24",
+        "end_date": "2026-07-24",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/san-franciscos-hello-bachata-salsa-zouk-kizomba-dance-festival-san-francisco-f52b68"
+        },
+        "organizer": {
+          "name": "San Francisco’s Hello! Bachata / Salsa / Zouk / Kizomba Dance Festival"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata",
+          "kizomba"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sabaki summer fest 2026|findbachata.com",
+      "candidate": {
+        "name": "Sabaki Summer Fest 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Benacazon",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-24",
+        "end_date": "2026-07-24",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/sabaki-summer-fest-2026-benacazon-z4yj9h"
+        },
+        "organizer": {
+          "name": "Sabaki Summer Fest 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "tropical oporto dance congress|findbachata.com",
+      "candidate": {
+        "name": "TROPICAL OPORTO DANCE CONGRESS",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Porto",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-24",
+        "end_date": "2026-07-24",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/tropical-oporto-dance-congress-porto-a1ab3e"
+        },
+        "organizer": {
+          "name": "TROPICAL OPORTO DANCE CONGRESS"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "lausanne bachata summer 2026|findbachata.com",
+      "candidate": {
+        "name": "LAUSANNE BACHATA SUMMER 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Echandens",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-25",
+        "end_date": "2026-07-26",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/lausanne-bachata-summer-2026-echandens-3ekwps"
+        },
+        "organizer": {
+          "name": "LAUSANNE BACHATA SUMMER 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "viva latin summer 2026|findbachata.com",
+      "candidate": {
+        "name": "VIVA LATIN SUMMER 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Noord-Holland",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-30",
+        "end_date": "2026-07-30",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/viva-latin-summer-2026-noord-holland-903af4"
+        },
+        "organizer": {
+          "name": "VIVA LATIN SUMMER 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "lions alicante evento de baile edicion xix 2026|findbachata.com",
+      "candidate": {
+        "name": "LIONS ALICANTE evento de baile (edición XIX 2026)",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Spain",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-30",
+        "end_date": "2026-07-30",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/lions-alicante-evento-de-baile-edicion-xix-2026-spain-df8aeb"
+        },
+        "organizer": {
+          "name": "LIONS ALICANTE evento de baile (edición XIX 2026)"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "lento dance festival 2026 bachata in vienna|findbachata.com",
+      "candidate": {
+        "name": "Lento Dance Festival 2026 – Bachata in Vienna!",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Vienna",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-31",
+        "end_date": "2026-07-31",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/lento-dance-festival-2026-bachata-in-vienna-vienna-a09251"
+        },
+        "organizer": {
+          "name": "Lento Dance Festival 2026 – Bachata in Vienna!"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "lento dance vienna|findbachata.com",
+      "candidate": {
+        "name": "Lento Dance Vienna",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Vienna",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-31",
+        "end_date": "2026-07-31",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/lento-dance-vienna-vienna-w5p6jb"
+        },
+        "organizer": {
+          "name": "Lento Dance Vienna"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "empire sensual movement 2026|findbachata.com",
+      "candidate": {
+        "name": "Empire Sensual Movement 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "New York",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-31",
+        "end_date": "2026-07-31",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/empire-sensual-movement-2026-new-york-bjppyd"
+        },
+        "organizer": {
+          "name": "Empire Sensual Movement 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "summer bachata festival stuttgart 2026|findbachata.com",
+      "candidate": {
+        "name": "Summer Bachata Festival Stuttgart 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Stuttgart",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-31",
+        "end_date": "2026-07-31",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/summer-bachata-festival-stuttgart-2026-stuttgart-30dc49"
+        },
+        "organizer": {
+          "name": "Summer Bachata Festival Stuttgart 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata cuban weekend 4th edition|findbachata.com",
+      "candidate": {
+        "name": "Bachata & Cuban Weekend 4th Edition",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Stockholm",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-07-31",
+        "end_date": "2026-07-31",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-cuban-weekend-4th-edition-stockholm-36dec7"
+        },
+        "organizer": {
+          "name": "Bachata & Cuban Weekend 4th Edition"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "latin heat klagenfurt|findbachata.com",
+      "candidate": {
+        "name": "Latin Heat Klagenfurt",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Klagenfurt",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-01",
+        "end_date": "2026-08-01",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/latin-heat-klagenfurt-klagenfurt-3a73dd"
+        },
+        "organizer": {
+          "name": "Latin Heat Klagenfurt"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata love experience|findbachata.com",
+      "candidate": {
+        "name": "❤️ BACHATA LOVE EXPERIENCE❤️",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Peigney",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-05",
+        "end_date": "2026-08-06",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/-bachata-love-experience-peigney-c9xmyu"
+        },
+        "organizer": {
+          "name": "❤️ BACHATA LOVE EXPERIENCE❤️"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "musicality summer dance week 2026|findbachata.com",
+      "candidate": {
+        "name": "Musicality Summer Dance Week 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Freiburg",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-05",
+        "end_date": "2026-08-05",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/musicality-summer-dance-week-2026-freiburg-71f3c3"
+        },
+        "organizer": {
+          "name": "Musicality Summer Dance Week 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "gozadero latin fest 2026|findbachata.com",
+      "candidate": {
+        "name": "GOZADERO LATIN FEST 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Constanța",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-06",
+        "end_date": "2026-08-06",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/gozadero-latin-fest-2026-constanta-c9e097"
+        },
+        "organizer": {
+          "name": "GOZADERO LATIN FEST 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "latina istriana festival 2026 new era 22o edition|findbachata.com",
+      "candidate": {
+        "name": "LATINA ISTRIANA Festival 2026 - NEW ERA (22o Edition)",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Istarska županija",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-06",
+        "end_date": "2026-08-06",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/latina-istriana-festival-2026-new-era-22o-edition-istarska-zupanija-980a0d"
+        },
+        "organizer": {
+          "name": "LATINA ISTRIANA Festival 2026 - NEW ERA (22o Edition)"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "motioncity 2026|findbachata.com",
+      "candidate": {
+        "name": "MotionCITY 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Birmingham",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-07",
+        "end_date": "2026-08-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/motioncity-2026-birmingham-40cf4e"
+        },
+        "organizer": {
+          "name": "MotionCITY 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "the denver bachata festival 2026|findbachata.com",
+      "candidate": {
+        "name": "The Denver Bachata Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Denver",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-07",
+        "end_date": "2026-08-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/the-denver-bachata-festival-2026-denver-03b604"
+        },
+        "organizer": {
+          "name": "The Denver Bachata Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sbk festival hamburg 2026|findbachata.com",
+      "candidate": {
+        "name": "SBK Festival Hamburg 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Hamburg",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-07",
+        "end_date": "2026-08-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/sbk-festival-hamburg-2026-hamburg-0a2209"
+        },
+        "organizer": {
+          "name": "SBK Festival Hamburg 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata summer murcia 2026|findbachata.com",
+      "candidate": {
+        "name": "Bachata Summer Murcia - 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Murcia",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-07",
+        "end_date": "2026-08-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-summer-murcia-2026-murcia-3aa0a3"
+        },
+        "organizer": {
+          "name": "Bachata Summer Murcia - 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata trinity new generation|findbachata.com",
+      "candidate": {
+        "name": "Bachata Trinity – New Generation",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Nuremberg",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-07",
+        "end_date": "2026-08-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-trinity-new-generation-nuremberg-34be80"
+        },
+        "organizer": {
+          "name": "Bachata Trinity – New Generation"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "xlb festival 2026|findbachata.com",
+      "candidate": {
+        "name": "XLB Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Aix-les-Bains",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-07",
+        "end_date": "2026-08-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/xlb-festival-2026-aix-les-bains-zhxdde"
+        },
+        "organizer": {
+          "name": "XLB Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "xlb festival 2026 bachata dance festival|findbachata.com",
+      "candidate": {
+        "name": "XLB Festival 2026: Bachata Dance Festival!",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Aix-Les-Bains",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-07",
+        "end_date": "2026-08-07",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/xlb-festival-2026-bachata-dance-festival-aix-les-bains-af74f7"
+        },
+        "organizer": {
+          "name": "XLB Festival 2026: Bachata Dance Festival!"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "dcbx|findbachata.com",
+      "candidate": {
+        "name": "DCBX",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Washington DC",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-13",
+        "end_date": "2026-08-13",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/dcbx-washington-dc-utc1v7"
+        },
+        "organizer": {
+          "name": "DCBX"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "la summer bachata festival|findbachata.com",
+      "candidate": {
+        "name": "LA Summer Bachata Festival",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Los Angeles",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-13",
+        "end_date": "2026-08-13",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/la-summer-bachata-festival-los-angeles-g8b1eh"
+        },
+        "organizer": {
+          "name": "LA Summer Bachata Festival"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "los angeles summer bachata salsa festival|findbachata.com",
+      "candidate": {
+        "name": "Los Angeles Summer Bachata & Salsa Festival",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Los Angeles",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-13",
+        "end_date": "2026-08-14",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/los-angeles-summer-bachata-salsa-festival-los-angeles-796k86"
+        },
+        "organizer": {
+          "name": "Los Angeles Summer Bachata & Salsa Festival"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachatazo beach festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Bachatazo Beach Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Santa Susanna",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-13",
+        "end_date": "2026-08-13",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachatazo-beach-festival-2026-santa-susanna-pljhaa"
+        },
+        "organizer": {
+          "name": "Bachatazo Beach Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachaturo|findbachata.com",
+      "candidate": {
+        "name": "Bachaturo",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Katowice",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-14",
+        "end_date": "2026-08-14",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachaturo-katowice-3a7d29"
+        },
+        "organizer": {
+          "name": "Bachaturo"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachaturo poland festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Bachaturo Poland Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Katowice",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-14",
+        "end_date": "2026-08-14",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachaturo-poland-festival-2026-katowice-jt3y7c"
+        },
+        "organizer": {
+          "name": "Bachaturo Poland Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "roma sensual symposium 9 ed|findbachata.com",
+      "candidate": {
+        "name": "ROMA SENSUAL SYMPOSIUM – 9° Ed.",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Rome",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-19",
+        "end_date": "2026-08-19",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/roma-sensual-symposium-9-ed-rome-855687"
+        },
+        "organizer": {
+          "name": "ROMA SENSUAL SYMPOSIUM – 9° Ed."
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "istanbul world dance congress summer edition 2026|findbachata.com",
+      "candidate": {
+        "name": "Istanbul World Dance Congress Summer Edition 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "İstanbul",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-20",
+        "end_date": "2026-08-20",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/istanbul-world-dance-congress-summer-edition-2026-istanbul-f285b4"
+        },
+        "organizer": {
+          "name": "Istanbul World Dance Congress Summer Edition 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata suave experience|findbachata.com",
+      "candidate": {
+        "name": "Bachata suave expérience",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Bouches-du-Rhône",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-20",
+        "end_date": "2026-08-20",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-suave-experience-bouches-du-rhone-bfb585"
+        },
+        "organizer": {
+          "name": "Bachata suave expérience"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "salsa festival prague 2026|findbachata.com",
+      "candidate": {
+        "name": "SALSA FESTIVAL PRAGUE 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Prague",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-22",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/salsa-festival-prague-2026-prague-7rcczi"
+        },
+        "organizer": {
+          "name": "SALSA FESTIVAL PRAGUE 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "rhythm vibes marathon experience 2026|findbachata.com",
+      "candidate": {
+        "name": "Rhythm Vibes Marathon Experience 2026",
+        "categories": [
+          "marathon"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Madrid",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-21",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/rhythm-vibes-marathon-experience-2026-madrid-d04754"
+        },
+        "organizer": {
+          "name": "Rhythm Vibes Marathon Experience 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata adventure bosnia 2026|findbachata.com",
+      "candidate": {
+        "name": "Bachata Adventure Bosnia 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Konjic",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-22",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-adventure-bosnia-2026-konjic-lebr4g"
+        },
+        "organizer": {
+          "name": "Bachata Adventure Bosnia 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sabi baila sb|findbachata.com",
+      "candidate": {
+        "name": "SABI BAILA SB",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "SABIÑANIGO",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-22",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/sabi-baila-sb-sabinanigo-8d0lob"
+        },
+        "organizer": {
+          "name": "SABI BAILA SB"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "boston salsa festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Boston Salsa Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Boston",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-21",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/boston-salsa-festival-2026-boston-634715"
+        },
+        "organizer": {
+          "name": "Boston Salsa Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "salsa festival czech republic 2026|findbachata.com",
+      "candidate": {
+        "name": "Salsa Festival Czech Republic 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Praha",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-21",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/salsa-festival-czech-republic-2026-praha-006475"
+        },
+        "organizer": {
+          "name": "Salsa Festival Czech Republic 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachatango fusion weekender|findbachata.com",
+      "candidate": {
+        "name": "Bachatango Fusion Weekender",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Sarasota Springs",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-21",
+        "end_date": "2026-08-21",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachatango-fusion-weekender-sarasota-springs-47dbe9"
+        },
+        "organizer": {
+          "name": "Bachatango Fusion Weekender"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata week cadiz 2026|findbachata.com",
+      "candidate": {
+        "name": "Bachata Week Cadiz 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Cadiz",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-24",
+        "end_date": "2026-08-24",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-week-cadiz-2026-cadiz-azn09w"
+        },
+        "organizer": {
+          "name": "Bachata Week Cadiz 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "10th vilnius bachata festival 2026|findbachata.com",
+      "candidate": {
+        "name": "10th Vilnius Bachata Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Vilnius",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-27",
+        "end_date": "2026-08-27",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/10th-vilnius-bachata-festival-2026-vilnius-e481e6"
+        },
+        "organizer": {
+          "name": "10th Vilnius Bachata Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "berlin salsacongress 2026 jungle edition|findbachata.com",
+      "candidate": {
+        "name": "Berlin Salsacongress 2026 – Jungle Edition",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Berlin",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-27",
+        "end_date": "2026-08-27",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/berlin-salsacongress-2026-jungle-edition-berlin-b234ff"
+        },
+        "organizer": {
+          "name": "Berlin Salsacongress 2026 – Jungle Edition"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata sky weekender 2026|findbachata.com",
+      "candidate": {
+        "name": "Bachata Sky Weekender 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Denver",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-28",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-sky-weekender-2026-denver-co33l6"
+        },
+        "organizer": {
+          "name": "Bachata Sky Weekender 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sarasota salsa bachata fest 2026|findbachata.com",
+      "candidate": {
+        "name": "Sarasota Salsa & Bachata Fest 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Florida",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-28",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/sarasota-salsa-bachata-fest-2026-florida-bc3c1e"
+        },
+        "organizer": {
+          "name": "Sarasota Salsa & Bachata Fest 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "dance casa festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Dance Casa Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Budapest",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-28",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/dance-casa-festival-2026-budapest-c10273"
+        },
+        "organizer": {
+          "name": "Dance Casa Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "vibras bachata summer festival|findbachata.com",
+      "candidate": {
+        "name": "Vibras Bachata Summer Festival",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Hessen",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-28",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/vibras-bachata-summer-festival-hessen-a0d536"
+        },
+        "organizer": {
+          "name": "Vibras Bachata Summer Festival"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "exb latin congress 2026|findbachata.com",
+      "candidate": {
+        "name": "ExB Latin Congress 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Sao Paulo",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-28",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/exb-latin-congress-2026-sao-paulo-8effab"
+        },
+        "organizer": {
+          "name": "ExB Latin Congress 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata sphere 2026|findbachata.com",
+      "candidate": {
+        "name": "Bachata Sphere 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Paris",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-08-28",
+        "end_date": "2026-08-28",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-sphere-2026-paris-kwjz0d"
+        },
+        "organizer": {
+          "name": "Bachata Sphere 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "salsa bachata break in athens 2026|findbachata.com",
+      "candidate": {
+        "name": "Salsa Bachata Break in Athens 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Athens",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-01",
+        "end_date": "2026-09-01",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/salsa-bachata-break-in-athens-2026-athens-dfbcca"
+        },
+        "organizer": {
+          "name": "Salsa Bachata Break in Athens 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "conri sensual aura csa|findbachata.com",
+      "candidate": {
+        "name": "ConRi Sensual Aura (CSA)",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Goa",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-02",
+        "end_date": "2026-09-02",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/conri-sensual-aura-csa-goa-d31196"
+        },
+        "organizer": {
+          "name": "ConRi Sensual Aura (CSA)"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "sunny latin beach festival|findbachata.com",
+      "candidate": {
+        "name": "SUNNY LATIN BEACH FESTIVAL",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Bulgaria",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-02",
+        "end_date": "2026-09-02",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/sunny-latin-beach-festival-bulgaria-256f42"
+        },
+        "organizer": {
+          "name": "SUNNY LATIN BEACH FESTIVAL"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "varijanta dance festival belgrade|findbachata.com",
+      "candidate": {
+        "name": "Varijanta Dance Festival Belgrade",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Belgrade",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-03",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/varijanta-dance-festival-belgrade-belgrade-5ansqy"
+        },
+        "organizer": {
+          "name": "Varijanta Dance Festival Belgrade"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "9th annual hawaii salsa bachata paradise|findbachata.com",
+      "candidate": {
+        "name": "9th Annual Hawaii Salsa & Bachata Paradise",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Honolulu",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-03",
+        "end_date": "2026-09-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/9th-annual-hawaii-salsa-bachata-paradise-honolulu-083a4c"
+        },
+        "organizer": {
+          "name": "9th Annual Hawaii Salsa & Bachata Paradise"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "hawaii salsa bachata paradise 2026|findbachata.com",
+      "candidate": {
+        "name": "Hawaii Salsa & Bachata Paradise 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Honolulu",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-03",
+        "end_date": "2026-09-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/hawaii-salsa-bachata-paradise-2026-honolulu-60iher"
+        },
+        "organizer": {
+          "name": "Hawaii Salsa & Bachata Paradise 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "cancun salsa bachata fest 2026|findbachata.com",
+      "candidate": {
+        "name": "Cancun Salsa Bachata Fest 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Puerto Morelos",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-03",
+        "end_date": "2026-09-03",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/cancun-salsa-bachata-fest-2026-puerto-morelos-1dgisu"
+        },
+        "organizer": {
+          "name": "Cancun Salsa Bachata Fest 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "alpes bachata congress abc 2026|findbachata.com",
+      "candidate": {
+        "name": "ALPES BACHATA CONGRESS – ABC – 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "France",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/alpes-bachata-congress-abc-2026-france-407512"
+        },
+        "organizer": {
+          "name": "ALPES BACHATA CONGRESS – ABC – 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata king festival|findbachata.com",
+      "candidate": {
+        "name": "Bachata KING Festival",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Kos",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-king-festival-kos-44af43"
+        },
+        "organizer": {
+          "name": "Bachata KING Festival"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "miami dance fusion festival|findbachata.com",
+      "candidate": {
+        "name": "Miami Dance Fusion Festival",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Miami",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/miami-dance-fusion-festival-miami-8oqy6c"
+        },
+        "organizer": {
+          "name": "Miami Dance Fusion Festival"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "alpes bachata congress|findbachata.com",
+      "candidate": {
+        "name": "ALPES BACHATA CONGRESS",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Annecy",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/alpes-bachata-congress-annecy-373545"
+        },
+        "organizer": {
+          "name": "ALPES BACHATA CONGRESS"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "terra magica dance experience|findbachata.com",
+      "candidate": {
+        "name": "Terra Magica Dance Experience",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Istarska županija",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/terra-magica-dance-experience-istarska-zupanija-24de05"
+        },
+        "organizer": {
+          "name": "Terra Magica Dance Experience"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "prishtina dance festival 2026|findbachata.com",
+      "candidate": {
+        "name": "Prishtina Dance Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Kosovo",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/prishtina-dance-festival-2026-kosovo-d56f56"
+        },
+        "organizer": {
+          "name": "Prishtina Dance Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "finland latin festival 4|findbachata.com",
+      "candidate": {
+        "name": "Finland Latin Festival 4",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Helsinki",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/finland-latin-festival-4-helsinki-4e5a56"
+        },
+        "organizer": {
+          "name": "Finland Latin Festival 4"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "big texas salsa bachata festival 2026|findbachata.com",
+      "candidate": {
+        "name": "BIG Texas Salsa Bachata Festival 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Dallas",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-04",
+        "end_date": "2026-09-04",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/big-texas-salsa-bachata-festival-2026-dallas-241034"
+        },
+        "organizer": {
+          "name": "BIG Texas Salsa Bachata Festival 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata sensual america|findbachata.com",
+      "candidate": {
+        "name": "Bachata Sensual America",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Chicago",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-10",
+        "end_date": "2026-09-10",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-sensual-america-chicago-fkfrx7"
+        },
+        "organizer": {
+          "name": "Bachata Sensual America"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "salsa bachata temptation asia 2026 sbta|findbachata.com",
+      "candidate": {
+        "name": "SALSA BACHATA TEMPTATION ASIA 2026 (SBTA)",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Bangkok",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-10",
+        "end_date": "2026-09-10",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/salsa-bachata-temptation-asia-2026-sbta-bangkok-3copod"
+        },
+        "organizer": {
+          "name": "SALSA BACHATA TEMPTATION ASIA 2026 (SBTA)"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "salsa",
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "nova dance fest 2026|findbachata.com",
+      "candidate": {
+        "name": "Nova Dance Fest 2026",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "San Jose",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-10",
+        "end_date": "2026-09-10",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/nova-dance-fest-2026-san-jose-3zwh1f"
+        },
+        "organizer": {
+          "name": "Nova Dance Fest 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.75,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "bachata sensual festival chicago 2026|findbachata.com",
+      "candidate": {
+        "name": "Bachata Sensual Festival Chicago 2026",
+        "categories": [
+          "festival"
+        ],
+        "description": "",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": "Chicago",
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": "2026-09-10",
+        "end_date": "2026-09-10",
+        "images": [
+          "https://findbachata.com/og-default.png",
+          "https://findbachata.com/brand/og-default-1200x630.png"
+        ],
+        "socials": {
+          "website": "https://findbachata.com/events/bachata-sensual-festival-chicago-2026-chicago-s5ydxl"
+        },
+        "organizer": {
+          "name": "Bachata Sensual Festival Chicago 2026"
+        },
+        "music": [],
+        "artists": [],
+        "dances": [
+          "bachata"
+        ]
+      },
+      "confidence": 0.9,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "strong category keyword (+0.15)",
+        "parsed dates (+0.1)",
+        "images/socials (+0.1)",
+        "performer/organizer (+0.05)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://findbachata.com/festivals",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    },
+    {
+      "key": "kizomba embassy|kizombaembassy.com",
+      "candidate": {
+        "name": "Kizomba Embassy",
+        "categories": [
+          "social",
+          "festival",
+          "class"
+        ],
+        "description": "Connection of Kizomba",
+        "lat": null,
+        "lng": null,
+        "address": null,
+        "city": null,
+        "country": null,
+        "schedule": null,
+        "days_of_week": [],
+        "start_date": null,
+        "end_date": null,
+        "images": [],
+        "socials": {
+          "website": "https://kizombaembassy.com/",
+          "facebook": "https://www.facebook.com/kizombaembassy",
+          "instagram": "https://www.instagram.com/kizombaembassy/"
+        },
+        "organizer": null,
+        "music": [],
+        "artists": [],
+        "dances": [
+          "kizomba"
+        ]
+      },
+      "confidence": 0.6,
+      "reasons": [
+        "JSON-LD with name (+0.5)",
+        "weak category keyword (+0)",
+        "images/socials (+0.1)",
+        "no coordinates"
+      ],
+      "context": {
+        "url": "https://kizombaembassy.com/events-calendar-kizomba/",
+        "query": null
+      },
+      "first_seen": "2026-07-03T01:27:16Z",
+      "last_seen": "2026-07-03T01:27:16Z"
+    }
+  ]
 }

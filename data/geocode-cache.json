@@ -1,1 +1,278 @@
-{}
+{
+  "hauptstraße 48, berlin, germany": {
+    "lat": 52.482946,
+    "lng": 13.3494171,
+    "display": "Alt-Katholische Gemeinde Berlin, 48, Hauptstraße, Schöneberger Dreieck, Akazienkiez, Wilmersdorf, Tempelhof-Schöneberg, Berlin, 10827, Deutschland",
+    "ts": "2026-07-03T01:26:26Z"
+  },
+  "kaiser-friedrich-straße 87, berlin, germany": {
+    "lat": 52.5142205,
+    "lng": 13.3019105,
+    "display": "Auferstehungskirche, 87, Kaiser-Friedrich-Straße, Gierkekiez, Danckelmannkiez, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
+    "ts": "2026-07-03T01:26:27Z"
+  },
+  "grüne trift 169, berlin, deutschland": {
+    "lat": 52.4236559,
+    "lng": 13.5925699,
+    "display": "Evangelische Schule Köpenick, 169, Grüne Trift, Kietzer Feld, Köpenick, Treptow-Köpenick, Berlin, 12557, Deutschland",
+    "ts": "2026-07-03T01:26:29Z"
+  },
+  "konrad-adenauer-straße 1, berlin, deutschland": {
+    "lat": 52.5201476,
+    "lng": 13.3748004,
+    "display": "Paul-Löbe-Haus, 1, Konrad-Adenauer-Straße, Tiergarten, Mitte, Berlin, 10557, Deutschland",
+    "ts": "2026-07-03T01:26:29Z"
+  },
+  "chausseestraße 102 (rechter seitenflügel), berlin, deutschland": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-03T01:26:31Z"
+  },
+  "ystader straße 10, berlin, deutschland": {
+    "lat": 52.5490823,
+    "lng": 13.4044618,
+    "display": "10, Ystader Straße, Gleimviertel, Prenzlauer Berg, Pankow, Berlin, 10437, Deutschland",
+    "ts": "2026-07-03T01:26:32Z"
+  },
+  "kolonnenstraße 29, (2.aufg, gittertür, 3.hinterhof, berlin, deutschland": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-03T01:26:33Z"
+  },
+  "hasenheide 54, (durchgang zum 3. hof), berlin, deutschland": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-03T01:26:34Z"
+  },
+  "monbijou str. 3, (gegenüber dem bode museum), berlin, deutschland": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-03T01:26:35Z"
+  },
+  "fidicinstraße 3, berlin, deutschland": {
+    "lat": 52.4865434,
+    "lng": 13.3892171,
+    "display": "mmpro film- und medienproduktion GmbH, 3, Fidicinstraße, Bockbrauerei, Bergmannkiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10965, Deutschland",
+    "ts": "2026-07-03T01:26:36Z"
+  },
+  "ella-barowsky-str. 70, berlin, deutschland": {
+    "lat": 52.4791163,
+    "lng": 13.3548431,
+    "display": "weRK36, 70, Ella-Barowsky-Straße, Schöneberger Dreieck, Rote Insel, Schöneberg, Tempelhof-Schöneberg, Berlin, 10829, Deutschland",
+    "ts": "2026-07-03T01:26:37Z"
+  },
+  "graefestraße 82, berlin, germany": {
+    "lat": 52.4935579,
+    "lng": 13.4184004,
+    "display": "Dobedo / NOIR Café kleider, kuchen, künste, 82, Graefestraße, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland",
+    "ts": "2026-07-03T01:26:38Z"
+  },
+  "bäkestraße 2, berlin, deutschland": {
+    "lat": 52.4340192,
+    "lng": 13.3186098,
+    "display": "2, Bäkestraße, Lichterfelde Ost, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12207, Deutschland",
+    "ts": "2026-07-03T01:26:39Z"
+  },
+  "gardeschützenweg 57, berlin, germany": {
+    "lat": 52.4470121,
+    "lng": 13.3083563,
+    "display": "fourty fit healthclub, 57, Gardeschützenweg, Lichterfelde West, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12203, Deutschland",
+    "ts": "2026-07-03T01:26:41Z"
+  },
+  "pfuelstraße 5, etage 0, berlin, deutschland": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-03T01:26:41Z"
+  },
+  "john-f.-kennedy-platz 1, berlin, deutschland": {
+    "lat": 52.4848253,
+    "lng": 13.3441027,
+    "display": "Rathaus Schöneberg, 1, John-F.-Kennedy-Platz, Akazienkiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10825, Deutschland",
+    "ts": "2026-07-03T01:26:43Z"
+  },
+  "herbartstraße 25, berlin, deutschland": {
+    "lat": 52.5039867,
+    "lng": 13.2866508,
+    "display": "Nachbarschaftshaus am Lietzensee e.V., 25, Herbartstraße, Witzleben, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 14057, Deutschland",
+    "ts": "2026-07-03T01:26:44Z"
+  },
+  "berliner straße 46, berlin, deutschland": {
+    "lat": 52.5602599,
+    "lng": 13.4127463,
+    "display": "46, Berliner Straße, Tiroler Viertel, Pankow, Berlin, 13189, Deutschland",
+    "ts": "2026-07-03T01:26:45Z"
+  },
+  "otto-von-bismarck-allee, berlin, deutschland": {
+    "lat": 52.520749,
+    "lng": 13.3744486,
+    "display": "Otto-von-Bismarck-Allee, Tiergarten, Mitte, Berlin, 10557, Deutschland",
+    "ts": "2026-07-03T01:26:46Z"
+  },
+  "potsdamer straße 50, berlin, deutschland": {
+    "lat": 52.4379291,
+    "lng": 13.2988167,
+    "display": "50, Potsdamer Straße, Lichterfelde West, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12205, Deutschland",
+    "ts": "2026-07-03T01:26:47Z"
+  },
+  "belziger straße 25, berlin, germany": {
+    "lat": 52.4870017,
+    "lng": 13.3537171,
+    "display": "Hupfer Interior Design, 25, Belziger Straße, Akazienkiez, Schöneberg, Tempelhof-Schöneberg, Berlin, 10823, Deutschland",
+    "ts": "2026-07-03T01:26:48Z"
+  },
+  "bremer straße 68, berlin, germany": {
+    "lat": 52.5229059,
+    "lng": 13.6377306,
+    "display": "68, Bremer Straße, Mahlsdorf Nord, Mahlsdorf, Marzahn-Hellersdorf, Berlin, 12623, Deutschland",
+    "ts": "2026-07-03T01:26:49Z"
+  },
+  "ackerstraße 12, berlin, deutschland": {
+    "lat": 52.5308524,
+    "lng": 13.3969695,
+    "display": "12, Ackerstraße, Spandauer Vorstadt, Mitte, Berlin, 10115, Deutschland",
+    "ts": "2026-07-03T01:26:50Z"
+  },
+  "mehringdamm 61, berlin, germany": {
+    "lat": 52.4907729,
+    "lng": 13.3873561,
+    "display": "Maze, 61, Mehringdamm, Chamissokiez, Tempelhofer Vorstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Deutschland",
+    "ts": "2026-07-03T01:26:51Z"
+  },
+  "möckernstraße 26., berlin, deutschland": {
+    "lat": 52.4951332,
+    "lng": 13.377443,
+    "display": "TorEins, 26, Möckernstraße, Möckernkiez, Tempelhofer Vorstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland",
+    "ts": "2026-07-03T01:26:52Z"
+  },
+  "antwerpener straße 3, berlin, deutschland": {
+    "lat": 52.5478615,
+    "lng": 13.3493543,
+    "display": "3, Antwerpener Straße, Brüsseler Kiez, Wedding, Mitte, Berlin, 13353, Deutschland",
+    "ts": "2026-07-03T01:26:54Z"
+  },
+  "schwedter straße 79, berlin, deutschland": {
+    "lat": 52.5476464,
+    "lng": 13.4011426,
+    "display": "SVEDA, 79, Schwedter Straße, Gleimviertel, Prenzlauer Berg, Pankow, Berlin, 10437, Deutschland",
+    "ts": "2026-07-03T01:26:55Z"
+  },
+  "potsdamer platz, berlin, germany": {
+    "lat": 52.5098014,
+    "lng": 13.3755898,
+    "display": "Potsdamer Platz, Tiergarten, Mitte, Berlin, 10785, Deutschland",
+    "ts": "2026-07-03T01:26:56Z"
+  },
+  "böckhstraße 21, berlin, deutschland": {
+    "lat": 52.493311,
+    "lng": 13.4197539,
+    "display": "21, Böckhstraße, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland",
+    "ts": "2026-07-03T01:26:57Z"
+  },
+  "auguststraße 24 (spiegelsaal), berlin, deutschland": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-03T01:26:58Z"
+  },
+  "oranienstraße 185, berlin, deutschland": {
+    "lat": 52.4997875,
+    "lng": 13.4203283,
+    "display": "185, Oranienstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Deutschland",
+    "ts": "2026-07-03T01:26:59Z"
+  },
+  "kreuzbergstr. 62, berlin, deutschland": {
+    "lat": 52.4894583,
+    "lng": 13.3802094,
+    "display": "Tomasa, 62, Kreuzbergstraße, Tempelhofer Vorstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10965, Deutschland",
+    "ts": "2026-07-03T01:27:00Z"
+  },
+  "bahnhofstraße 4d, berlin, germany": {
+    "lat": 52.4309171,
+    "lng": 13.325597,
+    "display": "4D, Bahnhofstraße, Giesensdorf, Lichterfelde Ost, Lichterfelde, Steglitz-Zehlendorf, Berlin, 12207, Deutschland",
+    "ts": "2026-07-03T01:27:01Z"
+  },
+  "24 haverstock hill, london, united kingdom": {
+    "lat": 51.544832,
+    "lng": -0.1531932,
+    "display": "Haverstock School, 24, Haverstock Hill, Steele's Village, Primrose Hill, Chalk Farm, London Borough of Camden, Greater London, England, NW3 2BQ, United Kingdom",
+    "ts": "2026-07-03T01:27:03Z"
+  },
+  "draycott ave, chelsea, london, united kingdom": {
+    "lat": 51.491942,
+    "lng": -0.163517,
+    "display": "Draycott Avenue, Chelsea, Royal Borough of Kensington and Chelsea, Greater London, England, SW3 2PH, United Kingdom",
+    "ts": "2026-07-03T01:27:04Z"
+  },
+  "134 charlton street, euston, london, united kingdom": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-03T01:27:04Z"
+  },
+  "141 shoreditch high street, london, united kingdom": {
+    "lat": 51.5260603,
+    "lng": -0.0782425,
+    "display": "Ink, 141-143, Shoreditch High Street, Shoreditch, London Borough of Hackney, Greater London, England, E1 6JE, United Kingdom",
+    "ts": "2026-07-03T01:27:05Z"
+  },
+  "junction road, tufnell park,, london, united kingdom": {
+    "lat": 51.5585133,
+    "lng": -0.1378053,
+    "display": "Junction Road, Tufnell Park, London Borough of Islington, Greater London, England, N19 5QE, United Kingdom",
+    "ts": "2026-07-03T01:27:07Z"
+  },
+  "61 - 65 queen street, london, united kingdom": {
+    "lat": 51.5158253,
+    "lng": -0.120125,
+    "display": "Middle Eight Hotel, 61-65, Great Queen Street, Seven Dials, Holborn, London Borough of Camden, Greater London, England, WC2B 5DA, United Kingdom",
+    "ts": "2026-07-03T01:27:08Z"
+  },
+  "christ&#039;s college, east end road, finchley, london": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-03T01:27:09Z"
+  },
+  "penfold street,, london,, united kingdom": {
+    "lat": 51.5231452,
+    "lng": -0.171905,
+    "display": "Penfold Street, Paddington, City of Westminster, Greater London, England, NW8 8PH, United Kingdom",
+    "ts": "2026-07-03T01:27:10Z"
+  },
+  "277a upper street, islington,, london, united kingdom": {
+    "lat": 51.5403675,
+    "lng": -0.1021227,
+    "display": "New Unity @Upper Street, 277A, Upper Street, Canonbury, Angel, Islington, London Borough of Islington, Greater London, England, N1 2TZ, United Kingdom",
+    "ts": "2026-07-03T01:27:11Z"
+  },
+  "50 shirland rd, london, united kingdom": {
+    "lat": 51.5243032,
+    "lng": -0.1894258,
+    "display": "The Amadeus, 50, Shirland Road, Kensal Town, Maida Vale, City of Westminster, Greater London, England, W9 2JA, United Kingdom",
+    "ts": "2026-07-03T01:27:13Z"
+  },
+  "moreland st angel, london, united kingdom": {
+    "lat": 51.5288157,
+    "lng": -0.0998895,
+    "display": "Moreland Street, St Luke's, Angel, Clerkenwell, London Borough of Islington, Greater London, England, EC1V 8BB, United Kingdom",
+    "ts": "2026-07-03T01:27:14Z"
+  },
+  "19 new bridge st,, london, united kingdom": {
+    "lat": 51.5122778,
+    "lng": -0.1046318,
+    "display": "Hyatt Regency London Blackfriars, 19, New Bridge Street, West Smithfield, Blackfriars, City of London, Greater London, England, EC4V 6DB, United Kingdom",
+    "ts": "2026-07-03T01:27:15Z"
+  },
+  "63a upper richmond rd, putney, london, united kingdom": {
+    "lat": 51.4628199,
+    "lng": -0.2255937,
+    "display": "Upper Richmond Road, Putney, London Borough of Wandsworth, Greater London, England, SW15 6TN, United Kingdom",
+    "ts": "2026-07-03T01:27:16Z"
+  }
+}
