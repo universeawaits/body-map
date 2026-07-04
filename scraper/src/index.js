@@ -1,5 +1,6 @@
 // Orchestrator: plan → fetch → extract → geocode → merge → stale sweep →
-// persist → report. See CONTRACT.md §7 for the binding pipeline description.
+// translations queue diff → persist → report. See CONTRACT.md §7 for the
+// binding pipeline description.
 //
 // Flags:
 //   --dry-run        full pipeline, prints planned mutations, writes NOTHING
@@ -18,6 +19,7 @@ import { extractCandidates, DANCE_KEYS } from './extract.js';
 import { geocodeCandidates } from './geocode.js';
 import { runMerge, staleSweep } from './merge.js';
 import { createStore, defaultActor, nowIso } from './store.js';
+import { updateTranslationsQueue } from './translate.js';
 
 function parseArgs(argv) {
   const flags = {
@@ -171,6 +173,7 @@ async function main() {
   const queue = store.loadReviewQueue();
   const rejected = store.loadRejected();
   const geocodeCache = store.loadGeocodeCache();
+  const translationsQueue = store.loadTranslationsQueue();
 
   if (flags.dryRun) console.log('DRY RUN — nothing will be written.\n');
 
@@ -246,13 +249,18 @@ async function main() {
     ? { archived: 0, mutations: [] }
     : staleSweep({ doc, store, actor });
 
-  // 7. persist (no-ops when dry-run)
+  // 7. translations queue diff — description/schedule text needing translation
+  // (Part C, local-only pipeline; never touches the entities themselves)
+  const translationStats = updateTranslationsQueue({ doc, queue: translationsQueue, now: nowIso() });
+
+  // 8. persist (no-ops when dry-run)
   const mutationCount =
     mergeStats.created + mergeStats.updated + mergeStats.restored + sweepStats.archived;
   if (!flags.dryRun) {
     store.saveEntitiesDoc(doc);
     store.saveReviewQueue(queue);
     store.saveGeocodeCache(geocodeCache);
+    store.saveTranslationsQueue(translationsQueue);
     store.flushAudit();
   } else {
     const pending = store.pendingAuditEntries();
@@ -268,7 +276,7 @@ async function main() {
     }
   }
 
-  // 8. report
+  // 9. report
   console.log('\nPer-source summary:');
   for (const [label, bucket] of perSource) {
     console.log(`  ${label}: ${bucket.ok}/${bucket.pages} pages fetched, ${bucket.candidates} candidate(s)`);
@@ -279,6 +287,10 @@ async function main() {
     `${mergeStats.created} created, ${mergeStats.updated} updated, ${mergeStats.restored} restored, ` +
     `${mergeStats.queued} queued, ${sweepStats.archived} archived, ${mergeStats.dropped} dropped, ` +
     `${mergeStats.rejectedSkipped} rejected-skipped, ${mergeStats.refreshed} refreshed sightings`
+  );
+  console.log(
+    `Translations queue: ${translationStats.pending} pending item(s) ` +
+    `(${translationStats.delta >= 0 ? '+' : ''}${translationStats.delta} vs last run)`
   );
   console.log(`Run finished at ${nowIso()}${flags.dryRun ? ' (dry run, nothing written)' : ''}`);
 

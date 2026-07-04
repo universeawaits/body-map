@@ -22,6 +22,7 @@ import {
   orderedCategories,
   categoryLabel,
 } from './logic.js';
+import { UI, ROLES, MTYPES, DEFAULT_LANG } from './i18n.js';
 
 let map = null;
 let markerLayer = null;
@@ -43,6 +44,26 @@ export function initMap(containerId) {
   }).addTo(map);
   markerLayer = L.layerGroup().addTo(map);
   map.setView(FALLBACK_CENTER, FALLBACK_ZOOM);
+
+  // autoPanPaddingTopLeft (see bindPopup below) only reserves margin Leaflet's
+  // own autopan uses when IT decides to pan; on short viewports with tall
+  // popups it can still under-correct, leaving the popup peeking out under
+  // the glass topbar. Catch anything that slips through with an explicit
+  // measurement after open.
+  map.on('popupopen', (event) => {
+    const popupEl = event.popup.getElement();
+    const topbarEl = document.querySelector('.topbar');
+    if (!popupEl || !topbarEl) return;
+    requestAnimationFrame(() => {
+      const popupRect = popupEl.getBoundingClientRect();
+      const topbarRect = topbarEl.getBoundingClientRect();
+      const minTop = topbarRect.bottom + 12;
+      if (popupRect.top < minTop) {
+        map.panBy([0, popupRect.top - minTop], { animate: false });
+      }
+    });
+  });
+
   return map;
 }
 
@@ -56,6 +77,11 @@ export function renderMarkers(entities, filter, { fit = false } = {}) {
   markerLayer.clearLayers();
   const groups = groupEntities(entities, filter);
   const points = [];
+  const lang = filter.lang ?? DEFAULT_LANG;
+
+  // Glass topbar floats over the map — keep popups from opening underneath it.
+  const topbarEl = document.querySelector('.topbar');
+  const topPad = (topbarEl ? topbarEl.offsetHeight : 0) + 24;
 
   for (const group of groups) {
     const colors = effectiveColors(group, filter.categories);
@@ -71,7 +97,11 @@ export function renderMarkers(entities, filter, { fit = false } = {}) {
       icon,
       title: group.entities.map((e) => e.name).join(', '),
     })
-      .bindPopup(popupHtml(group, filter.dance), { maxWidth: 340 })
+      .bindPopup(popupHtml(group, filter.dance, lang), {
+        maxWidth: 340,
+        autoPanPaddingTopLeft: [24, topPad],
+        autoPanPaddingBottomRight: [24, 24],
+      })
       .addTo(markerLayer);
     points.push([group.lat, group.lng]);
   }
@@ -104,18 +134,22 @@ function pinHtml(group, colors) {
 const ICON_PLAY =
   '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>';
 
-function popupHtml(group, dance) {
-  const sections = group.entities.map((e) => entitySectionHtml(e, dance));
+function popupHtml(group, dance, lang = DEFAULT_LANG) {
+  const sections = group.entities.map((e) => entitySectionHtml(e, dance, lang));
   return `<div class="popup">${sections.join('<hr class="popup-divider">')}</div>`;
 }
 
-function entitySectionHtml(entity, dance) {
+function entitySectionHtml(entity, dance, lang) {
+  const ui = UI[lang] ?? UI[DEFAULT_LANG];
+  // Translated description/schedule (§10) win over the scraped English text
+  // when available for the active language; proper nouns are never translated.
+  const translated = entity.translations?.[lang];
   const parts = [`<h3 class="popup-name">${escapeHtml(entity.name)}</h3>`];
 
   const chips = orderedCategories(entity.categories)
     .map(
       (key) =>
-        `<span class="chip"><span class="chip-dot" style="background:var(--cat-${key})"></span>${escapeHtml(categoryLabel(key, dance))}</span>`
+        `<span class="chip"><span class="chip-dot" style="background:var(--cat-${key})"></span>${escapeHtml(categoryLabel(key, dance, lang))}</span>`
     )
     .join('');
   if (chips) parts.push(`<div class="popup-chips">${chips}</div>`);
@@ -125,29 +159,30 @@ function entitySectionHtml(entity, dance) {
     .join(', ');
   if (place) parts.push(`<p class="popup-place">${escapeHtml(place)}</p>`);
 
-  const when = scheduleLabel(entity);
+  const when = translated?.schedule?.text ?? scheduleLabel(entity, lang);
   if (when) parts.push(`<p class="popup-schedule">${escapeHtml(when)}</p>`);
 
-  if (entity.description) {
-    parts.push(`<p class="popup-desc">${escapeHtml(entity.description)}</p>`);
+  const description = translated?.description?.text ?? entity.description;
+  if (description) {
+    parts.push(`<p class="popup-desc">${escapeHtml(description)}</p>`);
   }
 
-  const music = musicHtml(entity.music);
+  const music = musicHtml(entity.music, lang);
   if (music) {
-    parts.push(`<p class="popup-eyebrow">Music</p><p class="popup-music">${music}</p>`);
+    parts.push(`<p class="popup-eyebrow">${escapeHtml(ui.music)}</p><p class="popup-music">${music}</p>`);
   }
 
   const organizer = organizerHtml(entity.organizer);
   if (organizer) {
     parts.push(
-      `<p class="popup-eyebrow">Organized by</p><p class="popup-organizer">${organizer}</p>`
+      `<p class="popup-eyebrow">${escapeHtml(ui.organizedBy)}</p><p class="popup-organizer">${organizer}</p>`
     );
   }
 
-  const artists = artistsHtml(entity.artists);
+  const artists = artistsHtml(entity.artists, lang);
   if (artists) {
     parts.push(
-      `<p class="popup-eyebrow">Artists</p><div class="popup-artists">${artists}</div>`
+      `<p class="popup-eyebrow">${escapeHtml(ui.artists)}</p><div class="popup-artists">${artists}</div>`
     );
   }
 
@@ -162,7 +197,7 @@ function entitySectionHtml(entity, dance) {
     .join('');
   if (images) parts.push(`<div class="popup-thumbs">${images}</div>`);
 
-  const links = socialLinksHtml(entity.socials);
+  const links = socialLinksHtml(entity.socials, lang);
   if (links) parts.push(`<div class="popup-links">${links}</div>`);
 
   return `<section class="popup-entity">${parts.join('')}</section>`;
@@ -170,8 +205,9 @@ function entitySectionHtml(entity, dance) {
 
 const MUSIC_TYPES = new Set(['dj', 'orchestra', 'band']);
 
-function musicHtml(music) {
+function musicHtml(music, lang) {
   if (!Array.isArray(music)) return '';
+  const mtypes = MTYPES[lang] ?? MTYPES[DEFAULT_LANG];
   return music
     .filter((m) => m && typeof m.name === 'string' && m.name)
     .map((m) => {
@@ -180,7 +216,7 @@ function musicHtml(music) {
         ? `<a href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(m.name)}</a>`
         : escapeHtml(m.name);
       const type = MUSIC_TYPES.has(m.type)
-        ? `<span class="music-type">${escapeHtml(m.type)}</span>`
+        ? `<span class="music-type">${escapeHtml(mtypes[m.type] ?? m.type)}</span>`
         : '';
       return `<span class="music-row">${name}${type}</span>`;
     })
@@ -195,8 +231,9 @@ function organizerHtml(organizer) {
     : escapeHtml(organizer.name);
 }
 
-function artistsHtml(artists) {
+function artistsHtml(artists, lang) {
   if (!Array.isArray(artists)) return '';
+  const roles = ROLES[lang] ?? ROLES[DEFAULT_LANG];
   return artists
     .filter((a) => a && typeof a.name === 'string' && a.name)
     .map((a) => {
@@ -209,7 +246,7 @@ function artistsHtml(artists) {
         ? `<a href="${escapeAttr(pageUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.name)}</a>`
         : escapeHtml(a.name);
       const role = a.role
-        ? `<p class="artist-role">${escapeHtml(a.role)}</p>`
+        ? `<p class="artist-role">${escapeHtml(roles[a.role] ?? a.role)}</p>`
         : '';
       const videoUrl = safeUrl(a.video);
       const video = videoUrl
@@ -220,17 +257,27 @@ function artistsHtml(artists) {
     .join('');
 }
 
-const SOCIAL_LABELS = [
-  ['website', 'Website'],
-  ['facebook', 'Facebook'],
-  ['instagram', 'Instagram'],
-  ['email', 'Email'],
-];
+// Inline Lucide-style line icons for the popup's social-link buttons — the
+// card layout uses icon-only 34px circular buttons rather than text pills.
+const SOCIAL_ICONS = {
+  website:
+    '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>',
+  facebook:
+    '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M14 8.5V7c0-.7.3-1 1-1h1.5V3H14c-2.2 0-3.5 1.3-3.5 3.5v2H8.5v3h2V21h3.5v-9.5H16l.5-3H14z"/></svg>',
+  instagram:
+    '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>',
+  email:
+    '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>',
+};
 
-function socialLinksHtml(socials) {
+const SOCIAL_KEYS = ['website', 'facebook', 'instagram', 'email'];
+
+function socialLinksHtml(socials, lang) {
   if (!socials || typeof socials !== 'object') return '';
+  const labels = (UI[lang] ?? UI[DEFAULT_LANG]).links;
   const links = [];
-  for (const [key, label] of SOCIAL_LABELS) {
+  for (const key of SOCIAL_KEYS) {
+    const label = labels[key];
     let value = socials[key];
     if (!value || typeof value !== 'string') continue;
     if (key === 'email' && !/^mailto:/i.test(value.trim())) {
@@ -239,7 +286,7 @@ function socialLinksHtml(socials) {
     const url = safeUrl(value);
     if (!url) continue;
     links.push(
-      `<a class="popup-link" href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`
+      `<a class="popup-link" href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeAttr(label)}" title="${escapeAttr(label)}">${SOCIAL_ICONS[key]}</a>`
     );
   }
   return links.join('');

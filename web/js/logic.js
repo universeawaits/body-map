@@ -9,6 +9,7 @@ import {
   DANCE_KEYS,
   DEFAULT_DANCE,
 } from './categories.js';
+import { UI, DEFAULT_LANG } from './i18n.js';
 
 /**
  * Escape a string for safe interpolation into HTML text content.
@@ -47,20 +48,24 @@ export function safeUrl(url) {
 
 // --- labels ------------------------------------------------------------------
 
-/** Display label of a dance key ('tango' → 'Tango'); '' for unknown keys. */
-export function danceLabel(key) {
-  return DANCE_BY_KEY[key]?.label ?? '';
+/** Display label of a dance key ('tango' → 'Tango') in the given language; '' for unknown keys. */
+export function danceLabel(key, lang = DEFAULT_LANG) {
+  if (!DANCE_BY_KEY[key]) return '';
+  return (UI[lang] ?? UI[DEFAULT_LANG]).dances[key];
 }
 
 /**
- * Dance-aware display label of a category key: 'social' reads "Milongas"
- * when the active dance is tango and "Socials" otherwise; all other
- * category labels are constant.
+ * Dance-aware display label of a category key in the given language:
+ * 'social' reads "Milongas" when the active dance is tango and "Socials"
+ * (or the language's equivalent) otherwise; all other category labels are
+ * constant per language.
  */
-export function categoryLabel(key, dance) {
-  const category = CATEGORY_BY_KEY[key];
-  if (!category) return '';
-  return category.labels[dance] ?? category.labels.default;
+export function categoryLabel(key, dance, lang = DEFAULT_LANG) {
+  if (!CATEGORY_BY_KEY[key]) return '';
+  const cats = (UI[lang] ?? UI[DEFAULT_LANG]).cats;
+  const value = cats[key];
+  if (value && typeof value === 'object') return value[dance] ?? value.default;
+  return value ?? '';
 }
 
 /**
@@ -82,21 +87,6 @@ export function parseDanceHash(hash) {
 // --- weekday math & date matching (UTC from the string; no TZ drift) ---------
 
 export const WEEKDAY_KEYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
-
-const WEEKDAY_LABELS = {
-  mon: 'Mon',
-  tue: 'Tue',
-  wed: 'Wed',
-  thu: 'Thu',
-  fri: 'Fri',
-  sat: 'Sat',
-  sun: 'Sun',
-};
-
-const MONTH_LABELS = [
-  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
-];
 
 /** Weekday key ('mon'…'sun') of a 'YYYY-MM-DD' string, computed in UTC. */
 export function weekdayOf(iso) {
@@ -156,20 +146,25 @@ export function clampMonth(monthKey) {
 /**
  * Model of one strip month: sticky separator label ("Jul 2026") plus one
  * chip per day with weekday abbreviation, day number and ISO date.
+ * Weekday/month labels are derived from `locale` via Intl (UTC, so they
+ * never drift with the viewer's timezone).
  * @returns {{key: string, label: string,
  *            days: Array<{iso: string, day: number,
  *                         weekday: string, weekdayLabel: string}>}}
  */
-export function buildMonthModel(monthKey) {
+export function buildMonthModel(monthKey, locale = 'en-GB') {
   const [y, m] = String(monthKey).split('-').map(Number);
   const count = new Date(Date.UTC(y, m, 0)).getUTCDate();
+  const weekdayFmt = new Intl.DateTimeFormat(locale, { weekday: 'short', timeZone: 'UTC' });
+  const monthFmt = new Intl.DateTimeFormat(locale, { month: 'short', year: 'numeric', timeZone: 'UTC' });
   const days = [];
   for (let day = 1; day <= count; day += 1) {
     const iso = `${monthKey}-${String(day).padStart(2, '0')}`;
     const weekday = weekdayOf(iso);
-    days.push({ iso, day, weekday, weekdayLabel: WEEKDAY_LABELS[weekday] });
+    const weekdayLabel = weekdayFmt.format(new Date(Date.UTC(y, m - 1, day)));
+    days.push({ iso, day, weekday, weekdayLabel });
   }
-  return { key: monthKey, label: `${MONTH_LABELS[m - 1]} ${y}`, days };
+  return { key: monthKey, label: monthFmt.format(new Date(Date.UTC(y, m - 1, 1))), days };
 }
 
 // --- visibility & grouping -----------------------------------------------------
@@ -272,12 +267,12 @@ export function orderedCategories(keys) {
   return CATEGORIES.filter((c) => wanted.has(c.key)).map((c) => c.key);
 }
 
-/** "12 Aug 2026" from an ISO date, UTC; falls back to the raw string. */
-export function formatDate(iso) {
+/** "12 Aug 2026" from an ISO date in the given locale, UTC; falls back to the raw string. */
+export function formatDate(iso, locale = 'en-GB') {
   if (!iso) return '';
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return String(iso);
-  return date.toLocaleDateString('en-GB', {
+  return date.toLocaleDateString(locale, {
     day: 'numeric',
     month: 'short',
     year: 'numeric',
@@ -286,16 +281,18 @@ export function formatDate(iso) {
 }
 
 /** Schedule string if present, else the start/end date range, else ''. */
-export function scheduleLabel(entity) {
+export function scheduleLabel(entity, lang = DEFAULT_LANG) {
   if (entity.schedule) return entity.schedule;
+  const ui = UI[lang] ?? UI[DEFAULT_LANG];
+  const locale = ui.locale;
   const start = entity.start_date;
   const end = entity.end_date;
   if (start && end) {
     return start === end
-      ? formatDate(start)
-      : `${formatDate(start)} – ${formatDate(end)}`;
+      ? formatDate(start, locale)
+      : `${formatDate(start, locale)} – ${formatDate(end, locale)}`;
   }
-  if (start) return `From ${formatDate(start)}`;
-  if (end) return `Until ${formatDate(end)}`;
+  if (start) return `${ui.from} ${formatDate(start, locale)}`;
+  if (end) return `${ui.until} ${formatDate(end, locale)}`;
   return '';
 }

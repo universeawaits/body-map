@@ -1,5 +1,5 @@
 // Read/write for entities.json, review-queue.json, rejected.json,
-// geocode-cache.json and the JSONL audit log. Every mutation persisted through
+// geocode-cache.json, translations-queue.json and the JSONL audit log. Every mutation persisted through
 // this module carries an audit entry (§5 shape). All writes are skipped when
 // the store is created with {dryRun: true}.
 
@@ -12,7 +12,7 @@ export const ENTITY_KEY_ORDER = [
   'id', 'name', 'dances', 'categories', 'description', 'lat', 'lng',
   'address', 'city', 'country', 'schedule', 'days_of_week',
   'start_date', 'end_date', 'images', 'socials',
-  'organizer', 'music', 'artists', 'status', 'locked_fields', 'sources',
+  'organizer', 'music', 'artists', 'translations', 'status', 'locked_fields', 'sources',
   'created_at', 'updated_at',
 ];
 
@@ -40,6 +40,7 @@ export function orderEntity(entity) {
   if (out.artists === null) out.artists = [];
   if (out.locked_fields === null) out.locked_fields = [];
   if (out.sources === null) out.sources = [];
+  if (out.translations === null) out.translations = {};
   // keep any unexpected extra keys rather than silently dropping data
   for (const key of Object.keys(entity)) {
     if (!(key in out)) out[key] = entity[key];
@@ -92,6 +93,10 @@ export function createStore(paths = PATHS, { dryRun = false } = {}) {
       return readJson(paths.reviewQueue, { generated: null, items: [] });
     },
 
+    loadTranslationsQueue() {
+      return readJson(paths.translationsQueue, { generated: null, items: [] });
+    },
+
     loadRejected() {
       return readJson(paths.rejected, { items: [] });
     },
@@ -121,6 +126,17 @@ export function createStore(paths = PATHS, { dryRun = false } = {}) {
       if (unchangedOnDisk(paths.reviewQueue, out)) return;
       out.generated = nowIso();
       writeJson(paths.reviewQueue, out);
+    },
+
+    saveTranslationsQueue(queue) {
+      if (dryRun) return;
+      const out = {
+        generated: queue.generated ?? null,
+        items: queue.items,
+      };
+      if (unchangedOnDisk(paths.translationsQueue, out)) return;
+      out.generated = nowIso();
+      writeJson(paths.translationsQueue, out);
     },
 
     saveRejected(rejected) {

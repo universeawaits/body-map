@@ -14,6 +14,7 @@ import {
   STRIP_START_MONTH,
   STRIP_END_MONTH,
 } from './logic.js';
+import { LANG_META, UI, DEFAULT_LANG } from './i18n.js';
 
 // Inline-SVG Lucide-style line icons (static markup, no dynamic strings).
 const ICON_CHECK =
@@ -29,11 +30,12 @@ const ICON_X =
  * @param {HTMLElement} container
  * @param {{dance: string, onChange: () => void}} options
  */
-export function initTabs(container, { dance, onChange }) {
+export function initTabs(container, { dance, lang, onChange }) {
   const selected = new Set(CATEGORIES.map((c) => c.key));
   const countEls = {};
   const labelEls = {};
   let activeDance = dance;
+  let activeLang = lang;
 
   for (const category of CATEGORIES) {
     const button = document.createElement('button');
@@ -48,7 +50,7 @@ export function initTabs(container, { dance, onChange }) {
 
     const label = document.createElement('span');
     label.className = 'tab-label';
-    label.textContent = categoryLabel(category.key, activeDance);
+    label.textContent = categoryLabel(category.key, activeDance, activeLang);
     labelEls[category.key] = label;
 
     const count = document.createElement('span');
@@ -81,7 +83,18 @@ export function initTabs(container, { dance, onChange }) {
       for (const category of CATEGORIES) {
         labelEls[category.key].textContent = categoryLabel(
           category.key,
-          activeDance
+          activeDance,
+          activeLang
+        );
+      }
+    },
+    setLang(langCode) {
+      activeLang = langCode;
+      for (const category of CATEGORIES) {
+        labelEls[category.key].textContent = categoryLabel(
+          category.key,
+          activeDance,
+          activeLang
         );
       }
     },
@@ -107,21 +120,23 @@ function localTodayIso() {
  * Multi-select; a sticky "N dates" clear pill appears when any is selected.
  * @param {HTMLElement} container - the scrollable strip
  * @param {HTMLElement} todayButton - the "Today" pill next to the strip
- * @param {{onChange: () => void}} options
+ * @param {{lang: string, onChange: () => void}} options
  */
-export function initDateStrip(container, todayButton, { onChange }) {
+export function initDateStrip(container, todayButton, { lang, onChange }) {
   const GAP = 4; // --space-1 flex gap between strip items
   const selected = new Set();
   const todayIso = localTodayIso();
   const todayMonth = clampMonth(monthKeyOf(todayIso));
   let firstMonth = null;
   let lastMonth = null;
+  let activeLang = lang;
+  let activeLocale = (UI[lang] ?? UI.EN).locale;
 
   const clearPill = document.createElement('button');
   clearPill.type = 'button';
   clearPill.className = 'strip-clear';
   clearPill.hidden = true;
-  clearPill.setAttribute('aria-label', 'Clear selected dates');
+  clearPill.setAttribute('aria-label', (UI[activeLang] ?? UI.EN).clearDatesAria);
   container.appendChild(clearPill);
   clearPill.addEventListener('click', () => {
     selected.clear();
@@ -133,17 +148,21 @@ export function initDateStrip(container, todayButton, { onChange }) {
   });
 
   function updateClearPill() {
+    const ui = UI[activeLang] ?? UI.EN;
+    clearPill.setAttribute('aria-label', ui.clearDatesAria);
     if (!selected.size) {
       clearPill.hidden = true;
       return;
     }
-    const noun = selected.size === 1 ? 'date' : 'dates';
-    clearPill.innerHTML = `${selected.size} ${noun} ${ICON_X}`;
+    const category = new Intl.PluralRules(activeLocale).select(selected.size);
+    const template = ui.dateCount[category] ?? ui.dateCount.other;
+    const text = template.replace('{n}', String(selected.size));
+    clearPill.innerHTML = `${escapeHtml(text)} ${ICON_X}`;
     clearPill.hidden = false;
   }
 
   function monthElement(monthKey) {
-    const model = buildMonthModel(monthKey);
+    const model = buildMonthModel(monthKey, activeLocale);
     const monthEl = document.createElement('div');
     monthEl.className = 'strip-month';
     monthEl.dataset.month = model.key;
@@ -268,6 +287,22 @@ export function initDateStrip(container, todayButton, { onChange }) {
 
   return {
     getSelected: () => new Set(selected),
+    setLang(langCode) {
+      activeLang = langCode;
+      activeLocale = (UI[langCode] ?? UI.EN).locale;
+      for (const monthEl of container.querySelectorAll('.strip-month')) {
+        const model = buildMonthModel(monthEl.dataset.month, activeLocale);
+        monthEl.querySelector('.strip-month-label').textContent = model.label;
+        const dayByIso = new Map(model.days.map((d) => [d.iso, d]));
+        for (const chip of monthEl.querySelectorAll('.day-chip')) {
+          const day = dayByIso.get(chip.dataset.date);
+          if (!day) continue;
+          chip.querySelector('.day-wd').textContent = day.weekdayLabel;
+          chip.setAttribute('aria-label', `${day.weekdayLabel} ${day.day} ${model.label}`);
+        }
+      }
+      updateClearPill();
+    },
   };
 }
 
@@ -277,10 +312,11 @@ export function initDateStrip(container, todayButton, { onChange }) {
  * Floating circle button + single-select dropdown menu (role=menu).
  * Esc and click-outside close it; the selected row carries a check icon.
  * @param {HTMLElement} container
- * @param {{dance: string, onChange: (key: string) => void}} options
+ * @param {{dance: string, lang: string, onChange: (key: string) => void}} options
  */
-export function initDanceSwitcher(container, { dance, onChange }) {
+export function initDanceSwitcher(container, { dance, lang, onChange }) {
   let activeDance = dance;
+  let activeLang = lang;
 
   const button = document.createElement('button');
   button.type = 'button';
@@ -301,7 +337,7 @@ export function initDanceSwitcher(container, { dance, onChange }) {
     option.className = 'dance-option';
     option.setAttribute('role', 'menuitemradio');
     option.dataset.key = d.key;
-    option.innerHTML = `<span>${escapeHtml(d.label)}</span>${ICON_CHECK}`;
+    option.innerHTML = `<span class="dance-name"></span>${ICON_CHECK}`;
     option.addEventListener('click', () => {
       close();
       if (d.key !== activeDance) onChange(d.key);
@@ -311,10 +347,14 @@ export function initDanceSwitcher(container, { dance, onChange }) {
   }
 
   function syncButton() {
-    const label = danceLabel(activeDance);
-    button.textContent = label.charAt(0);
+    const label = danceLabel(activeDance, activeLang);
+    button.textContent = [...label][0] ?? '';
     button.setAttribute('aria-label', `Switch dance — current: ${label}`);
     for (const option of options) {
+      option.querySelector('.dance-name').textContent = danceLabel(
+        option.dataset.key,
+        activeLang
+      );
       option.setAttribute(
         'aria-checked',
         String(option.dataset.key === activeDance)
@@ -373,18 +413,130 @@ export function initDanceSwitcher(container, { dance, onChange }) {
       activeDance = key;
       syncButton();
     },
+    setLang(langCode) {
+      activeLang = langCode;
+      syncButton();
+    },
+  };
+}
+
+/* --- language switcher ----------------------------------------------------------- */
+
+const ICON_GLOBE =
+  '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>';
+
+/**
+ * Globe-icon button + single-select dropdown menu (role=menu) listing all
+ * supported languages by native + English name. Same interaction pattern as
+ * initDanceSwitcher (Esc/click-outside closes, aria-checked on the active row).
+ * @param {HTMLElement} container
+ * @param {{lang: string, onChange: (code: string) => void}} options
+ */
+export function initLangSwitcher(container, { lang, onChange }) {
+  let activeLang = lang;
+
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'lang-btn';
+  button.setAttribute('aria-haspopup', 'menu');
+  button.setAttribute('aria-expanded', 'false');
+
+  const menu = document.createElement('div');
+  menu.className = 'dance-menu lang-menu';
+  menu.setAttribute('role', 'menu');
+  menu.setAttribute('aria-label', 'Language');
+  menu.hidden = true;
+
+  const options = [];
+  for (const l of LANG_META) {
+    const option = document.createElement('button');
+    option.type = 'button';
+    option.className = 'dance-option';
+    option.setAttribute('role', 'menuitemradio');
+    option.dataset.code = l.code;
+    option.innerHTML = `<span><span class="lang-native">${escapeHtml(l.native)}</span> <span class="lang-en">${escapeHtml(l.label)}</span></span>${ICON_CHECK}`;
+    option.addEventListener('click', () => {
+      close();
+      if (l.code !== activeLang) onChange(l.code);
+    });
+    options.push(option);
+    menu.appendChild(option);
+  }
+
+  function syncButton() {
+    const current = LANG_META.find((l) => l.code === activeLang) ?? LANG_META[0];
+    button.innerHTML = `${ICON_GLOBE}<span>${escapeHtml(current.code)}</span>`;
+    button.setAttribute('aria-label', `Language — current: ${current.label}`);
+    for (const option of options) {
+      option.setAttribute('aria-checked', String(option.dataset.code === activeLang));
+    }
+  }
+
+  function open() {
+    menu.hidden = false;
+    button.setAttribute('aria-expanded', 'true');
+    const current = options.find((o) => o.dataset.code === activeLang);
+    (current ?? options[0]).focus();
+  }
+
+  function close() {
+    if (menu.hidden) return;
+    menu.hidden = true;
+    button.setAttribute('aria-expanded', 'false');
+  }
+
+  button.addEventListener('click', () => {
+    if (menu.hidden) {
+      open();
+    } else {
+      close();
+    }
+  });
+
+  menu.addEventListener('keydown', (event) => {
+    const index = options.indexOf(document.activeElement);
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      options[(index + 1) % options.length].focus();
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      options[(index - 1 + options.length) % options.length].focus();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !menu.hidden) {
+      close();
+      button.focus();
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!menu.hidden && !container.contains(event.target)) close();
+  });
+
+  container.append(button, menu);
+  syncButton();
+
+  return {
+    setLang(code) {
+      activeLang = code;
+      syncButton();
+    },
   };
 }
 
 /* --- corner chip ---------------------------------------------------------------- */
 
 /** Fill the corner chip with the dataset's `generated` timestamp. */
-export function setUpdatedChip(element, generated) {
+export function setUpdatedChip(element, generated, lang = DEFAULT_LANG) {
   if (!generated) {
     element.hidden = true;
     return;
   }
-  element.innerHTML = `data updated ${escapeHtml(formatDate(generated))}`;
+  const ui = UI[lang] ?? UI[DEFAULT_LANG];
+  const text = ui.dataUpdated.replace('{date}', formatDate(generated, ui.locale));
+  element.innerHTML = escapeHtml(text);
   element.hidden = false;
 }
 

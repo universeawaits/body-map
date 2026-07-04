@@ -12,6 +12,7 @@ export const PATHS = {
   entities: path.join(REPO_ROOT, 'web', 'data', 'entities.json'),
   auditLog: path.join(REPO_ROOT, 'data', 'audit-log.jsonl'),
   reviewQueue: path.join(REPO_ROOT, 'data', 'review-queue.json'),
+  translationsQueue: path.join(REPO_ROOT, 'data', 'translations-queue.json'),
   rejected: path.join(REPO_ROOT, 'data', 'rejected.json'),
   geocodeCache: path.join(REPO_ROOT, 'data', 'geocode-cache.json'),
   queriesConfig: path.join(REPO_ROOT, 'scraper', 'config', 'queries.json'),

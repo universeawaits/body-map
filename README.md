@@ -49,9 +49,17 @@ app. `CONTRACT.md` is the binding spec for everything here.
   schedule or date range, description, **who plays the music** (names with
   dj / orchestra / band badges), **the organizer**, and **the artists
   involved** (photo thumb, role, video link), then up to 3 photos and
-  Website / Facebook / Instagram / Email buttons. All scraped strings are
-  HTML-escaped and every URL passes an http/https/mailto scheme check before
-  rendering.
+  icon-only Website / Facebook / Instagram / Email buttons. All scraped
+  strings are HTML-escaped and every URL passes an http/https/mailto scheme
+  check before rendering.
+- **11-language interface** — a globe-icon switcher (persisted in
+  `localStorage`, shareable via `#lang=<code>`) retranslates all chrome live:
+  tabs, dance names, the "Today" pill, popup section labels, and
+  weekday/month/date formatting (via `Intl`, locale-aware). Entity content
+  itself (names, descriptions, schedules) stays as scraped unless translated
+  through the local workflow below.
+- **Glass topbar** — a translucent, blurred bar floats over the full-bleed
+  map (tabs left; language + dance switcher right); no wordmark.
 - **Ф design language** — warm paper, warm ink, one ink-blue accent,
   Newsreader + Hanken Grotesk + IBM Plex Mono (tokens in
   `web/css/tokens.css`), with a dark theme that follows
@@ -222,6 +230,34 @@ jq -s 'group_by(.action) | map({(.[0].action): length}) | add' data/audit-log.js
 # where scraper-made changes came from
 jq -c 'select(.source | startswith("scraper")) | [.ts, .action, .entity_name, .context.url]' data/audit-log.jsonl
 ```
+
+## Translating entity content (local, manual — never CI)
+
+The interface (tabs, chrome, date formatting) is translated automatically —
+see Features above. Entity **content** (descriptions, schedules) is a
+separate, deliberately manual workflow: after every scraper run,
+`data/translations-queue.json` is rebuilt with every entity/field that's
+missing or has a stale translation in any of the 10 non-English languages
+(EN is the source language). That detection step commits automatically like
+the other `data/*.json` ops files — but nothing ever calls an AI/translation
+API from this repo or from CI. You translate by hand, using your own
+separate AI subscription:
+
+```bash
+cd scraper
+node src/translate.js queue                              # see what's pending
+node src/translate.js export --out batch.md               # write a markdown batch
+node src/translate.js export --out batch.md --lang de --limit 20   # narrower batch
+# … paste batch.md's fenced source text into your own AI chat, paste the
+#   translations back under each "> translation:" line, save the file …
+node src/translate.js import --file batch.md              # merge it back
+```
+
+`import` verifies each block's source text still matches the entity's current
+field (skips + warns if the entity changed since export — re-export it) and
+records one audit entry per touched entity. This CLI is never invoked by
+`.github/workflows/scrape.yml` or any other CI step — it's local-only by
+design.
 
 ## Refining the search together
 

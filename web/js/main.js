@@ -7,12 +7,15 @@ import {
   initTabs,
   initDateStrip,
   initDanceSwitcher,
+  initLangSwitcher,
   setUpdatedChip,
   showError,
 } from './ui.js';
 import { categoryCounts, resolveDance, parseDanceHash } from './logic.js';
+import { resolveLang, parseLangHash, UI } from './i18n.js';
 
 const DANCE_STORAGE_KEY = 'bodymap.dance';
+const LANG_STORAGE_KEY = 'bodymap.lang';
 
 // --- theme: data-theme follows prefers-color-scheme, live ---------------------
 
@@ -49,6 +52,26 @@ function persistDance(dance) {
   }
 }
 
+// --- language persistence ---------------------------------------------------------
+
+function loadLang() {
+  let stored = null;
+  try {
+    stored = localStorage.getItem(LANG_STORAGE_KEY);
+  } catch {
+    // Storage may be unavailable (private mode); fall through.
+  }
+  return resolveLang(parseLangHash(window.location.hash), stored);
+}
+
+function persistLang(lang) {
+  try {
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+  } catch {
+    // Best effort only.
+  }
+}
+
 // --- boot -------------------------------------------------------------------------
 
 async function boot() {
@@ -57,20 +80,26 @@ async function boot() {
 
   let entities = [];
   let dance = loadDance();
+  let lang = loadLang();
+  let generatedAt = null;
+
+  const todayPill = document.getElementById('today-pill');
+  const updatedChip = document.getElementById('updated-chip');
 
   const tabs = initTabs(document.getElementById('tabs'), {
     dance,
+    lang,
     onChange: () => refresh({ fit: false }),
   });
 
-  const dateStrip = initDateStrip(
-    document.getElementById('datestrip'),
-    document.getElementById('today-pill'),
-    { onChange: () => refresh({ fit: false }) }
-  );
+  const dateStrip = initDateStrip(document.getElementById('datestrip'), todayPill, {
+    lang,
+    onChange: () => refresh({ fit: false }),
+  });
 
   const switcher = initDanceSwitcher(document.getElementById('dance-switcher'), {
     dance,
+    lang,
     onChange: (key) => {
       dance = key;
       persistDance(dance);
@@ -80,11 +109,32 @@ async function boot() {
     },
   });
 
+  const langSwitcher = initLangSwitcher(document.getElementById('lang-switcher'), {
+    lang,
+    onChange: (code) => {
+      lang = code;
+      persistLang(lang);
+      langSwitcher.setLang(lang);
+      switcher.setLang(lang);
+      tabs.setLang(lang);
+      dateStrip.setLang(lang);
+      applyLangChrome();
+      refresh({ fit: false });
+    },
+  });
+
+  function applyLangChrome() {
+    todayPill.textContent = (UI[lang] ?? UI.EN).today;
+    if (generatedAt) setUpdatedChip(updatedChip, generatedAt, lang);
+  }
+
   persistDance(dance);
+  applyLangChrome();
 
   function refresh({ fit = false } = {}) {
     const filter = {
       dance,
+      lang,
       categories: tabs.getSelected(),
       dates: dateStrip.getSelected(),
     };
@@ -92,11 +142,11 @@ async function boot() {
     tabs.updateCounts(categoryCounts(entities, filter));
   }
 
-  const updatedChip = document.getElementById('updated-chip');
   try {
     const data = await loadEntities();
     entities = data.entities;
-    setUpdatedChip(updatedChip, data.generated);
+    generatedAt = data.generated;
+    setUpdatedChip(updatedChip, generatedAt, lang);
   } catch (err) {
     console.error(err);
     showError(updatedChip, 'Could not load data');

@@ -1,9 +1,12 @@
-# Body Map — Build Contract (v3: multi-dance, date filter, rich popups, Ф design language)
+# Body Map — Build Contract (v4: glass topbar, interface i18n, local translation pipeline)
 
 Binding spec for every agent working on this repo. When a file and this contract
 disagree, the contract wins. Repo root: `/Users/universeawaits/body-map`.
-This v3 describes the TARGET end state; the v2 base build is already on disk —
-phase-2 agents modify it in place.
+This v4 describes the TARGET end state; the v3 base build is already on disk —
+phase-3 agents modify it in place. v4 adds: a glass/transparent topbar overlay,
+full interface (UI chrome) translation into 11 languages, icon-style popup
+social links, and a local-only (never CI) pipeline for translating scraped
+entity content — see §10.
 
 ## 0. Hard guardrails — read first
 
@@ -61,29 +64,34 @@ write, contents: read`. Concurrency group `deploy-web`,
 
 ```
 web/                            ← FRONTEND agent (all of it)
-  index.html                    Leaflet 1.9.4 (unpkg, SRI) + tokens.css/style.css + dance button + tabs + date strip + map
+  index.html                    Leaflet 1.9.4 (unpkg, SRI) + tokens.css/style.css + glass topbar (tabs, lang + dance
+                                switcher, date strip) + map — no wordmark (see §6)
   package.json                  {"type":"module","private":true}
   css/tokens.css                NEW — the Ф design tokens, copied VERBATIM (see §6)
-  css/style.css                 consumes ONLY tokens; raw hexes allowed ONLY for --cat-* pin colors
+  css/style.css                 consumes ONLY tokens; raw hexes allowed ONLY for --cat-* pin colors and the
+                                topbar's translucent-glass rgba() overlay states (see §6)
   js/config.js                  DATA_URL, tile URL + attribution, map defaults
-  js/categories.js              category keys/labels(dance-aware)/colors + dance keys/labels — single source
+  js/categories.js              category/dance KEYS + colors + fixed order — single source (labels moved to i18n.js)
+  js/i18n.js                    NEW (v4, §10) — 11-language UI-chrome translation tables + lang resolution helpers
   js/logic.js                   PURE helpers (no DOM/Leaflet): grouping, colors, escaping, URL check,
-                                date matching, date-strip model, weekday math
+                                date matching, date-strip model, weekday math, lang-aware labels/dates (§10)
   js/data.js                    fetch entities.json
-  js/map.js                     Leaflet init, teardrop markers, popups
-  js/ui.js                      tab bar + date strip + dance switcher
-  js/main.js                    bootstrap, theme (prefers-color-scheme → data-theme), hash/localStorage
+  js/map.js                     Leaflet init, teardrop markers, popups (icon-style social links, §6)
+  js/ui.js                      tab bar + date strip + dance switcher + language switcher (§10)
+  js/main.js                    bootstrap, theme (prefers-color-scheme → data-theme), hash/localStorage (dance + lang)
   data/entities.json            dataset (sample entries per §5 until the scraper takes over)
 .github/workflows/deploy.yml    base build, already phi-style — do not change
 supabase — DOES NOT EXIST; never reintroduce
 scraper/                        ← SCRAPER agent (src/**), RESEARCH agent (config/**)
-  src/…                         as base build; phase-2 deltas in §7
+  src/…                         as base build; phase-2 deltas in §7; phase-3 translation pipeline in §10
+  src/translate.js              NEW (v4, §10) — local-only CLI: queue / export / import entity translations
   config/queries.json           per-dance search plan (§8 v2 schema)
   config/sources.json           curated sites with dance context (§8)
 docs/search-plan.md             ← RESEARCH agent
-data/                           audit log / review queue / rejected / geocode cache (unchanged)
-.github/workflows/scrape.yml    base build — unchanged in phase 2
-README.md                       ← DOCS agent (update for v3)
+docs/i18n-plan.md               NEW (v4) — the translation workflow as a living doc (§10)
+data/                           audit log / review queue / rejected / geocode cache / translations queue (§10)
+.github/workflows/scrape.yml    base build; git-adds data/translations-queue.json (detection only — §10)
+README.md                       ← DOCS agent (update for v4)
 ```
 
 ## 4. Dances & categories
@@ -136,6 +144,9 @@ Entity (v3 — new fields marked ★):
   "organizer": {"name": "…", "url": "…"},                ★ null or object with at least name
   "music": [{"name": "DJ …", "type": "dj", "url": "…"}], ★ type ∈ dj|orchestra|band
   "artists": [{"name": "…", "role": "teacher", "photo": "…", "video": "…", "url": "…"}], ★
+  "translations": {                                       ★ v4 (§10) — {} until translated
+    "DE": {"description": {"text": "…", "source_hash": "sha256…", "translated_at": "…"}}
+  },
   "status": "active",
   "locked_fields": [],
   "sources": [{"source": "seed", "ref": "la-viruta", "url": null,
@@ -153,6 +164,16 @@ Entity (v3 — new fields marked ★):
 - `sources[].source` values: `seed`, `manual`, `scraper:search`,
   `scraper:site:<domain>`. `locked_fields`: field names the scraper must never
   overwrite (set via admin CLI).
+- `translations` (★ v4, §10): keyed by one of the 10 non-English language
+  codes, each holding a subset of `{description, schedule}` — the only two
+  prose fields worth translating. Never populated for proper nouns (`name`,
+  `city`, `country`, `organizer`/`artist` names, `address`) — those render
+  verbatim in every language. Each leaf is `{text, source_hash, translated_at}`;
+  `source_hash` is a sha256 of the English source text at translation time, so
+  a later scraper edit to `description`/`schedule` is detected as stale
+  (queued for re-translation) rather than silently showing outdated text next
+  to updated English. Populated only by `scraper/src/translate.js import`,
+  never by the scraper's own merge step.
 - Sample dataset (until the scraper takes over): 24–28 entries — keep/upgrade
   the existing 15 tango entries (add `dances:["tango"]`, `days_of_week` for
   weeklies, `organizer`/`music`/`artists` on most, rename category key) and add
@@ -186,32 +207,44 @@ source / actor / changes {field:{old,new}} / context {url, query}).
 - Rules: sentence case everywhere, no emoji in UI, icons are inline-SVG
   Lucide-style line icons. The flowing gradient on pins is the ONE sanctioned
   exception to phi's no-gradients rule.
-- Chrome specs: top bar `--paper` bg + `--line` bottom hairline; "Body Map"
-  wordmark in Newsreader (`--h3`). Tabs: pill chips — `--surface` + `--line`
-  hairline + sans `--body`; hover `--surface-hover`; selected `--accent-soft`
-  bg with `--accent` text/border; the category color appears only as the dot.
-  Date chips: same language; selected = `--accent` bg / `--accent-ink` text;
-  today outlined `--line-strong`; month separators as uppercase eyebrow labels
-  (`--label` + `--label-track`, `--ink-3`). Popups: `--surface`, `--r-lg`,
-  `--shadow-3`, `--line` hairline; entity name in Newsreader `--h4`;
-  description serif `--prose` scaled ~15px; section labels (Music /
-  Organized by / Artists) as uppercase eyebrows; link buttons as small
-  hairline pills. "data updated" chip + attribution: `--caption`, `--ink-3`.
+- Chrome specs (v4): top bar is a **glass overlay floating over the full-bleed
+  map** — `position: absolute` over `#map`, `rgba(36,34,28,.30)` background,
+  `backdrop-filter: blur(18px) saturate(1.15)`, no hairline border (a soft
+  blurred drop shadow marks its bottom edge instead). **No wordmark** — the
+  source ships none in the topbar; do not reintroduce "Body Map" as an `<h1>`.
+  Tabs/day-chips/today-pill/dance-switcher/lang-switcher all render as
+  translucent white-on-glass controls (`rgba(255,255,255,.14–.80)` states)
+  rather than the opaque `--surface`/`--line` tokens — those opaque tokens are
+  reserved for the map-level UI (popups, corner chip, Leaflet controls), which
+  is unaffected. Category color still appears only as the tab dot. Popups:
+  `--surface`, `--r-lg`, `--shadow-3`, `--line` hairline; entity name in
+  Newsreader `--h4`; description serif `--prose` scaled ~15px; section labels
+  (Music / Organized by / Artists) as uppercase eyebrows, translated per §10;
+  social links are **icon-only 34×34 circular buttons** (`aria-label`/`title`
+  carry the platform name), not text pills. "data updated" chip (translated
+  per §10) + attribution: `--caption`, `--ink-3`.
 
 ### Behavior
 
 - **Zero configuration**: works immediately when served statically.
-- **Dance switcher**: floating circular button top-left over the map
-  (`--surface`, `--line-strong` border, `--shadow-1`), shows the active
-  dance's initial letter; click opens a dropdown (`--surface`, `--r-md`,
-  `--shadow-2`; role=menu, aria-expanded, Esc/click-outside closes) listing
-  the four dances; selected row `--accent-soft` + inline-SVG check.
-  Single-select. Precedence at load: URL hash `#dance=<key>` → localStorage
-  `bodymap.dance` → `tango`. Switching updates hash + localStorage, re-renders
-  pins, re-resolves the `social` tab label, updates counts.
+- **Dance switcher** (v4: moved in-flow): circular glass button at the right
+  end of the topbar row (was: floating top-left over the map in v3), shows the
+  active dance's initial letter, translated per §10; click opens a dropdown
+  (translucent dark glass, role=menu, aria-expanded, Esc/click-outside closes)
+  listing the four dances (translated labels); selected row highlighted +
+  inline-SVG check. Single-select. Precedence at load: URL hash `#dance=<key>`
+  → localStorage `bodymap.dance` → `tango`. Switching updates hash +
+  localStorage, re-renders pins, re-resolves the `social` tab label, updates
+  counts.
+- **Language switcher** (v4, §10): globe-icon + language-code glass button
+  immediately left of the dance switcher; dropdown lists all 11 languages by
+  native + English name. Precedence at load: URL hash `#lang=<code>` →
+  localStorage `bodymap.lang` → `EN`. Switching re-renders every translated
+  chrome element live (tabs, dance names, "Today" pill, date-strip weekday/
+  month labels, open popups) without touching `dance`/date-filter state.
 - **Tabs** (`ui.js`): one pill per category in fixed order — color dot, dance-
-  aware label, live count of visible entities; multi-select (`aria-pressed`),
-  all selected on load; every toggle re-renders pins.
+  AND lang-aware label (§10), live count of visible entities; multi-select
+  (`aria-pressed`), all selected on load; every toggle re-renders pins.
 - **Date strip** (under the tabs, same top-bar block): horizontally scrollable
   strip of day chips — weekday abbreviation over day number, ≥40px tap
   targets; sticky "Mon YYYY" month separator chips (year always visible). The
@@ -242,19 +275,30 @@ source / actor / changes {field:{old,new}} / context {url, query}).
   300%`, background-position keyframes 0%→100%, duration `--pin-flow-duration:
   1.2s`, linear infinite — FAST flow. Count badge (>1 entity) top-right of the
   head, counter-rotated to read upright.
-- **Popup** (maxWidth ≈ 340) per entity in the group: name (serif), category
-  chips (dot + dance-aware label), schedule or date range, description
-  (clamped ~4 lines), **Music row** (names + type badge dj/orchestra/band,
-  linked when url), **Organized by row** (name, linked), **Artists block**
-  (compact cards: 40px photo thumb — lazy, hidden on error — name, role,
-  video link as small icon-button opening in a new tab with rel=noopener),
-  then up to 3 images (72px thumbs, lazy, hidden on error), social link pills
-  (Website / Facebook / Instagram / Email — omit missing). Multiple entities →
-  stacked sections with hairline dividers. **Every dynamic string goes through
-  the logic.js escape helper; every URL through the scheme check
-  (http/https/mailto only).**
+- **Popup** (maxWidth ≈ 340) per entity in the group: name (serif, always
+  verbatim/untranslated), category chips (dot + dance- AND lang-aware label),
+  schedule or date range (locale-formatted per §10; entity `description`/
+  `schedule` text itself stays English unless a §10 `translations` entry
+  exists for the active language), **Music row** (names + type badge
+  dj/orchestra/band — badge text translated, names verbatim — linked when
+  url), **Organized by row** (name, linked, verbatim), **Artists block**
+  (compact cards: 40px photo thumb — lazy, hidden on error — name verbatim,
+  role translated, video link as small icon-button opening in a new tab with
+  rel=noopener), then up to 3 images (72px thumbs, lazy, hidden on error),
+  **icon-only social link buttons** (34×34 circular, Website / Facebook /
+  Instagram / Email — omit missing; `aria-label`/`title` translated). Multiple
+  entities → stacked sections with hairline dividers. **Every dynamic string
+  goes through the logic.js escape helper; every URL through the scheme check
+  (http/https/mailto only).** Popups near the top of the viewport get extra
+  `autoPanPaddingTopLeft` (topbar height + margin) so Leaflet's own autopan
+  clears the glass topbar in the common case; `map.js`'s `popupopen` handler
+  re-measures after open and issues a corrective `panBy` for the cases
+  Leaflet's own padding under-corrects (very tall popups on short viewports)
+  — verified never to overlap the topbar regardless of viewport height.
 - First load: fitBounds to visible pins (fallback: center Europe, zoom 4).
-  Corner chip shows "data updated <generated date>". Responsive: tabs and date
+  Corner chip shows "data updated <generated date>" (translated per §10,
+  including correct one/few/many/other pluralization for the date-strip's
+  "N dates" clear pill via `Intl.PluralRules`). Responsive: tabs and date
   strip scroll horizontally on narrow screens.
 - `logic.js` stays pure; extend the existing node assertion suite to cover
   date matching (ranges, weekdays, none-selected, no-date-info hiding), strip
@@ -286,6 +330,11 @@ source / actor / changes {field:{old,new}} / context {url, query}).
   validation checks `dances` non-empty ⊆ the four dance keys.
 - Admin CLI: `--json` patches already cover the new fields; `list` gains
   `--dance X` filter. Everything else unchanged.
+- **Translations-queue diff (v4, §10)**: new step between the stale sweep and
+  persist — rebuilds `data/translations-queue.json` from every active
+  entity's `description`/`schedule` vs. its `translations` field. Read-only
+  detection; the actual translation CLI (`scraper/src/translate.js`) is
+  local-only and never runs here — see §10 for the full workflow.
 
 ## 8. Search plan (RESEARCH agent) — v2 per-dance schema
 
@@ -323,3 +372,55 @@ Plain JavaScript everywhere — no TypeScript, no transpilers, no frontend
 dependencies, scraper dependency = cheerio only. Comments only where code
 can't say it. All times UTC ISO-8601. No frameworks. Scraper paths stay
 repo-root-relative via `src/paths.js`. Sentence case, no emoji, line icons.
+
+## 10. Internationalization (v4)
+
+Two independent efforts — do not conflate them.
+
+**A. Interface (UI chrome) — fully translated, client-side, no data-schema
+involvement.** 11 languages: EN (default), DE, ES (Latin America), PT, IT, RU,
+UK, ZH, JA, KO, FR. `web/js/i18n.js` exports `UI[langCode]` (chrome strings:
+`today`, `music`, `organizedBy`, `artists`, `from`, `until`, `links{…}`,
+`dances{…}`, `cats{…}` — the last dance-aware exactly like the v3 `social`
+label), `ROLES[langCode]` (artist role vocab: teacher/performer), and
+`MTYPES[langCode]` (music-credit type vocab: dj/orchestra/band), plus
+`LANG_META`/`LANG_CODES`/`resolveLang`/`parseLangHash`. Weekday/month/date
+formatting is derived per-locale via `Intl` in `logic.js` (`buildMonthModel`,
+`formatDate` take a `locale` param; `scheduleLabel` takes a `lang` param) —
+never hand-translated tables for dates. Active language persists in
+`localStorage` under `bodymap.lang`, with URL hash `#lang=<code>` taking
+precedence at load (same precedence pattern as `bodymap.dance`/`#dance=`).
+**Entity content itself (name, description, schedule, address, city,
+country, organizer/artist names) is NOT part of this effort** — those are
+scraped strings, not UI chrome, and stay in their original (scraped)
+language unless a translation exists per part B. The date-strip's "N dates"
+clear-pill (`UI[lang].dateCount`, selected via `Intl.PluralRules` — RU/UK
+carry the full one/few/many/other Slavic plural set, others one/other or a
+single invariant form for languages without number-based plurals) and the
+corner "data updated <date>" chip (`UI[lang].dataUpdated`) are both fully
+translated, matching every other piece of UI chrome.
+
+**B. Entity content — local-only, human-in-the-loop, never CI.** After every
+scraper run, `scraper/src/index.js` diffs every active entity's `description`/
+`schedule` against `entity.translations[<lang>][<field>].source_hash` for all
+10 non-English languages, and rebuilds `data/translations-queue.json` (one
+queue item per entity+field still missing/stale in ≥1 language). This
+diff step commits via the normal `scrape.yml` job (the queue file is added to
+its `git add` list alongside the other `data/*.json` ops files) — detection
+is automated because it's read-only analysis, not translation. Translating is
+**always manual and local**: `cd scraper && node src/translate.js queue`
+lists pending items; `node src/translate.js export --out batch.md [--lang XX]
+[--limit N]` writes a markdown file (one fenced source-text block + a blank
+`> translation:` placeholder per item×language) meant to be pasted into the
+user's own separate AI subscription and back; `node src/translate.js import
+--file batch.md` parses the filled-in file, verifies each block's source text
+still matches the entity's current field (via sha256 — a stale match is
+skipped with a warning telling you to re-export), merges accepted
+translations into `entity.translations[lang][field]`, and audits each touched
+entity. **This CLI must never be added to `.github/workflows/scrape.yml` or
+any other CI step** — the whole point is that translation goes through a
+human's own AI account, not a key baked into this repo (see §0's zero-API-key
+guardrail — `translate.js` doesn't violate it only because it makes zero
+network/API calls itself). `docs/i18n-plan.md` is the living document for
+this workflow's iteration (coverage per language, quality notes, backlog),
+following `docs/search-plan.md`'s conventions.

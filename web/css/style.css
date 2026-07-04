@@ -42,34 +42,35 @@ button {
   box-shadow: var(--ring);
 }
 
-/* --- top bar ------------------------------------------------------------- */
+/* --- top bar --- floating light-glass overlay above the full-bleed map.
+   No hard border: the bottom edge fades out with a soft blurred shadow. */
 
 .topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200; /* above Leaflet panes */
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
   padding: var(--space-3) var(--space-4);
-  background: var(--paper);
-  border-bottom: 1px solid var(--line);
-  position: relative;
-  z-index: 1000; /* above Leaflet panes */
+  background: rgba(36, 34, 28, 0.30);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  backdrop-filter: blur(18px) saturate(1.15);
+  border: none;
+  box-shadow: 0 10px 28px -8px rgba(0, 0, 0, 0.28);
 }
 
 .topbar-row {
   display: flex;
   align-items: center;
-  gap: var(--space-5);
+  gap: var(--space-4);
   min-width: 0;
 }
 
-.brand {
-  margin: 0;
-  font: var(--h3);
-  color: var(--ink);
-  white-space: nowrap;
-}
-
-/* --- category tabs --------------------------------------------------------- */
+/* --- category tabs --- borderless on the glass; hover/selected = a lighter
+   translucent highlight rather than a solid fill */
 
 .tabs {
   display: flex;
@@ -91,25 +92,27 @@ button {
   gap: var(--space-2);
   flex: none;
   padding: var(--space-1) var(--space-3);
-  border: 1px solid var(--line);
+  border: 1px solid transparent;
   border-radius: var(--r-pill);
-  background: var(--surface);
-  color: var(--ink-2);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.80);
   font: var(--body); /* §6: tab chips are sans --body */
   cursor: pointer;
   transition: background var(--dur-fast) var(--ease),
-    color var(--dur-fast) var(--ease),
-    border-color var(--dur-fast) var(--ease);
+    color var(--dur-fast) var(--ease);
 }
 
 .tab:hover {
-  background: var(--surface-hover);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .tab[aria-pressed="true"] {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  color: var(--accent);
+  background: rgba(255, 255, 255, 0.20);
+  color: #fff;
+}
+
+.tab[aria-pressed="false"] {
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .tab[aria-pressed="false"] .tab-dot {
@@ -128,17 +131,17 @@ button {
   min-width: var(--space-5);
   padding: 1px var(--space-1);
   border-radius: var(--r-pill);
-  background: var(--surface-sunken);
-  color: var(--ink-2);
+  background: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.80);
   text-align: center;
 }
 
 .tab[aria-pressed="true"] .tab-count {
-  background: var(--surface);
-  color: var(--accent);
+  background: rgba(255, 255, 255, 0.26);
+  color: #fff;
 }
 
-/* --- date strip -------------------------------------------------------------- */
+/* --- date strip --- borderless chips on the glass; highlight on hover/select */
 
 .datebar {
   display: flex;
@@ -151,17 +154,17 @@ button {
   flex: none;
   align-self: center;
   padding: var(--space-1) var(--space-3);
-  border: 1px solid var(--line);
+  border: 1px solid transparent;
   border-radius: var(--r-pill);
-  background: var(--surface);
-  color: var(--ink-2);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.80);
   font: var(--small);
   cursor: pointer;
   transition: background var(--dur-fast) var(--ease);
 }
 
 .today-pill:hover {
-  background: var(--surface-hover);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .datestrip {
@@ -222,8 +225,8 @@ button {
   flex: none;
   padding: var(--space-1) var(--space-2);
   border-radius: var(--r-sm);
-  background: var(--paper);
-  color: var(--ink-3);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
   font: var(--label);
   letter-spacing: var(--label-track);
   text-transform: uppercase;
@@ -240,45 +243,44 @@ button {
   min-width: var(--space-10);
   min-height: var(--space-10);
   padding: var(--space-1);
-  border: 1px solid var(--line);
+  border: 1px solid transparent;
   border-radius: var(--r-sm);
-  background: var(--surface);
-  color: var(--ink-2);
+  background: transparent;
   cursor: pointer;
   transition: background var(--dur-fast) var(--ease),
-    color var(--dur-fast) var(--ease),
-    border-color var(--dur-fast) var(--ease);
+    color var(--dur-fast) var(--ease);
 }
 
 .day-chip:hover {
-  background: var(--surface-hover);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .day-chip .day-wd {
   font: var(--micro);
   letter-spacing: var(--micro-track);
   text-transform: uppercase;
-  color: var(--ink-3);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .day-chip .day-num {
   font: var(--mono-sm);
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.90);
 }
 
 .day-chip.is-today {
-  border-color: var(--line-strong);
-  box-shadow: inset 0 0 0 1px var(--line-strong);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.38);
 }
 
 .day-chip[aria-pressed="true"] {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.22);
 }
 
-.day-chip[aria-pressed="true"] .day-wd,
+.day-chip[aria-pressed="true"] .day-wd {
+  color: rgba(255, 255, 255, 0.80);
+}
+
 .day-chip[aria-pressed="true"] .day-num {
-  color: var(--accent-ink);
+  color: #fff;
 }
 
 /* --- map + dance switcher ------------------------------------------------------ */
@@ -298,39 +300,88 @@ button {
 }
 
 .dance-switcher {
-  position: absolute;
-  top: var(--space-3);
-  left: var(--space-3);
-  z-index: 1100; /* above Leaflet controls */
+  position: relative;
+  flex: none;
+}
+
+.lang-switcher {
+  position: relative;
+  margin-left: auto;
+  flex: none;
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border: none;
+  border-radius: var(--r-pill);
+  background: transparent;
+  color: #fff;
+  font: var(--small);
+  cursor: pointer;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+
+.lang-btn:hover {
+  opacity: 0.7;
+}
+
+.lang-btn svg {
+  display: block;
+}
+
+.lang-menu {
+  top: calc(var(--space-8) + var(--space-1));
+  left: 0;
+  right: auto;
+  min-width: 220px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.lang-native {
+  color: #fff;
+}
+
+.lang-en {
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.dance-option[aria-checked="true"] .lang-en {
+  color: rgba(255, 255, 255, 0.70);
 }
 
 .dance-btn {
   width: var(--space-12);
   height: var(--space-12);
-  border: 1px solid var(--line-strong);
+  border: none;
   border-radius: var(--r-pill);
-  background: var(--surface);
-  color: var(--ink);
-  font: var(--h4);
-  box-shadow: var(--shadow-1);
+  background: transparent;
+  color: #fff;
+  font: var(--h3);
   cursor: pointer;
-  transition: background var(--dur-fast) var(--ease);
+  transition: opacity var(--dur-fast) var(--ease);
 }
 
 .dance-btn:hover {
-  background: var(--surface-hover);
+  opacity: 0.7;
 }
 
 .dance-menu {
   position: absolute;
   top: calc(var(--space-12) + var(--space-2));
-  left: 0;
+  right: 0;
+  left: auto;
   min-width: 160px;
   padding: var(--space-1);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--r-md);
-  background: var(--surface);
-  box-shadow: var(--shadow-2);
+  background: rgba(28, 26, 21, 0.55);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  backdrop-filter: blur(18px) saturate(1.15);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.40);
 }
 
 .dance-menu[hidden] {
@@ -347,19 +398,21 @@ button {
   border: none;
   border-radius: var(--r-sm);
   background: none;
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.82);
   font: var(--small);
   text-align: left;
   cursor: pointer;
+  transition: background var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease);
 }
 
 .dance-option:hover {
-  background: var(--surface-hover);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .dance-option[aria-checked="true"] {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
 }
 
 .dance-option .dance-check {
@@ -662,12 +715,15 @@ button {
 }
 
 .popup-link {
-  padding: var(--space-1) var(--space-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
   border: 1px solid var(--line);
   border-radius: var(--r-pill);
   background: var(--surface);
   color: var(--accent);
-  font: var(--caption);
   text-decoration: none;
   transition: background var(--dur-fast) var(--ease);
 }
@@ -728,9 +784,5 @@ button {
     flex-direction: column;
     align-items: stretch;
     gap: var(--space-2);
-  }
-
-  .brand {
-    font: var(--h4);
   }
 }

@@ -30,6 +30,7 @@ import {
   scheduleLabel,
 } from '../js/logic.js';
 import { CATEGORIES, DANCE_KEYS } from '../js/categories.js';
+import { resolveLang, parseLangHash, LANG_CODES } from '../js/i18n.js';
 
 let passed = 0;
 function ok(name, fn) {
@@ -319,6 +320,68 @@ ok('formatDate and scheduleLabel', () => {
   );
   assert.equal(scheduleLabel(entity({ start_date: '2026-08-19', end_date: '2026-08-19' })), '19 Aug 2026');
   assert.equal(scheduleLabel(entity()), '');
+});
+
+// --- i18n: lang-aware labels, locale-aware dates, lang resolution -----------------------
+
+ok('danceLabel and categoryLabel are lang-aware', () => {
+  assert.equal(danceLabel('tango', 'DE'), 'Tango');
+  assert.equal(danceLabel('kizomba', 'FR'), 'Kizomba');
+  assert.equal(danceLabel('foxtrot', 'DE'), '');
+  assert.equal(categoryLabel('social', 'tango', 'DE'), 'Milongas');
+  assert.equal(categoryLabel('social', 'salsa', 'ES'), 'Sociales');
+  assert.equal(categoryLabel('class', 'tango', 'DE'), 'Kurse');
+  assert.equal(categoryLabel('marathon', 'tango', 'RU'), 'Марафоны');
+  // omitted lang defaults to English, same as before i18n existed
+  assert.equal(danceLabel('tango'), 'Tango');
+  assert.equal(categoryLabel('social', 'tango'), 'Milongas');
+});
+
+ok('LANG_CODES covers all 11 supported languages', () => {
+  assert.deepEqual(LANG_CODES, [
+    'EN', 'DE', 'ES', 'PT', 'IT', 'RU', 'UK', 'ZH', 'JA', 'KO', 'FR',
+  ]);
+});
+
+ok('resolveLang precedence: hash > localStorage > EN', () => {
+  assert.equal(resolveLang('de', 'fr'), 'DE');
+  assert.equal(resolveLang(null, 'fr'), 'FR');
+  assert.equal(resolveLang(null, null), 'EN');
+  assert.equal(resolveLang('xx', 'yy'), 'EN');
+  assert.equal(resolveLang('xx', 'ja'), 'JA');
+});
+
+ok('parseLangHash', () => {
+  assert.equal(parseLangHash('#lang=de'), 'DE');
+  assert.equal(parseLangHash('lang=fr'), 'FR');
+  assert.equal(parseLangHash('#dance=tango&lang=ko'), 'KO');
+  assert.equal(parseLangHash('#dance=tango'), null);
+  assert.equal(parseLangHash(''), null);
+  assert.equal(parseLangHash(null), null);
+});
+
+ok('buildMonthModel is locale-aware; default matches pre-i18n English output', () => {
+  const jul = buildMonthModel('2026-07');
+  assert.equal(jul.label, 'Jul 2026');
+  assert.equal(jul.days[0].weekdayLabel, 'Wed');
+
+  const julDe = buildMonthModel('2026-07', 'de');
+  assert.match(julDe.label, /Juli 2026/);
+  assert.equal(julDe.days[0].weekdayLabel, 'Mi'); // German short Wednesday
+});
+
+ok('formatDate and scheduleLabel are locale/lang-aware; defaults unchanged', () => {
+  assert.equal(formatDate('2026-08-19', 'de'), '19. Aug. 2026');
+  assert.equal(
+    scheduleLabel(entity({ start_date: '2026-08-19' }), 'DE'),
+    'Ab 19. Aug. 2026'
+  );
+  assert.equal(
+    scheduleLabel(entity({ end_date: '2026-08-19' }), 'FR'),
+    "Jusqu'au 19 août 2026"
+  );
+  // omitted lang defaults to English/en-GB, same as before i18n existed
+  assert.equal(scheduleLabel(entity({ start_date: '2026-08-19' })), 'From 19 Aug 2026');
 });
 
 console.log(`\n${passed} assertions groups passed`);
