@@ -2,9 +2,12 @@ name: Scrape
 
 on:
   schedule:
-    # ~every 2 days at 03:00 UTC. Day-of-month based, so month boundaries may
-    # give a 1-day gap (e.g. the 31st is followed by the 1st).
-    - cron: '0 3 */2 * *'
+    # Every Friday at 12:00 Berlin time. GitHub Actions cron always runs in
+    # UTC and does not shift for DST, so this is fixed at 10:00 UTC (CEST,
+    # UTC+2) — during CET (UTC+1, late Oct-late Mar) this lands at 11:00
+    # Berlin instead of 12:00. Close enough for a weekly refresh; adjust the
+    # hour by ±1 here if that drift ever matters.
+    - cron: '0 10 * * 5'
   workflow_dispatch:
 
 concurrency: scrape

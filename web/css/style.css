@@ -224,13 +224,27 @@ button {
   z-index: 2;
   flex: none;
   padding: var(--space-1) var(--space-2);
+  border: 1px solid transparent;
   border-radius: var(--r-sm);
-  background: transparent;
+  /* Solid-ish backing (not transparent) so day chips scrolling underneath
+     this sticky label don't show through and overlap its text. */
+  background: rgba(20, 19, 15, 0.62);
   color: rgba(255, 255, 255, 0.55);
   font: var(--label);
   letter-spacing: var(--label-track);
   text-transform: uppercase;
   white-space: nowrap;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+
+.strip-month-label:hover {
+  background: rgba(20, 19, 15, 0.78);
+}
+
+.strip-month-label[aria-pressed="true"] {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
 }
 
 .day-chip {
@@ -493,6 +507,8 @@ button {
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-3);
+  /* Clips the hero image's square corners to the wrapper's rounded ones. */
+  overflow: hidden;
 }
 
 .leaflet-popup-tip {
@@ -505,18 +521,94 @@ button {
 }
 
 .leaflet-popup-content {
-  margin: var(--space-4);
+  margin: 0;
   font: var(--body);
 }
 
 .popup {
   font-family: var(--font-sans);
+  padding: var(--space-4);
 }
 
-.popup-divider {
-  border: none;
-  border-top: 1px solid var(--line);
-  margin: var(--space-3) 0;
+/* --- carousel nav (co-located pins with several entities) ------------------------- */
+
+.popup-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.popup-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease);
+}
+
+.popup-nav-btn:hover {
+  background: var(--surface-hover);
+}
+
+.popup-nav-count {
+  font: var(--mono-sm);
+  color: var(--ink-3);
+}
+
+/* --- hero header (entity's first photo, if any) ----------------------------------- */
+
+.popup-hero {
+  position: relative;
+  /* Bleeds past .popup's padding to span the card's full width. */
+  width: calc(100% + 2 * var(--space-4));
+  margin: 0 calc(-1 * var(--space-4)) var(--space-3);
+  height: 140px;
+  overflow: hidden;
+  background: var(--surface-sunken);
+}
+
+.popup-hero-first {
+  margin-top: calc(-1 * var(--space-4));
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+}
+
+.popup-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup-hero-backdrop {
+  position: absolute;
+  left: var(--space-2);
+  right: var(--space-2);
+  bottom: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--r-md);
+  background: rgba(20, 19, 15, 0.4);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  /* Fades the plate itself out at its edges instead of a hard-edged box, so
+     it reads as a soft frosted glow behind the title rather than a chip. */
+  -webkit-mask-image: radial-gradient(ellipse 100% 130% at 50% 50%, #000 45%, transparent 100%);
+  mask-image: radial-gradient(ellipse 100% 130% at 50% 50%, #000 45%, transparent 100%);
+}
+
+.popup-hero-title {
+  position: relative;
+  margin: 0;
+  font: var(--h4);
+  color: #fff;
 }
 
 .popup-name {
@@ -584,8 +676,7 @@ button {
   color: var(--ink-3);
 }
 
-.popup-music,
-.popup-organizer {
+.popup-music {
   margin: 0;
   font: var(--small);
   color: var(--ink-2);
@@ -608,14 +699,12 @@ button {
   color: var(--ink-3);
 }
 
-.popup-music a,
-.popup-organizer a {
+.popup-music a {
   color: var(--accent);
   text-decoration: none;
 }
 
-.popup-music a:hover,
-.popup-organizer a:hover {
+.popup-music a:hover {
   text-decoration: underline;
 }
 
@@ -636,8 +725,8 @@ button {
 }
 
 .artist-photo {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   flex: none;
   object-fit: cover;
   border-radius: var(--r-sm);
@@ -649,8 +738,14 @@ button {
   min-width: 0;
 }
 
+/* Name + role share one line (role as a muted inline suffix); a long combined
+   string truncates rather than wrapping onto a second line. */
 .artist-name {
+  display: block;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font: var(--small);
   font-weight: 600;
   color: var(--ink);
@@ -666,8 +761,8 @@ button {
 }
 
 .artist-role {
-  margin: 0;
   font: var(--caption);
+  font-weight: 400;
   color: var(--ink-3);
 }
 
@@ -691,20 +786,6 @@ button {
 
 .artist-video svg {
   display: block;
-}
-
-.popup-thumbs {
-  display: flex;
-  gap: var(--space-1);
-  margin: var(--space-2) 0;
-}
-
-.popup-thumb {
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-  border-radius: var(--r-sm);
-  background: var(--surface-sunken);
 }
 
 .popup-links {

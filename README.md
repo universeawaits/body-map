@@ -4,7 +4,7 @@ Body Map is a single-page map of the social-dance world — **tango, salsa,
 bachata and kizomba** — showing socials (milongas), marathons, festivals and
 classes on a full-screen Leaflet + OpenStreetMap view. The dataset is a plain
 JSON file committed to this repo; a polite, search-driven scraper (GitHub
-Actions, ~every 2 days) discovers new entities per dance, refreshes known
+Actions, weekly on Fridays) discovers new entities per dance, refreshes known
 ones, and commits every change with a full audit trail. There is no backend,
 no database server and no account with any third party — the repo *is* the
 app. `CONTRACT.md` is the binding spec for everything here.
@@ -67,8 +67,9 @@ app. `CONTRACT.md` is the binding spec for everything here.
 - **Full audit trail** — every create / update / archive / restore / delete /
   approve / reject is appended to `data/audit-log.jsonl` with its source
   (seed, manual, or the exact scraper URL/query that caused it).
-- **2-day refresh** — `.github/workflows/scrape.yml` runs on a cron
-  (`0 3 */2 * *`), commits data changes, and chains a Pages deploy.
+- **Weekly refresh** — `.github/workflows/scrape.yml` runs on a cron
+  (`0 10 * * 5`, Fridays 12:00 Berlin/CEST), commits data changes, and chains
+  a Pages deploy.
 
 ## Architecture — zero keys, zero accounts
 
@@ -82,7 +83,7 @@ project.
 
 ```mermaid
 flowchart LR
-  cron[GitHub Actions<br>cron ~every 2 days] --> scraper[scraper/<br>Node 20, cheerio only]
+  cron[GitHub Actions<br>cron: Fridays 12:00 Berlin] --> scraper[scraper/<br>Node 20, cheerio only]
   scraper -->|DuckDuckGo HTML, public pages,<br>Nominatim — polite, rate-limited| web((public web))
   scraper -->|commit| repo[(repo<br>web/data/entities.json + data/)]
   repo -->|push / workflow_call| deploy[deploy.yml]
@@ -113,9 +114,9 @@ python3 -m http.server 8000     # or: npx serve .
 1. Create a GitHub repository.
 2. Push this directory to it (branch `main`).
 3. Repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-4. Done. Every push to `main` deploys `web/`; the scraper runs on its 2-day
-   cron (or manually: **Actions → Scrape → Run workflow**). There are **no
-   secrets to configure** — the workflows use only the automatic
+4. Done. Every push to `main` deploys `web/`; the scraper runs on its weekly
+   Friday cron (or manually: **Actions → Scrape → Run workflow**). There are
+   **no secrets to configure** — the workflows use only the automatic
    `GITHUB_TOKEN`.
 
 ## How the scraper works

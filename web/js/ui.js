@@ -143,6 +143,9 @@ export function initDateStrip(container, todayButton, { lang, onChange }) {
     for (const chip of container.querySelectorAll('.day-chip[aria-pressed="true"]')) {
       chip.setAttribute('aria-pressed', 'false');
     }
+    for (const monthEl of container.querySelectorAll('.strip-month')) {
+      monthEl.querySelector('.strip-month-label').setAttribute('aria-pressed', 'false');
+    }
     updateClearPill();
     onChange();
   });
@@ -161,15 +164,44 @@ export function initDateStrip(container, todayButton, { lang, onChange }) {
     clearPill.hidden = false;
   }
 
+  /** Whole month is "selected" once every one of its day chips is pressed. */
+  function syncMonthLabel(monthEl) {
+    const label = monthEl.querySelector('.strip-month-label');
+    const chips = monthEl.querySelectorAll('.day-chip');
+    const allSelected =
+      chips.length > 0 &&
+      Array.from(chips).every((chip) => chip.getAttribute('aria-pressed') === 'true');
+    label.setAttribute('aria-pressed', String(allSelected));
+  }
+
+  /** Toggle every day in the month: select all if not already fully selected, else clear all. */
+  function toggleMonth(monthEl, model) {
+    const label = monthEl.querySelector('.strip-month-label');
+    const selectAll = label.getAttribute('aria-pressed') !== 'true';
+    for (const day of model.days) {
+      if (selectAll) selected.add(day.iso);
+      else selected.delete(day.iso);
+    }
+    for (const chip of monthEl.querySelectorAll('.day-chip')) {
+      chip.setAttribute('aria-pressed', String(selectAll));
+    }
+    label.setAttribute('aria-pressed', String(selectAll));
+    updateClearPill();
+    onChange();
+  }
+
   function monthElement(monthKey) {
     const model = buildMonthModel(monthKey, activeLocale);
     const monthEl = document.createElement('div');
     monthEl.className = 'strip-month';
     monthEl.dataset.month = model.key;
 
-    const label = document.createElement('span');
+    const label = document.createElement('button');
+    label.type = 'button';
     label.className = 'strip-month-label';
     label.textContent = model.label;
+    label.setAttribute('aria-pressed', 'false');
+    label.addEventListener('click', () => toggleMonth(monthEl, model));
     monthEl.appendChild(label);
 
     for (const day of model.days) {
@@ -197,10 +229,12 @@ export function initDateStrip(container, todayButton, { lang, onChange }) {
         }
         chip.setAttribute('aria-pressed', String(selected.has(day.iso)));
         updateClearPill();
+        syncMonthLabel(monthEl);
         onChange();
       });
       monthEl.appendChild(chip);
     }
+    syncMonthLabel(monthEl);
     return monthEl;
   }
 

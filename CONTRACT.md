@@ -1,12 +1,17 @@
-# Body Map — Build Contract (v4: glass topbar, interface i18n, local translation pipeline)
+# Body Map — Build Contract (v5: month-select, popup carousel + hero redesign, map bounds)
 
 Binding spec for every agent working on this repo. When a file and this contract
 disagree, the contract wins. Repo root: `/Users/universeawaits/body-map`.
-This v4 describes the TARGET end state; the v3 base build is already on disk —
-phase-3 agents modify it in place. v4 adds: a glass/transparent topbar overlay,
+This v5 describes the TARGET end state; the v4 base build is already on disk —
+phase-4 agents modify it in place. v4 added: a glass/transparent topbar overlay,
 full interface (UI chrome) translation into 11 languages, icon-style popup
 social links, and a local-only (never CI) pipeline for translating scraped
-entity content — see §10.
+entity content — see §10. v5 adds: whole-month date-strip selection, a
+redesigned popup (hero photo header, no organizer row, one-line artist rows,
+prev/next carousel for co-located multi-entity pins, wider card), and map
+zoom/pan bounds that keep the view from drifting into tile-less blank space.
+All interface copy is British English (`en-GB` locale, British spellings in
+source strings and comments — e.g. "centre", not "center").
 
 ## 0. Hard guardrails — read first
 
@@ -33,14 +38,15 @@ dropdown). A tab bar on top offers multi-select category tabs; under it, a
 horizontal date strip (day chips, month by month) allows multi-date filtering.
 Pins are Google-style teardrops taking the color of their category; when one
 location carries several active categories, the pin shows a fast flowing
-animated gradient of those colors. Clicking a pin opens a popup with photos,
-social links, description, who plays the music, the organizer, and the artists
-involved. The interface follows the Ф (phi) design language: warm paper, warm
+animated gradient of those colors. Clicking a pin opens a popup — a hero photo
+header, social links, description, who plays the music, and the artists
+involved — with a prev/next carousel when the pin covers several entities.
+The interface follows the Ф (phi) design language: warm paper, warm
 ink, one ink-blue accent, Newsreader + Hanken Grotesk + IBM Plex Mono.
 The dataset is a JSON file committed to the repo; a search-driven scraper
-(GitHub Actions, every 2 days) discovers and refreshes entities per dance,
-commits the changes, and every create/update/archive/restore/delete carries an
-audit entry with its source.
+(GitHub Actions, weekly on Fridays) discovers and refreshes entities per
+dance, commits the changes, and every create/update/archive/restore/delete
+carries an audit entry with its source.
 
 ## 2. Architecture
 
@@ -49,7 +55,7 @@ audit entry with its source.
 | Frontend | GitHub Pages (or any static host) | static files in `web/`, no build step, no keys; Leaflet 1.9.4 + OSM tiles |
 | Data | `web/data/entities.json` in the repo | served statically; git history versions every change |
 | Ops data | `data/` in the repo | audit log (JSONL), review queue, rejected list, geocode cache |
-| Scraper | GitHub Actions | `.github/workflows/scrape.yml`, cron every 2 days, Node 20, commits data changes with `GITHUB_TOKEN` |
+| Scraper | GitHub Actions | `.github/workflows/scrape.yml`, cron `0 10 * * 5` (Fridays 12:00 Berlin/CEST), Node 20, commits data changes with `GITHUB_TOKEN` |
 
 **Workflow-chaining gotcha (handled in the base build):** pushes made with the
 automatic `GITHUB_TOKEN` do NOT trigger `on: push` workflows. `deploy.yml`
@@ -218,11 +224,12 @@ source / actor / changes {field:{old,new}} / context {url, query}).
   reserved for the map-level UI (popups, corner chip, Leaflet controls), which
   is unaffected. Category color still appears only as the tab dot. Popups:
   `--surface`, `--r-lg`, `--shadow-3`, `--line` hairline; entity name in
-  Newsreader `--h4`; description serif `--prose` scaled ~15px; section labels
-  (Music / Organized by / Artists) as uppercase eyebrows, translated per §10;
-  social links are **icon-only 34×34 circular buttons** (`aria-label`/`title`
-  carry the platform name), not text pills. "data updated" chip (translated
-  per §10) + attribution: `--caption`, `--ink-3`.
+  Newsreader `--h4` (either plain, or overlaid on a hero photo — see §6
+  Popup); description serif `--prose` scaled ~15px; section labels (Music /
+  Artists) as uppercase eyebrows, translated per §10; social links are
+  **icon-only 34×34 circular buttons** (`aria-label`/`title` carry the
+  platform name), not text pills. "data updated" chip (translated per §10) +
+  attribution: `--caption`, `--ink-3`.
 
 ### Behavior
 
@@ -247,15 +254,21 @@ source / actor / changes {field:{old,new}} / context {url, query}).
   (`aria-pressed`), all selected on load; every toggle re-renders pins.
 - **Date strip** (under the tabs, same top-bar block): horizontally scrollable
   strip of day chips — weekday abbreviation over day number, ≥40px tap
-  targets; sticky "Mon YYYY" month separator chips (year always visible). The
-  strip spans **2020-01-01 through 2028-12-31** (full years 2020–2028, past
-  included). Initial view is scrolled so TODAY sits at the left edge; months
-  render lazily in BOTH directions as the user scrolls (windowed rendering;
-  when prepending past months, anchor the scroll position so the view does not
-  jump). A small "Today" pill next to the strip jumps back to today; today's
-  chip is outlined. Click toggles a chip (multi-select, `aria-pressed`). When
-  ≥1 selected, a sticky "N dates ✕" clear pill appears at the left edge.
-  Every toggle re-renders pins + counts.
+  targets; sticky "Mon YYYY" month separator chips (year always visible),
+  with a solid-ish glass backing (`rgba(20,19,15,.62)`, not fully transparent)
+  so day chips scrolling underneath the sticky label never show through it.
+  The strip spans **2020-01-01 through 2028-12-31** (full years 2020–2028,
+  past included). Initial view is scrolled so TODAY sits at the left edge;
+  months render lazily in BOTH directions as the user scrolls (windowed
+  rendering; when prepending past months, anchor the scroll position so the
+  view does not jump). A small "Today" pill next to the strip jumps back to
+  today; today's chip is outlined. Click toggles a chip (multi-select,
+  `aria-pressed`). **Month select** (v5): the month label is itself a button —
+  clicking it selects every day in that month at once (or clears them, if the
+  whole month is already selected); the label's own `aria-pressed` reflects
+  whether all of its days are currently selected, kept in sync on every
+  individual day toggle too. When ≥1 date selected, a sticky "N dates ✕" clear
+  pill appears at the left edge. Every toggle re-renders pins + counts.
 - **Visibility** (pure, `logic.js`): entity visible ⇔ `status === 'active'`
   AND `dances` includes the active dance AND (categories ∩ selected ≠ ∅) AND
   `matchesDates(entity, selectedDates)` where: no dates selected → true;
@@ -275,27 +288,55 @@ source / actor / changes {field:{old,new}} / context {url, query}).
   300%`, background-position keyframes 0%→100%, duration `--pin-flow-duration:
   1.2s`, linear infinite — FAST flow. Count badge (>1 entity) top-right of the
   head, counter-rotated to read upright.
-- **Popup** (maxWidth ≈ 340) per entity in the group: name (serif, always
-  verbatim/untranslated), category chips (dot + dance- AND lang-aware label),
-  schedule or date range (locale-formatted per §10; entity `description`/
-  `schedule` text itself stays English unless a §10 `translations` entry
-  exists for the active language), **Music row** (names + type badge
-  dj/orchestra/band — badge text translated, names verbatim — linked when
-  url), **Organized by row** (name, linked, verbatim), **Artists block**
-  (compact cards: 40px photo thumb — lazy, hidden on error — name verbatim,
-  role translated, video link as small icon-button opening in a new tab with
-  rel=noopener), then up to 3 images (72px thumbs, lazy, hidden on error),
-  **icon-only social link buttons** (34×34 circular, Website / Facebook /
-  Instagram / Email — omit missing; `aria-label`/`title` translated). Multiple
-  entities → stacked sections with hairline dividers. **Every dynamic string
-  goes through the logic.js escape helper; every URL through the scheme check
+- **Popup** (maxWidth ≈ 400, up from 340 in v4 to fit the wider hero/artist
+  layout) shows **one entity at a time** — a co-located group with several
+  entities gets a **prev/next carousel** instead of v4's stacked sections with
+  hairline dividers: a nav strip (‹ count › ) at the very top of the card,
+  only rendered when the group has >1 entity; clicking prev/next toggles which
+  `.popup-entity` section is `hidden` and calls Leaflet's `popup.update()` so
+  the popup resizes/repositions for the new content. Wired in `map.js`'s
+  `popupopen` handler (`wireCarouselNav`) since it needs the live popup DOM,
+  not the HTML string passed to `bindPopup`.
+  Per entity: a **hero photo header** if the entity has ≥1 image — the first
+  valid image bleeds edge-to-edge across the card's full width (negative
+  margins cancel the card's own padding), with the entity name overlaid at
+  the bottom on a frosted glass plate (`backdrop-filter: blur(14px)`, a
+  `radial-gradient` alpha mask so the plate's own edges fade out softly
+  rather than reading as a hard-edged chip). Only the very first thing in the
+  card (no nav strip above it) gets its top corners rounded to match the
+  card; otherwise a plain heading (name only, no photo) is used — **no
+  organizer row** (dropped in v5; `entity.organizer` is still scraped/stored,
+  just not displayed). Then: category chips (dot + dance- AND lang-aware
+  label), schedule or date range (locale-formatted per §10; entity
+  `description`/`schedule` text itself stays English unless a §10
+  `translations` entry exists for the active language), **Music row** (names
+  + type badge dj/orchestra/band — badge text translated, names verbatim —
+  linked when url), **Artists block** (one compact row per artist: 32px photo
+  thumb — lazy, hidden on error — name and role share a single line, role as
+  a muted inline suffix rather than a second line, truncating with an ellipsis
+  rather than wrapping; video link as a small icon-button opening in a new
+  tab with rel=noopener), then **icon-only social link buttons** (34×34
+  circular, Website / Facebook / Instagram / Email — omit missing;
+  `aria-label`/`title` translated). The old up-to-3 square image thumbnails
+  are gone — only the hero uses a photo now. **Every dynamic string goes
+  through the logic.js escape helper; every URL through the scheme check
   (http/https/mailto only).** Popups near the top of the viewport get extra
   `autoPanPaddingTopLeft` (topbar height + margin) so Leaflet's own autopan
   clears the glass topbar in the common case; `map.js`'s `popupopen` handler
   re-measures after open and issues a corrective `panBy` for the cases
-  Leaflet's own padding under-corrects (very tall popups on short viewports)
-  — verified never to overlap the topbar regardless of viewport height.
-- First load: fitBounds to visible pins (fallback: center Europe, zoom 4).
+  Leaflet's own padding under-corrects (very tall popups on short viewports),
+  but only if the correction is smaller than one viewport height — a larger
+  computed deficit means a bad measurement (e.g. mid-zoom), not a real
+  overlap, so it's skipped rather than flinging the view somewhere absurd.
+- **Map bounds** (v5): `minZoom: 2` (`config.js`'s `MIN_ZOOM`) on both the map
+  and the tile layer, plus `maxBounds: [[-90,-180],[90,180]]` with
+  `maxBoundsViscosity: 1.0` on the map. Below that zoom the world is smaller
+  than the viewport, and without bounds, panning/zooming out revealed blank
+  space past the map's real edges — tinted near-black by `--surface-sunken`
+  in dark theme (`#14130F`), which read as a broken black background. Fixed
+  at the source (map can no longer reach that state) rather than patched by
+  recolouring the sunken token.
+- First load: fitBounds to visible pins (fallback: centre of Europe, zoom 4).
   Corner chip shows "data updated <generated date>" (translated per §10,
   including correct one/few/many/other pluralization for the date-strip's
   "N dates" clear pill via `Intl.PluralRules`). Responsive: tabs and date
