@@ -9,8 +9,8 @@ import os from 'node:os';
 import { PATHS } from './paths.js';
 
 export const ENTITY_KEY_ORDER = [
-  'id', 'name', 'dances', 'categories', 'description', 'lat', 'lng',
-  'address', 'city', 'country', 'schedule', 'days_of_week',
+  'id', 'name', 'dances', 'categories', 'description', 'summary', 'lat', 'lng',
+  'address', 'city', 'country', 'schedule', 'days_of_week', 'pricing',
   'start_date', 'end_date', 'images', 'socials',
   'organizer', 'music', 'artists', 'translations', 'status', 'locked_fields', 'sources',
   'created_at', 'updated_at',
@@ -97,6 +97,14 @@ export function createStore(paths = PATHS, { dryRun = false } = {}) {
       return readJson(paths.translationsQueue, { generated: null, items: [] });
     },
 
+    loadCrawlState() {
+      return readJson(paths.crawlState, { generated: null, discovery_offset: 0 });
+    },
+
+    loadEnrichmentQueue() {
+      return readJson(paths.enrichmentQueue, { generated: null, items: [] });
+    },
+
     loadRejected() {
       return readJson(paths.rejected, { items: [] });
     },
@@ -137,6 +145,28 @@ export function createStore(paths = PATHS, { dryRun = false } = {}) {
       if (unchangedOnDisk(paths.translationsQueue, out)) return;
       out.generated = nowIso();
       writeJson(paths.translationsQueue, out);
+    },
+
+    saveCrawlState(state) {
+      if (dryRun) return;
+      const out = {
+        generated: state.generated ?? null,
+        discovery_offset: state.discovery_offset ?? 0,
+      };
+      if (unchangedOnDisk(paths.crawlState, out)) return;
+      out.generated = nowIso();
+      writeJson(paths.crawlState, out);
+    },
+
+    saveEnrichmentQueue(queue) {
+      if (dryRun) return;
+      const out = {
+        generated: queue.generated ?? null,
+        items: queue.items,
+      };
+      if (unchangedOnDisk(paths.enrichmentQueue, out)) return;
+      out.generated = nowIso();
+      writeJson(paths.enrichmentQueue, out);
     },
 
     saveRejected(rejected) {

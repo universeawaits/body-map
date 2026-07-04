@@ -11,10 +11,11 @@ export const QUEUE_THRESHOLD = 0.4;
 export const STALE_DAYS = 14;
 
 // scalar policy: replace when different, never blank, respects locked_fields
-// (days_of_week and organizer follow it too — §7)
+// (days_of_week, organizer and pricing follow it too — §7)
 const UPDATABLE_FIELDS = [
   'name', 'description', 'lat', 'lng', 'address', 'city', 'country',
   'schedule', 'days_of_week', 'start_date', 'end_date', 'images', 'organizer',
+  'pricing',
 ];
 
 // ---------- matching primitives ----------
@@ -274,6 +275,7 @@ function newEntityFromCandidate(candidate, now) {
     country: candidate.country ?? null,
     schedule: candidate.schedule ?? null,
     days_of_week: candidate.days_of_week || [],
+    pricing: candidate.pricing ?? null,
     start_date: candidate.start_date ?? null,
     end_date: candidate.end_date ?? null,
     images: candidate.images || [],

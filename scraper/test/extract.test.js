@@ -2,7 +2,7 @@
 // Run: node test/extract.test.js (from scraper/; plain node:assert).
 
 import assert from 'node:assert/strict';
-import { parseDaysOfWeek, parseDatesFromText } from '../src/extract.js';
+import { parseDaysOfWeek, parseDatesFromText, findPricing } from '../src/extract.js';
 
 let passed = 0;
 function ok(name, fn) {
@@ -50,6 +50,32 @@ ok('parseDatesFromText: month-aware validation rejects impossible dates', () => 
     start: '2026-03-12',
     end: '2026-03-15',
   });
+});
+
+ok('findPricing: currency symbol + amount, with and without a range', () => {
+  assert.deepEqual(findPricing('Entry is €10, €15 after midnight'), { text: '€10', currency: 'EUR' });
+  assert.deepEqual(findPricing('Tickets €10-15 on the door'), { text: '€10-15', currency: 'EUR' });
+  assert.deepEqual(findPricing('Admission £5.50'), { text: '£5.50', currency: 'GBP' });
+});
+
+ok('findPricing: "$" is captured as text but currency stays null (ambiguous symbol)', () => {
+  assert.deepEqual(findPricing('Cover charge $20'), { text: '$20', currency: null });
+});
+
+ok('findPricing: ISO currency code is unambiguous, unlike a bare symbol', () => {
+  assert.deepEqual(findPricing('Price: 15 EUR at the door'), { text: '15 EUR', currency: 'EUR' });
+  assert.deepEqual(findPricing('10-15 usd'), { text: '10-15 usd', currency: 'USD' });
+});
+
+ok('findPricing: multilingual "free entry" phrasing, no currency', () => {
+  assert.deepEqual(findPricing('Free entry all night'), { text: 'Free entry', currency: null });
+  assert.deepEqual(findPricing('Eintritt frei für alle'), { text: 'Eintritt frei', currency: null });
+  assert.deepEqual(findPricing('Entrada libre'), { text: 'Entrada libre', currency: null });
+});
+
+ok('findPricing: no match returns bare null, never a null-filled object', () => {
+  assert.equal(findPricing('Come dance with us on Saturday night'), null);
+  assert.equal(findPricing(''), null);
 });
 
 console.log(`\n${passed} assertion groups passed`);

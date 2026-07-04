@@ -656,6 +656,12 @@ button {
   color: var(--ink);
 }
 
+.popup-pricing {
+  margin: 0 0 var(--space-2);
+  font: var(--small);
+  color: var(--ink-2);
+}
+
 .popup-desc {
   margin: 0 0 var(--space-2);
   font: var(--prose);

@@ -188,6 +188,55 @@ function findSchedule(text) {
   return m ? clean(m[0]).slice(0, 120) : null;
 }
 
+// ---------- pricing (§7 v6) ----------
+
+// '$' is deliberately excluded here — it's ambiguous across USD/CAD/AUD/MXN/
+// ARS/etc., and guessing wrong is worse than leaving currency null.
+const CURRENCY_SYMBOLS = { '€': 'EUR', '£': 'GBP', '¥': 'JPY' };
+
+const PRICING_PATTERNS = [
+  // "€10-15", "€10", "£5.50" (see CURRENCY_SYMBOLS note on why '$' isn't here)
+  /[€£¥]\s?\d+(?:[.,]\d{1,2})?(?:\s?[-–—]\s?\d+(?:[.,]\d{1,2})?)?/,
+  // "$10-15", "$20" — kept separate so it's still captured as text, just
+  // without a guessed currency code
+  /\$\s?\d+(?:[.,]\d{1,2})?(?:\s?[-–—]\s?\d+(?:[.,]\d{1,2})?)?/,
+  // "10 EUR", "10-15 USD" — the code itself is unambiguous, unlike a symbol
+  /\b\d+(?:[.,]\d{1,2})?(?:\s?[-–—]\s?\d+(?:[.,]\d{1,2})?)?\s?(EUR|USD|GBP|JPY|CNY|CHF|CAD|AUD|BRL|ARS|MXN|COP|KRW|TRY|PLN|HUF|RUB)\b/i,
+  // multilingual "free entry" phrasing
+  /\b(?:free\s+entry|free\s+admission|entrada\s+libre|entrada\s+gratis|eintritt\s+frei|kostenlos|entr[ée]e\s+gratuite|gratuit|ingresso\s+gratuito|ingresso\s+libero)\b/i,
+];
+
+// Returns {text, currency} (currency null when not confidently identified) or
+// bare null when nothing matches — never {text: null, currency: null}, since
+// merge.js's isEmpty() only treats that as empty for objects with zero keys,
+// and a null-filled object would silently overwrite a good existing value.
+export function findPricing(text) {
+  for (const re of PRICING_PATTERNS) {
+    const m = String(text).match(re);
+    if (!m) continue;
+    const matched = clean(m[0]);
+    const symbol = matched.match(/[€£¥]/)?.[0];
+    const code = matched.match(/\b[A-Za-z]{3}\b/)?.[0]?.toUpperCase();
+    return { text: matched, currency: (symbol && CURRENCY_SYMBOLS[symbol]) || code || null };
+  }
+  return null;
+}
+
+function jsonLdPricing(node) {
+  for (const offer of [].concat(node?.offers || [])) {
+    if (!offer || typeof offer !== 'object') continue;
+    const spec = offer.priceSpecification && typeof offer.priceSpecification === 'object'
+      ? offer.priceSpecification
+      : offer;
+    const price = spec.price ?? spec.minPrice;
+    if (price == null || price === '') continue;
+    const currency = clean(spec.priceCurrency) || null;
+    const amount = String(price).trim();
+    return { text: currency ? `${amount} ${currency}` : amount, currency };
+  }
+  return null;
+}
+
 // ---------- weekday recurrence (§7) ----------
 
 export const DAY_KEYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
@@ -467,6 +516,7 @@ function candidateFromJsonLd(node, pageUrl, pageText) {
   const { music, artists } = jsonLdPerformers(node, pageUrl);
   const organizer = jsonLdOrganizer(node, pageUrl) ||
     extractOrganizerFromText(fullDescription);
+  const pricing = jsonLdPricing(node) || findPricing(fullDescription);
   return {
     name,
     categories,
@@ -486,6 +536,7 @@ function candidateFromJsonLd(node, pageUrl, pageText) {
     organizer,
     music: music.length > 0 ? music : extractMusicFromText(`${name} ${fullDescription}`),
     artists,
+    pricing,
     fromJsonLd: true,
   };
 }
@@ -553,6 +604,7 @@ function heuristicCandidate($, pageUrl, pageText) {
     organizer: extractOrganizerFromText(pageText.slice(0, 12000)),
     music: extractMusicFromText(pageText.slice(0, 12000)),
     artists: [],
+    pricing: findPricing(pageText.slice(0, 12000)),
     fromJsonLd: false,
   };
 }

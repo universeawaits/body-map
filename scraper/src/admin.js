@@ -2,6 +2,7 @@
 // an audit entry (source: manual, actor from --actor or $USER). See §7.
 //
 //   node src/admin.js list [--city X] [--category Y] [--dance D] [--status Z]
+//   node src/admin.js coverage [--city X]   # discovery queries + found entities, per city
 //   node src/admin.js show    --id <uuid>
 //   node src/admin.js add     --json path/to/entity.json
 //   node src/admin.js update  --id <uuid> --json path/to/patch.json
@@ -21,6 +22,7 @@ import { PATHS } from './paths.js';
 import { createStore, defaultActor, nowIso } from './store.js';
 import { CATEGORY_KEYS, DANCE_KEYS, DAY_KEYS } from './extract.js';
 import { slugify, candidateKey } from './merge.js';
+import { buildQueryList, flattenCities } from './crawl.js';
 
 function parseArgs(argv) {
   const [command, ...rest] = argv;
@@ -105,7 +107,7 @@ async function confirm(question) {
 
 const ENTITY_FIELDS = [
   'name', 'dances', 'categories', 'description', 'lat', 'lng', 'address', 'city',
-  'country', 'schedule', 'days_of_week', 'start_date', 'end_date', 'images',
+  'country', 'schedule', 'days_of_week', 'pricing', 'start_date', 'end_date', 'images',
   'socials', 'organizer', 'music', 'artists', 'status', 'locked_fields',
 ];
 
@@ -125,6 +127,53 @@ async function main() {
       if (opts.status) list = list.filter((e) => e.status === opts.status);
       for (const e of list) console.log(entityLine(e));
       console.log(`${list.length} entit${list.length === 1 ? 'y' : 'ies'}`);
+      return;
+    }
+
+    // What actually gets searched per city, and what's been found there so
+    // far — answers "what and how is being scanned" per-city, which the
+    // template/city/source lists in queries.json/search-plan.md describe in
+    // the abstract but don't show resolved for any one city.
+    case 'coverage': {
+      const queries = JSON.parse(fs.readFileSync(PATHS.queriesConfig, 'utf8'));
+      const cities = flattenCities(queries.cities);
+      const queryList = buildQueryList(queries);
+
+      const entityCityCounts = new Map();
+      for (const e of doc.entities) {
+        if (!e.city) continue;
+        const key = e.city.toLowerCase();
+        entityCityCounts.set(key, (entityCityCounts.get(key) || 0) + 1);
+      }
+
+      if (opts.city) {
+        const match = cities.find((c) => c.toLowerCase() === opts.city.toLowerCase());
+        if (!match) {
+          console.log(`"${opts.city}" isn't in queries.json's cities list (check exact spelling/ASCII form).`);
+          return;
+        }
+        const queriesForCity = queryList.filter((q) => q.city === match);
+        for (const q of queriesForCity) console.log(`[${q.dance}] ${q.query}`);
+        const entityCount = entityCityCounts.get(match.toLowerCase()) || 0;
+        console.log(
+          `\n${queriesForCity.length} discovery quer${queriesForCity.length === 1 ? 'y' : 'ies'} for ` +
+          `"${match}"; ${entityCount} existing entit${entityCount === 1 ? 'y' : 'ies'} tagged with this city.`
+        );
+        console.log(
+          '(Curated sources in sources.json are global aggregators, not city-scoped — see docs/search-plan.md §3.)'
+        );
+        return;
+      }
+
+      for (const city of cities) {
+        const count = queryList.filter((q) => q.city === city).length;
+        const entityCount = entityCityCounts.get(city.toLowerCase()) || 0;
+        console.log(`${city.padEnd(24)} ${String(count).padStart(3)} queries   ${entityCount} entities`);
+      }
+      console.log(
+        `\n${cities.length} cities, ${queryList.length} total discovery queries ` +
+        '(+ curated sources in sources.json, not city-scoped).'
+      );
       return;
     }
 
@@ -153,6 +202,7 @@ async function main() {
         country: input.country ?? null,
         schedule: input.schedule ?? null,
         days_of_week: input.days_of_week || [],
+        pricing: input.pricing ?? null,
         start_date: input.start_date ?? null,
         end_date: input.end_date ?? null,
         images: input.images || [],
@@ -300,6 +350,7 @@ async function main() {
         country: c.country ?? null,
         schedule: c.schedule ?? null,
         days_of_week: c.days_of_week || [],
+        pricing: c.pricing ?? null,
         start_date: c.start_date ?? null,
         end_date: c.end_date ?? null,
         images: c.images || [],
@@ -386,7 +437,7 @@ async function main() {
 
     default:
       console.error(
-        'Usage: node src/admin.js <list|show|add|update|archive|restore|delete|queue|approve|reject|lock|unlock> [options]'
+        'Usage: node src/admin.js <list|coverage|show|add|update|archive|restore|delete|queue|approve|reject|lock|unlock> [options]'
       );
       process.exit(2);
   }

@@ -50,7 +50,7 @@ jobs:
           ARCHIVED: ${{ steps.run.outputs.archived || 0 }}
           QUEUED: ${{ steps.run.outputs.queued || 0 }}
         run: |
-          git add web/data/entities.json data/audit-log.jsonl data/review-queue.json data/rejected.json data/geocode-cache.json data/translations-queue.json
+          git add web/data/entities.json data/audit-log.jsonl data/review-queue.json data/rejected.json data/geocode-cache.json data/translations-queue.json data/crawl-state.json data/enrichment-queue.json
           if git diff --cached --quiet; then
             echo "No data changes."
             echo "changed=false" >> "$GITHUB_OUTPUT"

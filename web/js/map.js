@@ -250,7 +250,18 @@ function entitySectionHtml(entity, dance, lang, roundHeroTop) {
   const when = translated?.schedule?.text ?? scheduleLabel(entity, lang);
   if (when) parts.push(`<p class="popup-schedule">${escapeHtml(when)}</p>`);
 
-  const description = translated?.description?.text ?? entity.description;
+  const pricing = entity.pricing?.text;
+  if (pricing) {
+    parts.push(`<p class="popup-eyebrow">${escapeHtml(ui.price)}</p><p class="popup-pricing">${escapeHtml(pricing)}</p>`);
+  }
+
+  // An AI-polished summary (§11), when present, replaces the raw scraped
+  // description entirely — translated summary beats translated description,
+  // which beats the untranslated fallback of each. Nothing changes for
+  // entities with no summary yet: falls through to today's exact behavior.
+  const description =
+    translated?.summary?.text ?? entity.summary?.text ??
+    translated?.description?.text ?? entity.description;
   if (description) {
     parts.push(`<p class="popup-desc">${escapeHtml(description)}</p>`);
   }

@@ -13,6 +13,8 @@ export const PATHS = {
   auditLog: path.join(REPO_ROOT, 'data', 'audit-log.jsonl'),
   reviewQueue: path.join(REPO_ROOT, 'data', 'review-queue.json'),
   translationsQueue: path.join(REPO_ROOT, 'data', 'translations-queue.json'),
+  enrichmentQueue: path.join(REPO_ROOT, 'data', 'enrichment-queue.json'),
+  crawlState: path.join(REPO_ROOT, 'data', 'crawl-state.json'),
   rejected: path.join(REPO_ROOT, 'data', 'rejected.json'),
   geocodeCache: path.join(REPO_ROOT, 'data', 'geocode-cache.json'),
   queriesConfig: path.join(REPO_ROOT, 'scraper', 'config', 'queries.json'),

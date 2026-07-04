@@ -19,10 +19,21 @@ import { createStore, nowIso } from './store.js';
 export const LANG_CODES = ['EN', 'DE', 'ES', 'PT', 'IT', 'RU', 'UK', 'ZH', 'JA', 'KO', 'FR'];
 export const TARGET_LANGS = LANG_CODES.filter((l) => l !== 'EN');
 
-export const TRANSLATABLE_FIELDS = ['description', 'schedule'];
+// 'summary' (§11) supersedes 'description' once an entity has one — see the
+// skip in updateTranslationsQueue below.
+export const TRANSLATABLE_FIELDS = ['description', 'schedule', 'summary'];
 
 export function sha256(text) {
   return crypto.createHash('sha256').update(String(text ?? ''), 'utf8').digest('hex');
+}
+
+// description/schedule are plain strings; summary (§11) is a leaf object
+// {text, source_hash, generated_at} like a translations entry — normalize
+// either shape to plain text so hashing/staleness works the same for all
+// three fields instead of hashing "[object Object]" for summary.
+export function sourceTextOf(entity, field) {
+  const raw = entity?.[field];
+  return raw && typeof raw === 'object' ? raw.text ?? '' : raw ?? '';
 }
 
 // Diff active entities' description/schedule against entity.translations and
@@ -37,7 +48,11 @@ export function updateTranslationsQueue({ doc, queue, now }) {
   for (const entity of doc.entities) {
     if (entity.status !== 'active') continue;
     for (const field of TRANSLATABLE_FIELDS) {
-      const text = entity[field];
+      // Once an entity has an AI-polished summary, its raw description is
+      // superseded — never shown again (map.js prefers summary), so don't
+      // spend translation effort on text nobody will see.
+      if (field === 'description' && entity.summary?.text) continue;
+      const text = sourceTextOf(entity, field);
       if (!text || !String(text).trim()) continue;
       const hash = sha256(text);
       const missing = TARGET_LANGS.some((lang) => entity.translations?.[lang]?.[field]?.source_hash !== hash);
@@ -208,7 +223,7 @@ async function main() {
           console.warn(`skip ${block.entityId} · ${block.field} · ${block.lang}: entity not found`);
           continue;
         }
-        const currentHash = sha256(entity[block.field]);
+        const currentHash = sha256(sourceTextOf(entity, block.field));
         if (currentHash !== sha256(block.sourceText)) {
           console.warn(`${entity.name} · ${block.field} · ${block.lang}: stale, re-export`);
           staleCount += 1;
@@ -249,7 +264,7 @@ async function main() {
       queue.items = queue.items.filter((item) => {
         const entity = byId.get(item.entity_id);
         if (!entity || entity.status !== 'active') return false;
-        const hash = sha256(entity[item.field]);
+        const hash = sha256(sourceTextOf(entity, item.field));
         return TARGET_LANGS.some((lang) => entity.translations?.[lang]?.[item.field]?.source_hash !== hash);
       });
 

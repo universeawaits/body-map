@@ -1,17 +1,23 @@
-# Body Map — Build Contract (v5: month-select, popup carousel + hero redesign, map bounds)
+# Body Map — Build Contract (v6: discovery rotation, global city coverage, pricing, local AI summaries)
 
 Binding spec for every agent working on this repo. When a file and this contract
 disagree, the contract wins. Repo root: `/Users/universeawaits/body-map`.
-This v5 describes the TARGET end state; the v4 base build is already on disk —
-phase-4 agents modify it in place. v4 added: a glass/transparent topbar overlay,
+This v6 describes the TARGET end state; the v5 base build is already on disk —
+phase-6 agents modify it in place. v4 added: a glass/transparent topbar overlay,
 full interface (UI chrome) translation into 11 languages, icon-style popup
 social links, and a local-only (never CI) pipeline for translating scraped
-entity content — see §10. v5 adds: whole-month date-strip selection, a
+entity content — see §10. v5 added: whole-month date-strip selection, a
 redesigned popup (hero photo header, no organizer row, one-line artist rows,
 prev/next carousel for co-located multi-entity pins, wider card), and map
 zoom/pan bounds that keep the view from drifting into tile-less blank space.
-All interface copy is British English (`en-GB` locale, British spellings in
-source strings and comments — e.g. "centre", not "center").
+v6 adds: a persisted discovery-rotation cursor so weekly runs eventually cycle
+through the whole query pool instead of always favoring the front of the list
+(§7); global per-country city coverage in place of one shared 35-city list
+(§8); a scraped `pricing` field (§5, §7); and `entity.summary`, a local-only
+(never CI) AI-polished replacement for the raw scraped description, mirroring
+the existing translation pipeline (§11). All interface copy is British English
+(`en-GB` locale, British spellings in source strings and comments — e.g.
+"centre", not "center").
 
 ## 0. Hard guardrails — read first
 
@@ -91,11 +97,12 @@ supabase — DOES NOT EXIST; never reintroduce
 scraper/                        ← SCRAPER agent (src/**), RESEARCH agent (config/**)
   src/…                         as base build; phase-2 deltas in §7; phase-3 translation pipeline in §10
   src/translate.js              NEW (v4, §10) — local-only CLI: queue / export / import entity translations
-  config/queries.json           per-dance search plan (§8 v2 schema)
+  config/queries.json           per-dance search plan (§8 v3 schema)
   config/sources.json           curated sites with dance context (§8)
 docs/search-plan.md             ← RESEARCH agent
 docs/i18n-plan.md               NEW (v4) — the translation workflow as a living doc (§10)
-data/                           audit log / review queue / rejected / geocode cache / translations queue (§10)
+data/                           audit log / review queue / rejected / geocode cache / translations queue (§10) /
+                                crawl state (§7) / enrichment queue (§11)
 .github/workflows/scrape.yml    base build; git-adds data/translations-queue.json (detection only — §10)
 README.md                       ← DOCS agent (update for v4)
 ```
@@ -144,6 +151,7 @@ Entity (v3 — new fields marked ★):
   "address": "Armenia 1366", "city": "Buenos Aires", "country": "Argentina",
   "schedule": "Wed-Sun from 23:30",
   "days_of_week": ["wed", "thu", "fri", "sat", "sun"],   ★ ⊆ [mon..sun], weekly recurrence
+  "pricing": {"text": "€10-15", "currency": "EUR"},      ★ v6 — null if not found
   "start_date": null, "end_date": null,
   "images": ["https://picsum.photos/seed/laviruta-1/400/300"],
   "socials": {"website": "…", "facebook": "…", "instagram": "…", "email": "…"},
@@ -167,6 +175,14 @@ Entity (v3 — new fields marked ★):
   `images`: URL strings, first is cover. `socials`: all keys optional.
   `organizer` null or `{name, url?}`; `music`/`artists` arrays (may be empty);
   all URLs http(s) only, `photo` is an image URL, `video` a page/video URL.
+- `pricing` (★ v6): null, or `{text, currency}` — `text` is the cleaned matched
+  string as scraped ("€10-15", "Free entry"), `currency` an ISO 4217 code when
+  confidently identified from a symbol/code (`$` is deliberately never
+  guessed — ambiguous across USD/CAD/AUD/MXN/ARS/etc.) or `null` otherwise.
+  JSON-LD `Offer.price`/`.priceCurrency`/`.priceSpecification` tried first,
+  regex fallback second (§7). Normal scalar never-blank/lock-respecting update
+  policy, same as `address`/`schedule` — not part of the translation pipeline
+  (it's scraped content, not UI chrome, and not prose worth translating).
 - `sources[].source` values: `seed`, `manual`, `scraper:search`,
   `scraper:site:<domain>`. `locked_fields`: field names the scraper must never
   overwrite (set via admin CLI).
@@ -293,8 +309,12 @@ source / actor / changes {field:{old,new}} / context {url, query}).
   entities gets a **prev/next carousel** instead of v4's stacked sections with
   hairline dividers: a nav strip (‹ count › ) at the very top of the card,
   only rendered when the group has >1 entity; clicking prev/next toggles which
-  `.popup-entity` section is `hidden` and calls Leaflet's `popup.update()` so
-  the popup resizes/repositions for the new content. Wired in `map.js`'s
+  `.popup-entity` section is `hidden` and updates the count text — deliberately
+  does NOT call Leaflet's `popup.update()`, which re-renders from the content
+  string originally passed to `bindPopup()` and undoes the `hidden` toggle
+  instead of respecting it. Trade-off accepted: the popup doesn't
+  auto-resize/reposition when switching to an entity with a very different
+  content height, but navigation stays reliably functional. Wired in `map.js`'s
   `popupopen` handler (`wireCarouselNav`) since it needs the live popup DOM,
   not the HTML string passed to `bindPopup`.
   Per entity: a **hero photo header** if the entity has ≥1 image — the first
@@ -309,7 +329,10 @@ source / actor / changes {field:{old,new}} / context {url, query}).
   just not displayed). Then: category chips (dot + dance- AND lang-aware
   label), schedule or date range (locale-formatted per §10; entity
   `description`/`schedule` text itself stays English unless a §10
-  `translations` entry exists for the active language), **Music row** (names
+  `translations` entry exists for the active language), **pricing row** (★ v6
+  — `entity.pricing.text` verbatim, own eyebrow label translated via
+  `UI[lang].price`; omitted when null; the price text itself is scraped
+  content, not translated, same as `schedule`), **Music row** (names
   + type badge dj/orchestra/band — badge text translated, names verbatim —
   linked when url), **Artists block** (one compact row per artist: 32px photo
   thumb — lazy, hidden on error — name and role share a single line, role as
@@ -376,14 +399,47 @@ source / actor / changes {field:{old,new}} / context {url, query}).
   entity's `description`/`schedule` vs. its `translations` field. Read-only
   detection; the actual translation CLI (`scraper/src/translate.js`) is
   local-only and never runs here — see §10 for the full workflow.
+- **Discovery rotation (v6)**: `data/crawl-state.json` (`{generated,
+  discovery_offset}`) persists a cursor into the full discovery query list
+  (§8) across runs. The list is round-robin interleaved by dance first (so any
+  contiguous slice samples every dance evenly), then rotated to start at
+  `discovery_offset` and wrap around, so a run doesn't always re-search the
+  same front portion of the list. The offset advances each run by the number
+  of queries actually attempted (not results found), so it self-corrects as
+  the refresh pool (§2) grows and leaves discovery a smaller, variable slice
+  of the shared `max_pages_per_run` cap over time. Ad-hoc `--query`/`--url`
+  runs never read or advance this cursor. Even with rotation, a large global
+  city list (§8) makes one full cycle a multi-year proposition at a weekly
+  cadence and the current page cap — rotation makes coverage eventually fair,
+  not fast; see `docs/search-plan.md` for the open item on speeding this up.
+- **Per-city coverage visibility**: `node src/admin.js coverage [--city X]`
+  reports, per city, how many discovery queries target it and how many
+  entities have been found there so far — the concrete, resolved view that
+  `queries.json`/`docs/search-plan.md` describe only in the abstract (as
+  templates × cities, not a materialized per-city list).
+- **Pricing (v6)**: JSON-LD `Offer.price`/`.priceCurrency`/`.priceSpecification`
+  tried first, an ordered regex fallback second (currency symbol + amount, ISO
+  currency code + amount, multilingual "free entry" phrasing) — mirrors the
+  existing `organizer` two-tier fallback. Does NOT contribute to
+  `scoreCandidate()`'s confidence rubric: a generic price regex is a weaker,
+  more false-positive-prone identity signal than address/category, so it
+  shouldn't inflate confidence on noise. Normal scalar never-blank update
+  policy (§5); the extractor returns bare `null` on no match, never a
+  null-filled `{text, currency}` object — `merge.js`'s `isEmpty()` only treats
+  a zero-key object as empty, so a null-filled object would silently
+  overwrite a good existing value on a later low-signal scrape.
 
-## 8. Search plan (RESEARCH agent) — v2 per-dance schema
+## 8. Search plan (RESEARCH agent) — v3 per-dance schema
 
 `scraper/config/queries.json`:
 
 ```json
 {
-  "cities": ["Buenos Aires", "Berlin", "Cali", "Havana", "Lisbon", "…"],
+  "cities": {
+    "Argentina": ["Buenos Aires", "Rosario"],
+    "South Korea": ["Seoul", "…19 more…"],
+    "…": ["…"]
+  },
   "max_results_per_query": 8,
   "max_pages_per_run": 200,
   "domain_blocklist": ["facebook.com", "instagram.com", "…"],
@@ -396,16 +452,33 @@ source / actor / changes {field:{old,new}} / context {url, query}).
 }
 ```
 
+`cities` (v6): an object keyed by country/dance-scene-region name (not strict
+ISO-3166 — e.g. Puerto Rico stays broken out from the United States) to an
+array of that country's city names. `scraper/src/crawl.js`'s `flattenCities()`
+also accepts the legacy flat-array shape. **Coverage rule**: every country
+gets ≥5 cities with population >100,000; countries with national population
+>50 million get ≥20 (a small country may legitimately have 0-4 qualifying
+cities — that's expected, not an error). ASCII-normalize names ("Sao Paulo",
+not "São Paulo" — DuckDuckGo treats both equivalently and it keeps
+URL-encoding trivial); a "City, Qualifier" string is allowed for genuinely
+ambiguous names (Cambridge, Springfield, San Jose), used sparingly. Population
+figures should cite one consistent dataset/vintage-year across the whole list
+(e.g. UN World Urbanization Prospects), stated explicitly in
+`docs/search-plan.md`, and specify city-proper vs. metro/urban-agglomeration
+(pick one). `node src/admin.js coverage [--city X]` reports the resolved
+discovery-query count and existing-entity count per city — use it to check
+coverage after editing this file, rather than reasoning about the templates ×
+cities cross-product by hand.
+
 `scraper/config/sources.json` — every entry gains `"dances": ["tango"]`
 context. Preserve the existing verified tango sources; ADD researched, live,
 verified sources for salsa, bachata, and kizomba (congress calendars, social
 listings, festival directories — verify each URL responds before including).
-Extend cities to cover the new scenes (Cali, Havana, Santo Domingo, San Juan,
-Lisbon, Luanda-diaspora hubs like Paris/London, Miami, NYC). Templates: what a
-human would actually google per dance and category; standing queries cover
-current and upcoming years (2026–2028), not a single year. `docs/search-plan.md`:
-update for the per-dance model and the refinement loop (edit → dry-run /
---query / --url → review queue → approve/reject via admin CLI).
+Templates: what a human would actually google per dance and category;
+standing queries cover current and upcoming years (2026–2028), not a single
+year. `docs/search-plan.md`: update for the per-dance model, the cities rule,
+and the refinement loop (edit → dry-run / --query / --url → review queue →
+approve/reject via admin CLI).
 
 ## 9. Conventions
 
@@ -421,9 +494,10 @@ Two independent efforts — do not conflate them.
 **A. Interface (UI chrome) — fully translated, client-side, no data-schema
 involvement.** 11 languages: EN (default), DE, ES (Latin America), PT, IT, RU,
 UK, ZH, JA, KO, FR. `web/js/i18n.js` exports `UI[langCode]` (chrome strings:
-`today`, `music`, `organizedBy`, `artists`, `from`, `until`, `links{…}`,
-`dances{…}`, `cats{…}` — the last dance-aware exactly like the v3 `social`
-label), `ROLES[langCode]` (artist role vocab: teacher/performer), and
+`today`, `music`, `price` (★ v6 — `organizedBy` was removed here when the
+organizer row was dropped from the popup in v5), `artists`, `from`, `until`,
+`links{…}`, `dances{…}`, `cats{…}` — the last dance-aware exactly like the v3
+`social` label), `ROLES[langCode]` (artist role vocab: teacher/performer), and
 `MTYPES[langCode]` (music-credit type vocab: dj/orchestra/band), plus
 `LANG_META`/`LANG_CODES`/`resolveLang`/`parseLangHash`. Weekday/month/date
 formatting is derived per-locale via `Intl` in `logic.js` (`buildMonthModel`,
@@ -443,9 +517,11 @@ translated, matching every other piece of UI chrome.
 
 **B. Entity content — local-only, human-in-the-loop, never CI.** After every
 scraper run, `scraper/src/index.js` diffs every active entity's `description`/
-`schedule` against `entity.translations[<lang>][<field>].source_hash` for all
-10 non-English languages, and rebuilds `data/translations-queue.json` (one
-queue item per entity+field still missing/stale in ≥1 language). This
+`schedule`/`summary` (★ v6 — see §11; once an entity has a `summary`, its
+superseded `description` is skipped rather than queued) against
+`entity.translations[<lang>][<field>].source_hash` for all 10 non-English
+languages, and rebuilds `data/translations-queue.json` (one queue item per
+entity+field still missing/stale in ≥1 language). This
 diff step commits via the normal `scrape.yml` job (the queue file is added to
 its `git add` list alongside the other `data/*.json` ops files) — detection
 is automated because it's read-only analysis, not translation. Translating is
@@ -465,3 +541,45 @@ guardrail — `translate.js` doesn't violate it only because it makes zero
 network/API calls itself). `docs/i18n-plan.md` is the living document for
 this workflow's iteration (coverage per language, quality notes, backlog),
 following `docs/search-plan.md`'s conventions.
+
+## 11. Entity-summary enrichment (v6) — local-only, human-in-the-loop, never CI
+
+Mirrors §10-B's pipeline shape exactly, for a different problem: today's
+`entity.description` is raw scraped text (sometimes messy, overlong, or
+oddly formatted); this pipeline produces `entity.summary` — a clean,
+AI-polished 1-2 sentence English replacement — via the same
+export-to-your-own-AI-account, paste-back workflow, never an API key in this
+repo or in CI.
+
+After every scraper run, `scraper/src/index.js` diffs every active entity's
+`description` against `entity.summary.source_hash` and rebuilds
+`data/enrichment-queue.json` (one item per entity whose summary is
+missing or stale — no per-language fan-out, unlike §10-B, since this is a
+single field in a single source language). This diff step commits via the
+normal `scrape.yml` job, same as the translations queue — detection is
+read-only analysis, not generation. Enriching is **always manual and
+local**: `cd scraper && node src/enrich.js queue` lists pending items;
+`node src/enrich.js export --out batch.md [--limit N]` writes a markdown
+file (a short instructional prompt header, then one fenced source-text block
++ a blank `> summary:` placeholder per entity) meant to be pasted into the
+user's own separate AI subscription and back; `node src/enrich.js import
+--file batch.md` parses the filled-in file, verifies each block's source text
+still matches the entity's current `description` (via sha256 — a stale match
+is skipped with a warning telling you to re-export), merges accepted
+summaries into `entity.summary = {text, source_hash, generated_at}`, and
+audits each touched entity. **This CLI must never be added to
+`.github/workflows/scrape.yml` or any other CI step**, for the same reason as
+§10-B's `translate.js`.
+
+Once `entity.summary` exists, `web/js/map.js`'s popup card prefers it over
+`entity.description` (translated summary beats translated description beats
+either untranslated fallback — see §6); `entity.summary` also becomes a 3rd
+`TRANSLATABLE_FIELDS` entry in `scraper/src/translate.js`, reusing §10-B's
+pipeline rather than inventing a parallel one (a `sourceTextOf(entity, field)`
+helper normalizes `summary`'s `{text, ...}` leaf shape and `description`/
+`schedule`'s plain-string shape to the same thing before hashing). Once an
+entity has a summary, its now-superseded `description` is skipped by the
+translations-queue diff — no point translating text nobody will see.
+`docs/enrichment-plan.md` is the living document for this workflow (the exact
+prompt template, coverage notes, backlog), following `docs/search-plan.md`'s
+conventions.

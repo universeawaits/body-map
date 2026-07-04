@@ -10,8 +10,8 @@ doubt, `CONTRACT.md` wins.
 
 Body Map covers four dances — `tango`, `salsa`, `bachata`, `kizomba` — and
 every crawl/search context carries a `dance`. Every scraper run (GitHub
-Actions, ~every 2 days, or `npm start` locally) plans URLs from three pools,
-in strict priority order, capped at `max_pages_per_run` (200):
+Actions, weekly on Fridays, or `npm start` locally) plans URLs from three
+pools, in strict priority order, capped at `max_pages_per_run` (200):
 
 1. **Curated sources** — every `enabled: true` entry in `sources.json`. Each
    entry declares `dances` (context passed to extraction) and a
@@ -96,27 +96,52 @@ or `social`, and that is correct.
 4 dances × 6 templates × 35 cities = 840 city queries plus 36 standing queries
 — far above the 200-page cap on purpose: the crawl planner's priority order
 and cap do the budgeting, so curated sources and refreshes are never starved
-by discovery. (Open item: planner-side rotation of the discovery slice so all
-queries get their turn across runs.)
+by discovery. As of v6, the discovery slice itself rotates across runs (see
+"Discovery rotation" in the change log below) rather than always starting
+from the same point.
 
-### Cities (35, shared across dances)
+### Cities (v6: per-country, global coverage rule)
 
-The 25 v2 tango cities are preserved, plus 10 added for the new scenes:
+`queries.json`'s `cities` is an object keyed by country/dance-scene-region name
+to an array of that country's cities (§8 v3 schema; `crawl.js`'s
+`flattenCities()` still accepts the old flat-array shape too, so partial
+migrations don't break anything). The list is shared across all four dances —
+most cities have scenes in several (Lisbon has tango and kizomba; NYC has all
+four), and low-yield combinations (kizomba Rosario …) simply return few
+results, wasting one search rather than fetch budget.
 
-- **Salsa heartland:** Cali (world salsa capital), Havana, San Juan (the
-  original salsa congress), Miami, Mexico City, Los Angeles.
-- **Bachata:** Santo Domingo (birthplace), Madrid (Europe's biggest
-  salsa/bachata hub — also strong salsa).
-- **Kizomba:** Luanda (birthplace), with the diaspora hubs Lisbon, Paris and
-  London already on the list.
-- **General Latin scenes:** Toronto.
+**Coverage rule**: every country gets ≥5 cities with population >100,000;
+countries with national population >50 million get ≥20. A country may
+legitimately have 0-4 qualifying cities (small nations, city-states counted
+once) — that's expected, not a gap to fill artificially.
 
-The single shared list is deliberate: most of these cities have scenes in
-several dances (Lisbon has tango and kizomba; NYC has all four), and low-yield
-combinations (kizomba Rosario …) simply return few results — they waste one
-search, not fetch budget. Cities are ASCII-normalized ("Sao Paulo",
-"Medellin") because DuckDuckGo treats accented and unaccented forms
-equivalently and ASCII keeps URL-encoding trivial.
+**Data source**: population figures should cite one consistent, dated dataset
+across the whole list rather than mixing sources per-country — e.g. UN World
+Urbanization Prospects agglomeration estimates, most recent revision at time
+of compilation. State city-proper vs. metro/urban-agglomeration explicitly
+(materially changes which cities clear the 100k bar) and pick one consistently.
+
+**Grouping key**: "country" here means dance-scene region, not strict
+ISO-3166 — e.g. Puerto Rico stays broken out from the United States (already
+true of today's data, San Juan listed separately).
+
+**Naming**: cities are ASCII-normalized ("Sao Paulo", "Medellin") because
+DuckDuckGo treats accented and unaccented forms equivalently and ASCII keeps
+URL-encoding trivial. A "City, Qualifier" string is allowed for genuinely
+ambiguous names (Cambridge, Springfield, San Jose), used sparingly.
+
+**Checking coverage**: `node src/admin.js coverage` lists every city with its
+resolved discovery-query count and existing-entity count; `--city "Name"`
+drills into the exact query list for one city. Use this after editing the
+cities list rather than reasoning about the templates × cities cross-product
+by hand.
+
+Today's 35 cities (carried over from the v3 per-dance rewrite, now regrouped
+by country rather than expanded) are a placeholder for the full v6 global list
+— compiling ~1,000-2,500 real cities against the cited population source for
+every country is its own follow-up research pass, not done inline with the
+schema/tooling change. Until that lands, coverage outside these 35 cities
+relies on curated sources (§3) and standing queries only.
 
 ### Standing queries (36 across the four dances)
 
@@ -263,10 +288,20 @@ Heuristics for the loop:
   feverup.com); sources.json entries gained `dances` and the
   `categories_hint` milonga → social rename; 15 sources added (13 enabled,
   2 disabled: kizzcalendar, salsanewyork), all curl-verified 2026-07-02.
+- **2026-07-04** — Discovery rotation (v6): `data/crawl-state.json` persists a
+  `discovery_offset` cursor; the discovery query list is round-robin
+  interleaved by dance, then rotated to start at the cursor and wrap around,
+  advancing each run by queries attempted (see CONTRACT.md §7). Also added
+  `node src/admin.js coverage [--city X]`, a per-city report of discovery
+  query count and entities found so far — the resolved, per-city view this
+  document only describes in the abstract.
 - **Open:** yearly bump of year tiers in standing queries and of the
-  Danceplace year-pinned URL (or implement a `{year}` token); planner-side
-  rotation of the oversized discovery pool; find a crawlable Asia-wide
-  aggregator (any dance) and crawlable socials listings for Havana / Cali /
-  Santo Domingo; re-check tangomarathons.com (418), kizomba-world.com (403),
-  tangofestivals.net / kizzcalendar / salsanewyork (client-side rendering)
-  occasionally.
+  Danceplace year-pinned URL (or implement a `{year}` token); at ~876 queries
+  and growing (see §2's cities expansion), one full rotation cycle at a weekly
+  cadence and the current 200-page cap is a multi-year proposition — rotation
+  makes coverage eventually fair, not fast; raising `max_pages_per_run` and/or
+  cron frequency are the levers if faster full coverage matters more than the
+  current politeness margin; find a crawlable Asia-wide aggregator (any dance)
+  and crawlable socials listings for Havana / Cali / Santo Domingo; re-check
+  tangomarathons.com (418), kizomba-world.com (403), tangofestivals.net /
+  kizzcalendar / salsanewyork (client-side rendering) occasionally.

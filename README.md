@@ -260,6 +260,38 @@ records one audit entry per touched entity. This CLI is never invoked by
 `.github/workflows/scrape.yml` or any other CI step — it's local-only by
 design.
 
+## Enriching entity summaries (local, manual — never CI)
+
+Scraped `description` text is whatever the source page happened to publish —
+sometimes tidy, often a messy paste of an announcement. `entity.summary` is a
+clean, AI-polished 1-2 sentence replacement, produced by the exact same
+local-only, human-in-the-loop pattern as entity translation above: after
+every scraper run, `data/enrichment-queue.json` is rebuilt with every active
+entity whose `description` is missing a fresh summary. That detection step
+commits automatically like the other `data/*.json` ops files — but nothing
+ever calls an AI API from this repo or from CI. You enrich by hand, using
+your own separate AI subscription:
+
+```bash
+cd scraper
+node src/enrich.js queue                                 # see what's pending
+node src/enrich.js export --out batch.md                 # write a markdown batch
+node src/enrich.js export --out batch.md --limit 20       # narrower batch
+# … paste batch.md's fenced source text into your own AI chat (the file's
+#   own header has the exact prompt to use), paste summaries back under each
+#   "> summary:" line, save the file …
+node src/enrich.js import --file batch.md                 # merge it back
+```
+
+`import` verifies each block's source text still matches the entity's current
+`description` (skips + warns if the entity changed since export — re-export
+it) and records one audit entry per touched entity. Once an entity has a
+summary, the popup card shows it instead of the raw description, and the
+summary itself becomes a new translatable field for the pipeline above. This
+CLI is never invoked by `.github/workflows/scrape.yml` or any other CI
+step — see [`docs/enrichment-plan.md`](docs/enrichment-plan.md) for the full
+workflow and the exact prompt template.
+
 ## Refining the search together
 
 Discovery quality is iterated, not designed once.
@@ -270,6 +302,16 @@ dance and why each is in or out, and the refinement loop — edit
 `scraper/config/queries.json` / `sources.json`, test with `npm run dry-run` /
 `--query` / `--url`, inspect the review queue, approve or reject, record the
 decision there.
+
+Cities are grouped per-country in `queries.json` (every country gets ≥5
+cities with population >100,000, ≥20 for countries with national population
+>50 million — see `docs/search-plan.md` §2 for the full rule and data
+source). Discovery queries rotate across runs (`data/crawl-state.json`) so a
+large query pool eventually gets a fair turn instead of the same front
+portion winning every time. `node src/admin.js coverage [--city X]` reports
+exactly how many discovery queries target a city and how many entities have
+been found there so far — the concrete view to check after editing the
+cities list.
 
 ## Portability
 

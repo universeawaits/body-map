@@ -20,6 +20,7 @@ import { geocodeCandidates } from './geocode.js';
 import { runMerge, staleSweep } from './merge.js';
 import { createStore, defaultActor, nowIso } from './store.js';
 import { updateTranslationsQueue } from './translate.js';
+import { updateEnrichmentQueue } from './enrich.js';
 
 function parseArgs(argv) {
   const flags = {
@@ -80,7 +81,7 @@ function loadConfig(file, { validate, describe }) {
   return parsed;
 }
 
-// §8 v2 per-dance schema: {cities, max_*, domain_blocklist, dances: {tango: {templates, standing_queries}, …}}
+// §8 v3 per-dance schema: {cities, max_*, domain_blocklist, dances: {tango: {templates, standing_queries}, …}}
 function validateQueries(q) {
   if (typeof q !== 'object' || q === null || Array.isArray(q)) return { fatal: 'expected an object' };
   if (q.dances === undefined) {
@@ -92,7 +93,7 @@ function validateQueries(q) {
           '{"dances": {"tango": {"templates": […], "standing_queries": […]}, …}}',
       };
     }
-    return { fatal: 'missing the "dances" object (per-dance v2 schema)' };
+    return { fatal: 'missing the "dances" object (per-dance v3 schema)' };
   }
   if (typeof q.dances !== 'object' || q.dances === null || Array.isArray(q.dances)) {
     return { fatal: '"dances" must be an object keyed by dance' };
@@ -110,8 +111,21 @@ function validateQueries(q) {
       }
     }
   }
-  for (const key of ['cities', 'domain_blocklist']) {
-    if (q[key] !== undefined && !Array.isArray(q[key])) return { fatal: `"${key}" must be an array` };
+  if (q.domain_blocklist !== undefined && !Array.isArray(q.domain_blocklist)) {
+    return { fatal: '"domain_blocklist" must be an array' };
+  }
+  if (q.cities !== undefined) {
+    const isFlatArray = Array.isArray(q.cities);
+    const isPerCountry =
+      typeof q.cities === 'object' && q.cities !== null && !Array.isArray(q.cities) &&
+      Object.values(q.cities).every((v) => Array.isArray(v));
+    if (!isFlatArray && !isPerCountry) {
+      return {
+        fatal:
+          '"cities" must be an array of city names, or (§8 v3) an object keyed by ' +
+          'country name to arrays of city names',
+      };
+    }
   }
   for (const key of ['max_results_per_query', 'max_pages_per_run']) {
     if (q[key] !== undefined && !Number.isInteger(q[key])) return { fatal: `"${key}" must be an integer` };
@@ -174,13 +188,16 @@ async function main() {
   const rejected = store.loadRejected();
   const geocodeCache = store.loadGeocodeCache();
   const translationsQueue = store.loadTranslationsQueue();
+  const enrichmentQueue = store.loadEnrichmentQueue();
+  const crawlState = store.loadCrawlState();
 
   if (flags.dryRun) console.log('DRY RUN — nothing will be written.\n');
 
   // 1. plan
-  const { plan, searchStats } = await planUrls({
-    sources, queries, entities: doc.entities, provider: duckduckgo, flags,
+  const { plan, searchStats, nextDiscoveryOffset } = await planUrls({
+    sources, queries, entities: doc.entities, provider: duckduckgo, flags, crawlState,
   });
+  crawlState.discovery_offset = nextDiscoveryOffset;
   console.log(
     `Planned ${plan.length} page(s) ` +
     `(curated: ${plan.filter((p) => p.kind === 'source').length}, ` +
@@ -249,9 +266,13 @@ async function main() {
     ? { archived: 0, mutations: [] }
     : staleSweep({ doc, store, actor });
 
-  // 7. translations queue diff — description/schedule text needing translation
-  // (Part C, local-only pipeline; never touches the entities themselves)
+  // 7. translations queue diff — description/schedule/summary text needing
+  // translation (§10, local-only pipeline; never touches the entities themselves)
   const translationStats = updateTranslationsQueue({ doc, queue: translationsQueue, now: nowIso() });
+
+  // 7b. enrichment queue diff — descriptions needing an AI-polished summary
+  // (§11, local-only pipeline; never touches the entities themselves)
+  const enrichmentStats = updateEnrichmentQueue({ doc, queue: enrichmentQueue, now: nowIso() });
 
   // 8. persist (no-ops when dry-run)
   const mutationCount =
@@ -261,6 +282,8 @@ async function main() {
     store.saveReviewQueue(queue);
     store.saveGeocodeCache(geocodeCache);
     store.saveTranslationsQueue(translationsQueue);
+    store.saveEnrichmentQueue(enrichmentQueue);
+    store.saveCrawlState(crawlState);
     store.flushAudit();
   } else {
     const pending = store.pendingAuditEntries();
@@ -292,6 +315,13 @@ async function main() {
     `Translations queue: ${translationStats.pending} pending item(s) ` +
     `(${translationStats.delta >= 0 ? '+' : ''}${translationStats.delta} vs last run)`
   );
+  console.log(
+    `Enrichment queue: ${enrichmentStats.pending} pending item(s) ` +
+    `(${enrichmentStats.delta >= 0 ? '+' : ''}${enrichmentStats.delta} vs last run)`
+  );
+  if (!flags.query) {
+    console.log(`Discovery rotation: offset now ${crawlState.discovery_offset}`);
+  }
   console.log(`Run finished at ${nowIso()}${flags.dryRun ? ' (dry run, nothing written)' : ''}`);
 
   // expose counts to the GitHub Actions workflow for the commit message

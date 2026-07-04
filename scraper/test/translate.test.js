@@ -7,6 +7,7 @@ import {
   sha256,
   updateTranslationsQueue,
   parseImportFile,
+  sourceTextOf,
   TARGET_LANGS,
 } from '../src/translate.js';
 
@@ -150,6 +151,37 @@ ok('import validation: a blank translation is treated as not provided', () => {
   const parsed = parseImportFile(md);
   assert.equal(parsed.length, 1);
   assert.equal(parsed[0].translatedText.trim(), '');
+});
+
+ok('sourceTextOf: plain-string fields (description/schedule) pass through unchanged', () => {
+  assert.equal(sourceTextOf({ description: 'Hello' }, 'description'), 'Hello');
+  assert.equal(sourceTextOf({ schedule: null }, 'schedule'), '');
+});
+
+ok('sourceTextOf: object-shaped fields (summary, §11) unwrap to .text — never "[object Object]"', () => {
+  assert.equal(sourceTextOf({ summary: { text: 'A great social.', source_hash: 'x' } }, 'summary'), 'A great social.');
+  assert.equal(sourceTextOf({ summary: null }, 'summary'), '');
+  assert.equal(sourceTextOf({}, 'summary'), '');
+});
+
+ok('updateTranslationsQueue: summary (§11) is diffed and hashed via its .text, not the whole object', () => {
+  const doc = {
+    entities: [{
+      id: 'e1', name: 'La Milonga', status: 'active',
+      description: 'raw scraped text', schedule: null,
+      summary: { text: 'A polished summary.', source_hash: 'irrelevant-here', generated_at: '2026-01-01T00:00:00Z' },
+      translations: {},
+    }],
+  };
+  const queue = { generated: null, items: [] };
+  const stats = updateTranslationsQueue({ doc, queue, now: '2026-01-01T00:00:00Z' });
+  const summaryItem = queue.items.find((i) => i.field === 'summary');
+  assert.ok(summaryItem, 'expected a queue item for the summary field');
+  assert.equal(summaryItem.source_text, 'A polished summary.');
+  assert.equal(summaryItem.source_hash, sha256('A polished summary.'));
+  // description is superseded by summary — never queued once a summary exists
+  assert.equal(stats.pending, queue.items.length);
+  assert.ok(!queue.items.some((i) => i.field === 'description'));
 });
 
 console.log(`\n${passed} assertion groups passed`);

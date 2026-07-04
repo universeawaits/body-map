@@ -12,7 +12,8 @@
     "dry-run": "node src/index.js --dry-run",
     "admin": "node src/admin.js",
     "translate": "node src/translate.js",
-    "test": "node test/extract.test.js && node test/translate.test.js"
+    "enrich": "node src/enrich.js",
+    "test": "node test/extract.test.js && node test/translate.test.js && node test/crawl.test.js && node test/enrich.test.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0"
