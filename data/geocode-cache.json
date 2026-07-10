@@ -274,5 +274,29 @@
     "lng": -0.2255937,
     "display": "Upper Richmond Road, Putney, London Borough of Wandsworth, Greater London, England, SW15 6TN, United Kingdom",
     "ts": "2026-07-03T01:27:16Z"
+  },
+  "schwielowseestraße 9, berlin, germany": {
+    "lat": 52.5571064,
+    "lng": 13.226047,
+    "display": "Schwielowseestraße, Waterkant, Quartier Haveleck, Haselhorst, Spandau, Berlin, 13599, Deutschland",
+    "ts": "2026-07-10T14:53:52Z"
+  },
+  "köpenicker str. 76 (brückenstr.1), berlin, deutschland": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-10T14:53:54Z"
+  },
+  "kolonnenstraße 29, berlin, deutschland": {
+    "lat": 52.4841833,
+    "lng": 13.3668845,
+    "display": "Mambita Etage, 29, Kolonnenstraße, Monumentenkiez, Rote Insel, Schöneberg, Tempelhof-Schöneberg, Berlin, 10829, Deutschland",
+    "ts": "2026-07-10T14:53:55Z"
+  },
+  "7 st john&#039;s rd,, london, united kingdom": {
+    "lat": null,
+    "lng": null,
+    "display": null,
+    "ts": "2026-07-10T14:53:56Z"
   }
 }

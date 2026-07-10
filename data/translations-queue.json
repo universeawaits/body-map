@@ -1,6 +1,15 @@
 {
-  "generated": "2026-07-04T10:03:29Z",
+  "generated": "2026-07-10T14:53:56Z",
   "items": [
+    {
+      "entity_id": "a5262cfc-46a8-4c3e-9aec-7fde45987580",
+      "entity_name": "Los Viernes Matinée - SOMMERPAUSE",
+      "field": "description",
+      "source_text": "milonga: ------- ^^^ ------ ENTRANCE click on the play button above ================================================== Today, on Friday, you are welcome to join us @ Los Viernes Matinée Come and let´s embrace each other, taste the wonderful tandas - from Dj Aaron - Admission to Milonga: €10 per person Hauptstr. 48, 10827 Berlin. Pls use the left side garden path for getting to Paul-Gerhardt Saal. - Free parking from 6 pm on Dominicusstr. - Parkgebührenfrei ab 18 Uhr in der Dominicusstr. -------…",
+      "source_hash": "fba28a3d13e1740e8f24ee88a509217ad3ff17252768a0f5fe8abdf1764705ae",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
     {
       "entity_id": "54d02e97-fef8-4d55-9ab5-f59531d1fbb1",
       "entity_name": "Milonga de la tarde",
@@ -8,7 +17,286 @@
       "source_text": "milonga: Milonga !!! wetterabhängig !!! ---------- Open-Air-Milonga am PLH (Spreeufer) (Milonga de la tarde) - 16:00 Uhr - 20:00 Uhr: DJs Nora & Mika (Preis: Spendenbasis) ---------- Quelle: https://www.facebook.com/norajensen24",
       "source_hash": "5fcbd49fe154bea78bf283835098fef46e08b5c79dc72cd325beecd535a99100",
       "first_seen": "2026-07-03T18:58:29Z",
-      "last_seen": "2026-07-03T18:58:29Z"
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "f0080899-62c2-439a-99cb-cb4b6a7109ae",
+      "entity_name": "Tangoloft @La Catedral",
+      "field": "description",
+      "source_text": "milonga: TANGOLOFT BERLIN goes LA CATEDRAL ---------- Heute, am Samstag, den 11. Juli, begrüßen wir euch zu einer besonderen Ausgabe von Tangoloft Berlin in der wunderschönen La Catedral in Charlottenburg. Da im TANGOLOFT an diesem Abend ein großer Geburtstag gefeiert wird, ziehen wir für eine Nacht in die einzigartige Atmosphäre der La Catedral um. Freut euch auf einen stimmungsvollen Tangoabend von 18:00 bis 23:00 Uhr mit den schönsten Tangos, ausgewählt von - DJ Michael Rühl. Gastgeberin des…",
+      "source_hash": "3fa7a18bd087334bb577710ba961da9f0ad3037733443c6a01d4a5d87bedb3c6",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "c6cba5ae-8f1d-450b-ad14-fd5d4d548cab",
+      "entity_name": "Open-Air-Tango mit Ilana",
+      "field": "description",
+      "source_text": "milonga: Open-Air-Tango ---------- Sonntags 16-24 Uhr, Open Air Milonga mit DJane Ilana am Paul Löbe Haus (Spreeufer), Konrad-Adenauer-Straße 1, 10557 Berlin Achtung! Wetterabhängig und die Anfangszeit kann sich ändern! Info:https://www.facebook.com/ilana.tscharnaja ---------- Quelle: https://www.facebook.com/ilana.tscharnaja",
+      "source_hash": "2af62922b6f0c7c2aebde441c4597b11a0c1e0ac5c701061e29ce3e4a8f5e4c4",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "5d9e009d-6450-4bb2-9b7d-a98b1b661ef4",
+      "entity_name": "Haus der Sinne - Tangobar Summer Edition",
+      "field": "description",
+      "source_text": "milonga: Tangobar Summer Edition: ---------- Milonga mit einem DJ, heute, am 10. Juli mit: - Djingo Viel Platz zum Tanzen auf zwei Ebenen (Haupt-Dancefloor und DJ sind auf dem unteren Dancefloor, die Musik läuft aber auch oben und ihr könnt gerne auch oben tanzen), auf der unteren Ebene ist es angenehm kühl, oben ist die Terrasse für euch bis 22 Uhr geöffnet. Barbetrieb ist bei der Summer Edition nur unten. Musik: Neo-, Non-Tango, contemporary, Fusion, Electro und ca. 20 % traditionelle Tangomu…",
+      "source_hash": "2847ff50f5836b4b90037a5974edc049135ab10f949878b815ce534ceec8aaa6",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "82b21095-e24c-4910-8353-19dc6563fca0",
+      "entity_name": "Tango open Air am Gleis 1",
+      "field": "description",
+      "source_text": "&lt;p&gt;vom 9.7. bis zum 6.8. tanzen wir donnerstags am Gleis 1 des Kulturbahnhofes Kassel (ehemaliger HBF) Holzfußboden, Überdachung, Sitzmöglichkeiten. Getränke serviert von der Bar / Lounge \\'Gleis 1\\'. Die erste halbe Stunde ist Practilonga. Wechselnde DJs. Schlechtwetter Hotline: 01575 2000 536&lt;/p&gt;\\n",
+      "source_hash": "b5cfc62c0fea4adcbc8f887aaf09ddc59a5943d10f1425ba8035a9448b444950",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "4832d56f-5cd2-440b-9b80-d592d273adfa",
+      "entity_name": "Fiesta Latina Thursdays @ Cubana Cafe",
+      "field": "description",
+      "source_text": "Every Thursday, a taste of the weekend! DJ for a purely Latin evening. Come party at Cubana Caf. Our DJ will have you dancing to Latin rhythms until the end of the night. We welcome you until 4 am!",
+      "source_hash": "2fbc398da08de313a79b7766a7bae1eafe49b42072796560c660aeecbf86a659",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "61e155e2-c622-498b-8b5b-d5d35792b56a",
+      "entity_name": "After Work Milonga - Havel",
+      "field": "description",
+      "source_text": "milonga: Freitag 10.07.27/ Open Air Tango auf dem Havelsteg Heute, am 10.07. ab 18:00 | Steg Schwielowseestraße, 13599 Spandau / Hakenfelde | Veranstalter: Bettina und Heike | Eintritt frei, Spende willkommen Liebe Tangueras und Tangueros, wieder laden wir euch auch 2026 ein, auf der Havel dem Sonnenuntergang Gesellschaft zu leisten und dabei den Tango zu genießen. Einmal pro Monat Freitags geben wir euch durch schönste Klassiker, vermischt mit ein paar Non und Neo- Tangos, die Möglichkeit, auf…",
+      "source_hash": "f3cd5c75fb531a37860aa96896952990e7901fc72bf2e08c00e8accbaaf12275",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "0a735b3d-8d6a-4d0a-a194-e85c5020b4f7",
+      "entity_name": "Tango-Café im Maxixe - SOMMERPAUSE",
+      "field": "description",
+      "source_text": "milonga: SOMMERPAUSE vom 11.Juli bis 29.August =============== Milonga ---------- Heute, am Samstag , gibt es wieder das Tango-Café im Maxixe. Es erwartet Euch ein wunderschöner Ballsaal mit einer angenehmen Klimaanlage.Lasst Euch verwöhnen mit hausgemachtem Kuchen und genießt das Tanzen auf erstklassigem Parkett in entspannter Atmosphäre. - TDJ Thomas spielt traditionelle Tangos (50%) und Neo-Tangos, Weltmusik… (50%). Wir freuen uns auf Euch! 15:00 - 19.00 | Tanzschule Maxixe, Fidicinstraße 3,…",
+      "source_hash": "f9d3c7d96e72d66b47988a6a365188daad97e6304a28c627f6f739e4fa63fd69",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "09ecf7c6-5656-40b2-803d-72924d09551f",
+      "entity_name": "El Gato",
+      "field": "description",
+      "source_text": "milonga: Das Tango Café El Gato findet regelmäßig alle zwei Wochen statt. Tanzen auf hervorragendem Tanzparkett bei traditioneller Tangomusik mit Tandas & Cortinas, bei Kaffee & Kuchen sowie mit einer Tausch-Tanda zum Kennenlernen. Alle sind herzlich willkommen! - Veranstalter: weRK36 - DJ: Torsten Moebis - Eintritt: € 10 - Tanzzeit 16.00 – 20.00 Uhr ---------- Quelle: https://www.facebook.com/elgatotangoberlin",
+      "source_hash": "10c4a8133350fa96a71cf1950ebccdddaed25b2261db75e91941272b0b7a6eae",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "6bbe2a1b-25c4-41c9-ad41-e70b0e7f174e",
+      "entity_name": "Jens & friends - the different milonga",
+      "field": "description",
+      "source_text": "milonga: Milonga ---------- Von 21 Uhr bis um 1 Uhr legt Jens Stuller zum letzten Mal im wunderbaren La Mambita einen Mix aus 70% Neotango, Nontango und Tango Nuevo, sowie 30%, traditionellem Tango auf. Ort: Kolonnenstr. 29, 10829 Berlin, 1.OG, nahe S Julius-Leber-Brücke oder M 104 Kesselsdorfstraße (in die Einfahrt gehen, an der 2. Gittertür bei Mambita klingeln, nach links in den Hof driften und nach rechts zum Hauseingang schwenken, im Haus ins 1.OG emporsteigen). ---------- ***english versi…",
+      "source_hash": "1d55d32627f1eef81fe02ac40e1c0bce46e3845f73a18e2625d3c1f579fbbe2c",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "3993130f-d5f2-4e48-adb8-e573e21665a6",
+      "entity_name": "After Work Milonga - La Berlinesa - SOMMERPAUSE",
+      "field": "description",
+      "source_text": "milonga: !!! Wir genießen eine kleine Sommerpause und freuen uns darauf, Euch ab Montag, dem 14.09.2026, wieder begrüßen zu dürfen. !!! Unsere Montagsmilonga beginnt künftig bereits um 18:30 Uhr. =============== Die Berliner Wohnzimmermilonga | La Berlinesa | Berlin - 14.09.2026 ---------- - Starte entspannt und tänzerisch in die Woche! Unsere Montagsmilonga im La Berlinesa lädt Dich ein zu klassischem Tango, herzlicher Atmosphäre und echten Begegnungen. - TDJ ;-) spielt für Euch klassische Tan…",
+      "source_hash": "93d6154ce3db18b1ceef4904aa068d89849cbd04ae02a782553ef8c2a87b680d",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "dc43aed4-84c1-4e54-9a73-956f1c7652d4",
+      "entity_name": "Milonga Coqueta - OPEN AIR",
+      "field": "description",
+      "source_text": "milonga: Open Air Milonga - wetterabhängig ---------- Heute, Dienstag, von 20.00 bis 23.00 Uhr Die besten traditionellen Tandas mit tanzbaren Cortinas aufgelegt von - Tango-DJ Elisabetta Energieausgleich gern gesehen. ---------- Ort: Neue Nationalgalerie, Nordseite, Potsdamer Str. 50-10785 Berlin ---------- Quelle: Veranstalterin",
+      "source_hash": "7a35d9b29013ce35251b65ac62b486265ef939cad54a42947eee67415a695cd8",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "0842886b-7054-4f1a-a07e-790c671586f3",
+      "entity_name": "TangoArt - SOMMERPAUSE",
+      "field": "description",
+      "source_text": "milonga: !!! SOMMERPAUSE bis 27. August 2026 !!! =============== Praktika ---------- Es sind alle herzlich willkommen, am Donnerstagabend in die Alte Bahnhofshalle zur Praktika auf Spendenbasis zu kommen und den Argentinischen Tango in gemütlicher und familiärer Atmosphäre zu genießen. Praktika ( auf Spendenbasis 5 - 9€ ) Beginn 21:15 - 23:15 Uhr Mehr Informationen von Angelika Fischer Telefon 030 / 815 8899 angelika@tangoart.de Ort: Alte Bahnhofshalle Bahnhofstraße 4d 12159 Berlin-Friedenau S-…",
+      "source_hash": "87226ec9f5b365e4faa0c092b90b4c8742c681b5207c92c8d74d5af2e22fdbe4",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "b8df7a5a-7763-45f8-8045-f54e74fd3724",
+      "entity_name": "OPEN-AIR-MILONGA mit DUO “BIEN PORTEÑO”",
+      "field": "description",
+      "source_text": "&lt;p&gt;Kommt und tanzt mit uns am 10.Juli von 19-23 Uhr. Wir tanzen unter Sternen im Leitz-Park. Live spielt für Euch das Tango-Duo Bien Porteño mit Norbert Kotzan (Bandoneon) und Jorge Coll (Piano). Wir freuen uns sehr auf Euch. Mit DJ Piu ♪♫ &nbsp;&lt;/p&gt;\\n",
+      "source_hash": "a667a99558c6fb4f537c015ec221574886cb998a4bafb09db776562fd123ae2d",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "a4e17ac5-7749-4825-b434-bd208efa7708",
+      "entity_name": "Neo Salón",
+      "field": "description",
+      "source_text": "&lt;p&gt;Die alternative Tango-Veranstaltung mit kleiner Practica am Anfang für alle die, die den Spaß mitbringen Tango, Vals &amp; Milonga mal auf etwas anderes zu tanzen oder einfach die &quot;Tango Ohren&quot; mal wieder musikalisch durchpusten möchten. Aber keine Sorge! Es wird trotzdem eine Cortina geben und alle 3-4 Stücke einen Wechsel zwischen Tango, Vals und Milonga. [&hellip;]&lt;/p&gt;\\n",
+      "source_hash": "d1617b1ce787d1edff60acb5b433bfe46eb6549316deca21d75d66c90354e7f5",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "8ce879c6-9c17-4fed-b385-97661e8446a1",
+      "entity_name": "TangofreiRaum -&gt; OPEN AIR",
+      "field": "description",
+      "source_text": "&lt;p&gt;ÜBEN. TANZEN. AUSTAUSCHEN +++Open Air +++ Wir tanzen am stillegelegten Gleis 1 des Kulturbahnhofs Kassel (ehemaliger HBF). Holzfußboden, Überdachung, Sitzmöglichkeiten. Auch eine schöne Gelegenheit, den Tango Argentino unverbindlich kennenzulernen. Mit überwiegend klassischen - und mit Neo- Tandas, Ihr seid mit und ohne Partner/in willkommen! Es wird seitens des Gleis1 eine kleine Getränke-Bar geben. Ich freue [&hellip;]&lt;/p&gt;\\n",
+      "source_hash": "3b918007d7a05061bf4c26b84ab0345b06afedbf503fa416b11b3f84e91020d5",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "b0a36978-e02b-4b17-9ca9-e7647be38f61",
+      "entity_name": "Open Air Tango auf dem alten Marktplatz in Usingen",
+      "field": "description",
+      "source_text": "&lt;p&gt;Milonga auf dem alten Markplatz in Usingen vor der Gaststätte Bembel &amp; Gretel. Direkt neben dem Biergarten auf dem Platz steht eine 8 x 6 Meter große Tanzfläche zur Verfügung. Die Musik wird ein Mix aus traditionellem Tango, Tango Nuevo und Non-Tango (Blues und gut tanzbare Rock und Pop-Tandas) von der Playlist sein. Gestartet wird [&hellip;]&lt;/p&gt;\\n",
+      "source_hash": "df5390e0689fc710b32e4fa1c25039505e61779092352a18bd30823e4187e7dc",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "7709c139-00d7-4ce1-bfbe-3454998023cf",
+      "entity_name": "ABailar! &#8211; Open Air Milonga",
+      "field": "description",
+      "source_text": "&lt;p&gt;ABailar! - Open Air Milonga Liebe Milongueras, liebe Milongueros, Freut Euch auf diesen besonderen Abend im Freien in Aschaffenburg. Das Programm für den Abend wir Anfang 2026 hier vorgestellt. Eure ABAILAR!s&lt;/p&gt;\\n",
+      "source_hash": "aaedfa6ed2548d0d577f18236cb8fec499b9ed74b984344a3c1dbc28f3b8e247",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "b6830d15-3a2e-4e21-8ce7-d8d628415108",
+      "entity_name": "AbrazTango Milonga",
+      "field": "description",
+      "source_text": "&lt;p&gt;Seit 10 Jahren immer Milonga am 2. Samstag, Kurse, Workshops, Milongawochenende, Marathons, Festivalitos, Theatershows uvm. - Das Programm und tickets Vorverkauf unter: abraztango.com Wir freuen uns auf euch &nbsp;&lt;/p&gt;\\n",
+      "source_hash": "2ba1efca3212b8d5e954bdaa23344efe0917220ac7110cebc160e22d6c12dc90",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "2c3bd82f-7117-43e7-a864-d90112a1af32",
+      "entity_name": "“Tango-Café” am Zoo, mit DJ Roger",
+      "field": "description",
+      "source_text": "&lt;p&gt;Gemütlich-familiäre Nachmittagsmilonga mit dem abwechslungsreichen Musikmix von DJ Roger &quot;el coronel&quot;.\\' Herzlich eingeladen sind alle Mitglieder, Freunde und Gäste der FTV Dance Connection. Die Vereinsgastronomie &quot;Bella Sena&quot; hat vss. geöffnet, individuelle Wünsche gerne via Selbstversorgung. Bitte beim Ravenstein-Zentrum ggf. den Garten-Zugang rechts ums Eck nutzen. Die Dance Connection freut sich auf uns alle! &lt;/p&gt;\\n",
+      "source_hash": "c2a7d2797765c3c3fc35f4b4a43ed3317363ff616ad0ccb2126d7c66f5514f99",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "90ba11eb-ff48-4412-a56b-edb339f350da",
+      "entity_name": "La Cuerda GRAN Milonga &#8211; 2. und 4. Sonntag &#8211; Exilonga in der Conexión",
+      "field": "description",
+      "source_text": "&lt;p&gt;Wie es scheint, wird es noch bis 2026 dauern, bis wir die reguläre La Cuerda — Gran Milonga wieder in der Seilerei stattfinden lassen können. Bis auf weiteres findet die EXILONGA jeweils am 2. und 4. Sonntag in der Tanzschule Conexión statt. Anfahrt mit dem ÖPNV: U6 &amp; U7 oder M34 &amp; N7 nehmen bis [&hellip;]&lt;/p&gt;\\n",
+      "source_hash": "3f2efbb3d786c098953b47105f62730d6557b64958a3c47f87df18fd942ca890",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "fbac9a0b-a558-4f3e-b5c2-9bda5861fc7f",
+      "entity_name": "Tangosummer in the City VIP Passes",
+      "field": "description",
+      "source_text": "&lt;p&gt;1 Pass und Zutritt zu allen 7 Milongas und 1 Pass und Teilnahme an allen Exklusiv und Standard und Workshops&lt;/p&gt;\\n",
+      "source_hash": "426c462557f8e348373501addab00d62539eb0ef740328a1b36da273e5996edd",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "748d349a-8070-420f-85d8-afc1c7ddb125",
+      "entity_name": "Gaia und Leandro WS 1 Teil 1 Drehungen Pivot und Ochos &#8211; für beide Rollen ohne Partner",
+      "field": "description",
+      "source_text": "&lt;p&gt;👥 Zielgruppe: Für beide Rollen In diesem Workshop tauchen wir gemeinsam in die Welt der Drehungen ein – mit Fokus auf Pivot und Ochos. 🌀 Gaia und Leandro, zwei der charismatischsten Tango-Lehrenden der Szene, führen euch durch die Grundprinzipien dieser eleganten Bewegungen. Beide Rollen werden gleichwertig behandelt, sodass ihr euren Tango von innen heraus verstehen [&hellip;]&lt;/p&gt;\\n",
+      "source_hash": "12aee0b3cc6bf0c68e05da0f51d6ce81580162e6784182b8f4da95f019eb1136",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "17d57a9c-5e72-4858-95c4-b403e36c76a9",
+      "entity_name": "Giselle und Diana WS 1 Technik Teil 1 Grundlagen der Tango Biomechank, Ästhetik und Musikalität &#8211; für beide Rollen",
+      "field": "description",
+      "source_text": "&lt;p&gt;kein Partner erforderlich &quot; 🔥 Beginnt den Tangosommer stark! Grundlagen der Tango-Biomechanik, Ästhetik und Musikalität – für Leader &amp; Follower, es sind keine Paare nötig. Baue dein Fundament! 💃🕺Sichere Dir jetzt Deinen Platz! #Tangosummer #TangoBasics #TangoTechnique #FrankfurtTango #TangoWorkshop&quot;&lt;/p&gt;\\n",
+      "source_hash": "0c79468b73dc5b082a649f78a44280c533b952d058007c550841cff4be827e62",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "70884893-81b7-4a82-838c-82722234bbe1",
+      "entity_name": "Gaia und Leandro WS 1 Teil 2 Drehungen Calesita &#038; Lapiz &#038; Giros &#8211; für beide Rollen ohne Partner",
+      "field": "description",
+      "source_text": "&lt;p&gt;Aufbauend auf Teil 1 vertiefen wir die Drehungen mit Calesita, Lapiz und Giros. 🌹 Gaia und Leandro sind bekannt für ihren klaren, körperbewussten Unterrichtsstil – hier lernt ihr nicht nur Figuren, sondern Bewegungsqualität. Beide Rollen profitieren gleichermaßen von diesem Workshop. Sichert euch jetzt euren Platz! kein Partner erforderlich&lt;/p&gt;\\n",
+      "source_hash": "1f3f345e8807d419a071b002f2dd6e16705684c6a71f6ecd5e2bbd47c5364339",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "5cf3e93a-f337-4457-ad47-78699f14fece",
+      "entity_name": "Giselle und Diana WS 2 Boleos &#8211; für Folgende",
+      "field": "description",
+      "source_text": "&lt;p&gt;Kein Partner erforderlich - Bewegen ✨ des freien Beins in der Luft: Boleos mit Technik, Struktur und Koordination! Für Follower – dynamisch, präzise, stilvoll. Verbessere Deine Darstellung, Deine Anmutung und Deine Haltung! 🌪️👠Melde Dich noch heute an! #Tangosummer #Boleos #FollowerTechnique #TangoFrankfurt #TangoTraining&quot;&lt;/p&gt;\\n",
+      "source_hash": "7c9adcc9e554adb080b9903cc609e7a71535fd8abdb99b2c55d1febe9271c5d1",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "6a8081f7-e47f-470f-8d67-869dbc9cb94b",
+      "entity_name": "Pre Milonga",
+      "field": "description",
+      "source_text": "&lt;p&gt;Die Opening Milonga für den Tangosummer 2026 Für Alle die bereits einen Tag früher anreisen und Lust haben mit uns gemeinsam in den Tangosummer hinein zu tanzen mit DJ Pasión - Musik mit 70% Non, Nuevo und Neo und 30% traditioneller Musik als Cortinas nach den 3er Tandas. 350m² bester Parkettboden, voll klimatisiert und einer fantastischen [&hellip;]&lt;/p&gt;\\n",
+      "source_hash": "02a947ec0d8da286a93b74b262ed07c3e698fc8309c60193f012c6bb6332477c",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "5e8068a1-2528-4e61-a534-f28c1b039729",
+      "entity_name": "Latin Party Thursdays @ La Pachanga",
+      "field": "description",
+      "source_text": "EVERY THURSDAY AT LA PACHANGA! Your Salsa classes with Cyrielle!! 7:30pm-8:30pm beginner class 8:30pm-9:30pm intermediate class And your evening with DJ PIEEWO! From 9:30 to 2:00 non stop... Salsa,",
+      "source_hash": "9c7a82fbc3ab9adf6383d5c681185d64b8eec09fd51197c6e3fa31077e2daed5",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "6238efb3-a076-44c6-94b9-1e4de4a79613",
+      "entity_name": "Adelaide Sensual Weekend",
+      "field": "description",
+      "source_text": "Salsa, Bachata, Kizomba dance festival in Adelaide, Australia",
+      "source_hash": "f4516bfc6443147fd1ac696de2c5b5a6104d42007001b1dcc5f708ebfad2cc85",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "df86db00-852d-4929-a53f-38eec191ae50",
+      "entity_name": "Berlin Kizzes Festival 2026",
+      "field": "description",
+      "source_text": "kizomba dance festival in Berlin, Germany",
+      "source_hash": "f354c3fdc7ca78eb0ce4bb84d5a9887dc2667cef536025672ee77119273be660",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "3ef3dd88-8d7a-47b7-9eff-590a3cf150f1",
+      "entity_name": "San Francisco’s Hello! Bachata / Salsa / Zouk / Kizomba Dance Festival",
+      "field": "description",
+      "source_text": "salsa, bachata, kizomba, zouk dance festival in Burlingame, United States",
+      "source_hash": "9e508b593c7c3ec79c880225f64724a8127a34b5a8d1f986b9ff41b5258f0bb6",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
+    },
+    {
+      "entity_id": "fdfd6add-3c35-4acf-ac13-e5ae25b30fbd",
+      "entity_name": "PARIS KIZOMBA SUMMER 9e Ed.",
+      "field": "description",
+      "source_text": "kizomba dance festival in Paris, France",
+      "source_hash": "c944feb5644c78662ffa90c68dbf74da1418e410b737ede9c3cd57ea0ea842c5",
+      "first_seen": "2026-07-10T14:53:56Z",
+      "last_seen": "2026-07-10T14:53:56Z"
     }
   ]
 }
