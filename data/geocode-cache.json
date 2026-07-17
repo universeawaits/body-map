@@ -298,5 +298,23 @@
     "lng": null,
     "display": null,
     "ts": "2026-07-10T14:53:56Z"
+  },
+  "auguststraße 24, berlin, deutschland": {
+    "lat": 52.526614,
+    "lng": 13.3968635,
+    "display": "Clärchens Ballhaus, 24, Auguststraße, Spandauer Vorstadt, Mitte, Berlin, 10117, Deutschland",
+    "ts": "2026-07-17T13:49:36Z"
+  },
+  "wilhelm-kuhr-straße 9, berlin, germany": {
+    "lat": 52.5694508,
+    "lng": 13.3972787,
+    "display": "Altes Kastellanhaus, 9, Wilhelm-Kuhr-Straße, Florakiez, Pankow, Berlin, 13187, Deutschland",
+    "ts": "2026-07-17T13:49:37Z"
+  },
+  "alt-tempelhof 17-19, berlin, deutschland": {
+    "lat": 52.4659138,
+    "lng": 13.3855858,
+    "display": "Alt-Tempelhof, Tempelhof, Tempelhof-Schöneberg, Berlin, 12099, Deutschland",
+    "ts": "2026-07-17T13:49:38Z"
   }
 }
