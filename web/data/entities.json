@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated": "2026-07-17T13:49:38Z",
+  "generated": "2026-07-24T14:11:11Z",
   "entities": [
     {
       "id": "acb1a5b5-c2c5-47d7-9537-bf6810a9605e",
@@ -4660,7 +4660,7 @@
         "https://www.hoy-milonga.com/data_images/event/logo/ML404716.png"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483020/Los-Viernes-Matinee---SOMMERPAUSE"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483021/Los-Viernes-Matinee---SOMMERPAUSE"
       },
       "organizer": {
         "name": "Berlinos Aires Milonga"
@@ -4747,11 +4747,11 @@
           "ref": "los-viernes-matinee-sommerpause",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "f7bc1f7e-3e5d-45e9-988f-836e54fe6e0a",
@@ -4885,7 +4885,7 @@
       "categories": [
         "social"
       ],
-      "description": "práctica de tango: Praktilonga mit Dana und Dirk: ---------- Freitags (außer an Feiertagen): April bis Oktober 19:00 bis 22:00 Uhr November bis März 20:30 bis 22:00 Uhr Ort: Turnhalle des Gymnasiums der ev. Schule Köpenick, Grüne Trift 169, 12557 Berlin - Eingang: Grüne Trift 169, linkes Tor, zwischen Sportplatz und Gebäude entlang laufen, bis links ein Container erscheint. - Rechts die Treppe hinauf. Falls die Tür verschlossen ist, gibt es links eine Klingel. - Wir tanzen bei reduzierter Beleu…",
+      "description": "práctica de tango: !!! Hinweis - am 31.07. und 07.08.2026 findet keine Praktika statt !!! =============== Praktilonga mit Dana und Dirk: ---------- Freitags (außer an Feiertagen): April bis Oktober 19:00 bis 22:00 Uhr November bis März 20:30 bis 22:00 Uhr Ort: Turnhalle des Gymnasiums der ev. Schule Köpenick, Grüne Trift 169, 12557 Berlin - Eingang: Grüne Trift 169, linkes Tor, zwischen Sportplatz und Gebäude entlang laufen, bis links ein Container erscheint. - Rechts die Treppe hinauf. Falls d…",
       "summary": null,
       "lat": 52.4236559,
       "lng": 13.5925699,
@@ -4903,7 +4903,7 @@
         "https://www.hoy-milonga.com/data_images/event/logo/ML449667.png"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475569/Praktilonga-mit-Dana-und-Dirk"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475570/Praktilonga-mit-Dana-und-Dirk"
       },
       "organizer": {
         "name": "SG Grüne Trift (Dana & Dirk)"
@@ -4990,11 +4990,11 @@
           "ref": "praktilonga-mit-dana-und-dirk",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "a7c13a7b-c608-435b-8a65-7d93dfc82063",
@@ -5024,7 +5024,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP306028.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/478973/PLH-Milonga-mit-TDJ-Lutz"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/478974/PLH-Milonga-mit-TDJ-Lutz"
       },
       "organizer": {
         "name": "Lutz Faerber"
@@ -5116,11 +5116,11 @@
           "ref": "plh-milonga-mit-tdj-lutz",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "70a1971b-efb5-4ade-8b1a-f7e24e50a746",
@@ -5605,7 +5605,7 @@
       "categories": [
         "social"
       ],
-      "description": "milonga: TANGOLOFT BERLIN goes LA CATEDRAL ---------- Heute, am Samstag, den 11. Juli, begrüßen wir euch zu einer besonderen Ausgabe von Tangoloft Berlin in der wunderschönen La Catedral in Charlottenburg. Da im TANGOLOFT an diesem Abend ein großer Geburtstag gefeiert wird, ziehen wir für eine Nacht in die einzigartige Atmosphäre der La Catedral um. Freut euch auf einen stimmungsvollen Tangoabend von 18:00 bis 23:00 Uhr mit den schönsten Tangos, ausgewählt von - DJ Michael Rühl. Gastgeberin des…",
+      "description": "milonga: TANGOLOFT BERLIN goes LA CATEDRAL ---------- Heute, am 25. Juli 2026 tanzen wir wieder in unserer wunderschönen Schwester-Location La Catedral! Da in unserem TANGOLOFT Flagship-Store an diesem Tag eine Fremdveranstaltung stattfindet, geht es für uns wieder nach Charlottenburg. La Catedral Kaiser-Friedrich-Straße 87 10585 Berlin - DJ Favorito: Aaron Benchimol - 19:00–23:00 Uhr - Eintritt: 11 € ---------- Quelle: https://www.facebook.com/TangoloftBerlin",
       "summary": null,
       "lat": 52.5142205,
       "lng": 13.3019105,
@@ -5624,7 +5624,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP346260.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/482794/Tangoloft-@La-Catedral"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483729/Tangoloft-@La-Catedral"
       },
       "organizer": {
         "name": "Tangoloft Berlin"
@@ -5632,6 +5632,10 @@
       "music": [
         {
           "name": "DJ Michael Rühl",
+          "type": "dj"
+        },
+        {
+          "name": "DJ Favorito",
           "type": "dj"
         }
       ],
@@ -5716,11 +5720,11 @@
           "ref": "tangoloft-la-catedral",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "efcf201d-26d6-4bf6-8bca-4fc207cf55f3",
@@ -5747,7 +5751,7 @@
         "https://www.hoy-milonga.com/data_images/event/logo/ML415560.png"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475773/La-Milonguita-Nota-Negra"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475774/La-Milonguita-Nota-Negra"
       },
       "organizer": {
         "name": "Philip Kojo"
@@ -5834,11 +5838,11 @@
           "ref": "la-milonguita-nota-negra",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "d3822cfb-737f-4931-a8ca-92de51c5603c",
@@ -5990,7 +5994,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP369169.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475069/Praktika-fur-alle-Niveaus"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475070/Praktika-fur-alle-Niveaus"
       },
       "organizer": {
         "name": "Berlin Tango Academy"
@@ -6077,11 +6081,11 @@
           "ref": "praktika-fur-alle-niveaus",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "c6cba5ae-8f1d-450b-ad14-fd5d4d548cab",
@@ -6110,7 +6114,7 @@
         "https://www.hoy-milonga.com/data_images/event/logo/ML178912.png"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/473811/Open-Air-Tango-mit-Ilana"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/473812/Open-Air-Tango-mit-Ilana"
       },
       "organizer": {
         "name": "Ilana Tscharnaja (Facebook)"
@@ -6197,11 +6201,11 @@
           "ref": "open-air-tango-mit-ilana",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "4675cb60-f74f-488a-93d5-edf6ead98a2e",
@@ -6350,7 +6354,7 @@
         "https://www.hoy-milonga.com/data_images/event/logo/ML2500.png"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474877/Practica---Haus-am-Lietzensee"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474878/Practica---Haus-am-Lietzensee"
       },
       "organizer": {
         "name": "Asnat Ricardo"
@@ -6437,11 +6441,11 @@
           "ref": "practica-haus-am-lietzensee",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "7e7cc925-170e-49dc-bf4a-6daab80841a8",
@@ -6585,10 +6589,11 @@
       "start_date": null,
       "end_date": null,
       "images": [
-        "https://www.hoy-milonga.com/data_images/event/logo/ML468056.png"
+        "https://www.hoy-milonga.com/data_images/event/logo/ML468056.png",
+        "https://www.hoy-milonga.com/data_images/event/photo/MP468056.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/477067/PLH-Milonga"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/477068/PLH-Milonga"
       },
       "organizer": {
         "name": "Claudia Dance"
@@ -6680,11 +6685,11 @@
           "ref": "plh-milonga",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "fec3ef5c-933d-448b-8882-e2f602f8c834",
@@ -6714,7 +6719,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP472668.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/478738/Sentidos---Open-Air-Milonga"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483064/Sentidos---Open-Air-Milonga"
       },
       "organizer": {
         "name": "Haus der Sinne"
@@ -6801,11 +6806,11 @@
           "ref": "sentidos-open-air-milonga",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "5b78c115-1a0b-4ae1-8a8a-cb1eb9beab4c",
@@ -6832,7 +6837,7 @@
         "https://www.hoy-milonga.com/data_images/event/logo/ML364857.png"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475243/PracticaMOS-juntos"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475244/PracticaMOS-juntos"
       },
       "organizer": {
         "name": "Juliana Troles y Fadi Yahya"
@@ -6919,11 +6924,11 @@
           "ref": "practicamos-juntos",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "587a3dee-6d71-4909-a4e8-8c59e26e630c",
@@ -6954,7 +6959,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP384676.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476496/La-Remise-Tango-Berlin"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476497/La-Remise-Tango-Berlin"
       },
       "organizer": {
         "name": "Sergio Bassano"
@@ -7041,11 +7046,11 @@
           "ref": "la-remise-tango-berlin",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "67fb0baa-0847-4aea-92a8-dbac1062663e",
@@ -7073,7 +7078,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP410274.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475018/Tango-Technique-for-Leaders"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475019/Tango-Technique-for-Leaders"
       },
       "organizer": {
         "name": "Francesco Cieschi"
@@ -7160,11 +7165,11 @@
           "ref": "tango-technique-for-leaders",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "e642c54e-aff9-4284-9d13-7fce0de2ad79",
@@ -7198,7 +7203,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP456349.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475493/Tango4all-%E2%80%93-Double-Role-&amp;-Queer-Tango"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475494/Tango4all-%E2%80%93-Double-Role-&amp;-Queer-Tango"
       },
       "organizer": {
         "name": "queerkultural, Maria August und Maggy LeBush"
@@ -7285,11 +7290,11 @@
           "ref": "tango4all-double-role-queer-tango",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "69c961ca-93fd-4a26-ae93-6f35f9e14d0c",
@@ -7322,7 +7327,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP461892.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475689/TorEins-Neolonga"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475690/TorEins-Neolonga"
       },
       "organizer": {
         "name": "Horst Priesner"
@@ -7409,11 +7414,11 @@
           "ref": "toreins-neolonga",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "8f64a126-176f-4def-8f3c-49e071d8b73b",
@@ -7444,7 +7449,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP350346.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474872/Clase-de-tango"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474873/Clase-de-tango"
       },
       "organizer": {
         "name": "Claudio Ceballos Cruz, Leila Reese"
@@ -7531,11 +7536,11 @@
           "ref": "clase-de-tango",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "4a5d687c-39a1-4ff5-a3ab-935c74a510f9",
@@ -7568,7 +7573,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP420082.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476927/Milonga-im-Rosengarten"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476928/Milonga-im-Rosengarten"
       },
       "organizer": {
         "name": "Markus Shamous"
@@ -7655,11 +7660,11 @@
           "ref": "milonga-im-rosengarten",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "9f2259f9-2d16-4ea6-b698-c5f74b6ca4bd",
@@ -7687,7 +7692,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP399625.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476881/Mittwochstango-am-PLH-DJ-Marcello---CTB"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476882/Mittwochstango-am-PLH-DJ-Marcello---CTB"
       },
       "organizer": {
         "name": "CTB - Colectivo de Tango Berlinés"
@@ -7779,11 +7784,11 @@
           "ref": "mittwochstango-am-plh-dj-marcello-ctb",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "9090b77a-18c7-42b2-9c8b-09194939e99c",
@@ -7937,7 +7942,7 @@
         "https://www.hoy-milonga.com/data_images/event/logo/ML393998.png"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475436/Praktica---Tango-"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475437/Praktica---Tango-"
       },
       "organizer": {
         "name": "Berlin Tango Academy"
@@ -8024,11 +8029,11 @@
           "ref": "praktica-tango",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "08e8d599-b772-4d85-8fab-7fde9c7be993",
@@ -8061,7 +8066,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP456148.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475362/Practica---TANGO-ARGENTINO"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475363/Practica---TANGO-ARGENTINO"
       },
       "organizer": {
         "name": "Daniela Schulz & Celeste Rodríguez"
@@ -8148,11 +8153,11 @@
           "ref": "practica-tango-argentino",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "8b5eb507-7365-4c7a-bbda-ce913d7881c1",
@@ -8182,7 +8187,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP431510.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474639/Mittwochs-Praktika-@TTMS"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474640/Mittwochs-Praktika-@TTMS"
       },
       "organizer": {
         "name": "Tangotanzenmachtschön"
@@ -8269,11 +8274,11 @@
           "ref": "mittwochs-praktika-ttms",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "fa6df42d-7464-4fb3-806b-3b1f89d77e1c",
@@ -8301,7 +8306,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP473534.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476938/Sommertango-am-PLH---TDJ-Harald"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476939/Sommertango-am-PLH---TDJ-Harald"
       },
       "organizer": {
         "name": "CTB - Colectivo de Tango Berlinés"
@@ -8393,11 +8398,11 @@
           "ref": "sommertango-am-plh-tdj-harald",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "c5ff20f1-37a6-48ab-b458-d10550f22de2",
@@ -8408,7 +8413,7 @@
       "categories": [
         "social"
       ],
-      "description": "milonga: NEOLONGA Berlin 100 % Neo-Non-Contemporary TDJ Kris TangoVida Termine Juli: 23.07. / 30.07 Uhrzeit: 19-23 Uhr Ort: Neue Nationalgalerie, Potsdamer Straße 50, 10785 Berlin Eintritt: Empfohlene Spende: 5–10 € pro Person Damit hilfst du, die NEOLONGA möglich zu machen. Spendehut vor Ort. Wetterhinweis Open Air: Bei unsicherem Wetter oder Regenprognose bekommst du kurzfristig die aktuellsten Infos über evtl. Verschiebungen auf der website: https://tangovida.de/termine/ sowie in den Messeng…",
+      "description": "milonga: NEOLONGA Berlin 100 % Neo-Non-Contemporary TDJ Kris TangoVida Termine Juli: 30.07 Uhrzeit: 19-23 Uhr Ort: Neue Nationalgalerie, Potsdamer Straße 50, 10785 Berlin Eintritt: Empfohlene Spende: 5–10 € pro Person Damit hilfst du, die NEOLONGA möglich zu machen. Spendehut vor Ort. Wetterhinweis Open Air: Bei unsicherem Wetter oder Regenprognose bekommst du kurzfristig die aktuellsten Infos über evtl. Verschiebungen auf der website: https://tangovida.de/termine/ sowie in den Messenger-Gruppe…",
       "summary": null,
       "lat": 52.4379291,
       "lng": 13.2988167,
@@ -8425,7 +8430,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP404297.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/478019/Neolonga---OPEN-AIR-TANGO"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/478021/Neolonga---OPEN-AIR-TANGO"
       },
       "organizer": {
         "name": "Kris TangoVida und NEO-NON-TANGO Fusion"
@@ -8517,11 +8522,11 @@
           "ref": "neolonga-open-air-tango",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "f1a1e0f2-e70e-4cc1-8f5a-35ee65948c1e",
@@ -8551,7 +8556,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP118834.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475910/La-Milonga-Villa-Kreuzberg"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475911/La-Milonga-Villa-Kreuzberg"
       },
       "organizer": {
         "name": "Felix Hahme"
@@ -8643,11 +8648,11 @@
           "ref": "la-milonga-villa-kreuzberg",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "a452082d-f82a-441d-8f05-029d9a1b41d4",
@@ -8678,7 +8683,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP148588.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474840/Tango-Informal"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474841/Tango-Informal"
       },
       "organizer": {
         "name": "Luciano Des & Natasha Barbará"
@@ -8765,11 +8770,11 @@
           "ref": "tango-informal",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "26fa1b1a-f009-422f-8fe6-2ea6aeb8b00c",
@@ -8899,7 +8904,7 @@
       "categories": [
         "social"
       ],
-      "description": "milonga: Tangobar Summer Edition: ---------- Milonga mit einem DJ, heute, am 17. Juli mit: - Andreas Weiser vom Panke-Tango e. V. Viel Platz zum Tanzen auf zwei Ebenen (Haupt-Dancefloor und DJ sind auf dem unteren Dancefloor, die Musik läuft aber auch oben und ihr könnt gerne auch oben tanzen), auf der unteren Ebene ist es angenehm kühl, oben ist die Terrasse für euch bis 22 Uhr geöffnet. Barbetrieb ist bei der Summer Edition nur unten. Musik: Neo-, Non-Tango, contemporary, Fusion, Electro und…",
+      "description": "milonga: Tangobar Summer Edition: ---------- Milonga mit einem DJ, heute, am 24. Juli mit: - DJ Fran Borra vom Tangorra Orquesta Viel Platz zum Tanzen auf zwei Ebenen (Haupt-Dancefloor und DJ sind auf dem unteren Dancefloor, die Musik läuft aber auch oben und ihr könnt gerne auch oben tanzen), auf der unteren Ebene ist es angenehm kühl, oben ist die Terrasse für euch bis 22 Uhr geöffnet. Barbetrieb ist bei der Summer Edition nur unten. Musik: Neo-, Non-Tango, contemporary, Fusion, Electro und c…",
       "summary": null,
       "lat": 52.5490823,
       "lng": 13.4044618,
@@ -8918,12 +8923,17 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP303459.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/478820/Haus-der-Sinne---Tangobar-Summer-Edition"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/478821/Haus-der-Sinne---Tangobar-Summer-Edition"
       },
       "organizer": {
         "name": "Haus der Sinne"
       },
-      "music": [],
+      "music": [
+        {
+          "name": "DJ Fran Borra",
+          "type": "dj"
+        }
+      ],
       "artists": [],
       "translations": {
         "DE": {
@@ -9005,11 +9015,11 @@
           "ref": "haus-der-sinne-tangobar-summer-edition",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "9fbcb1ff-2f9a-442a-a71c-da3f673213c2",
@@ -9173,7 +9183,7 @@
           "ref": "14th-varna-summer-tango-marathon-2026",
           "url": "https://www.danceus.org/events/argentine-tango/tango-festivals-marathons-worldwide/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -9204,7 +9214,7 @@
         "https://tango-calendar.de/wp-content/uploads/2025/11/Hofheim.png"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/hofheim-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino-2/2026-07-17/"
+        "website": "https://tango-calendar.de/event/hofheim-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino-2/2026-07-31/"
       },
       "organizer": {
         "name": "Blanco y Negro Tango",
@@ -9292,11 +9302,11 @@
           "ref": "hofheim-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "1d70e0dd-044e-4ef5-99b8-958a98cc5238",
@@ -9320,14 +9330,17 @@
       "days_of_week": [
         "fri"
       ],
-      "pricing": null,
-      "start_date": "2026-07-03",
-      "end_date": "2026-07-04",
+      "pricing": {
+        "text": "Spende EUR",
+        "currency": "EUR"
+      },
+      "start_date": "2026-07-31",
+      "end_date": "2026-08-01",
       "images": [
         "https://tango-calendar.de/wp-content/uploads/2026/04/IMG_20220813_163333.jpg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/vollmondtango-am-niederwaldtempel/2026-07-03/"
+        "website": "https://tango-calendar.de/event/vollmondtango-am-niederwaldtempel/2026-07-31/"
       },
       "organizer": {
         "name": "Tango Argentino in Mainz e. V.",
@@ -9407,7 +9420,7 @@
           }
         }
       },
-      "status": "archived",
+      "status": "active",
       "locked_fields": [],
       "sources": [
         {
@@ -9415,15 +9428,15 @@
           "ref": "vollmondtango-am-niederwaldtempel",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-03T08:49:08Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "394e846b-5a72-4ed9-80e3-f53cb88c17cd",
-      "name": "Milonga Morada – No. 52, Wächtersbach",
+      "name": "Milonga Morada – No. 53, Wächtersbach",
       "dances": [
         "tango"
       ],
@@ -9439,14 +9452,17 @@
       "country": "Deutschland",
       "schedule": null,
       "days_of_week": [],
-      "pricing": null,
+      "pricing": {
+        "text": "0 EUR",
+        "currency": "EUR"
+      },
       "start_date": null,
       "end_date": null,
       "images": [
-        "https://tango-calendar.de/wp-content/uploads/2026/04/Facebook-1080x1080-20260703-MM-deutsch.png"
+        "https://tango-calendar.de/wp-content/uploads/2026/04/Facebook-1080x1080-20260731-MM-deutsch-1.png"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/milonga-morada-no-52-waechtersbach/"
+        "website": "https://tango-calendar.de/event/milonga-morada-no-53-waechtersbach-2/"
       },
       "organizer": {
         "name": "Dance and Fitness Friends W&auml;chtersbach e.V.",
@@ -9526,7 +9542,7 @@
           }
         }
       },
-      "status": "archived",
+      "status": "active",
       "locked_fields": [],
       "sources": [
         {
@@ -9534,11 +9550,11 @@
           "ref": "milonga-morada-no-52-wachtersbach",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-03T08:49:08Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "d5679291-3e45-4cd3-be6f-9e1b7a3ff641",
@@ -9920,13 +9936,13 @@
         "thu"
       ],
       "pricing": null,
-      "start_date": "2026-07-16",
-      "end_date": "2026-07-16",
+      "start_date": "2026-07-30",
+      "end_date": "2026-07-30",
       "images": [
         "https://tango-calendar.de/wp-content/uploads/2026/05/OpenAir20262-Kopie-3.jpg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/tango-open-air-am-gleis-1/2026-07-16/"
+        "website": "https://tango-calendar.de/event/tango-open-air-am-gleis-1/2026-07-30/"
       },
       "organizer": {
         "name": "Tango Querido, Susanne &amp; Amir Helalat",
@@ -10019,11 +10035,11 @@
           "ref": "tango-open-air-am-gleis-1",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "fc038f6c-dc03-47c7-a6c6-2168d12b4c13",
@@ -10047,14 +10063,17 @@
       "days_of_week": [
         "sat"
       ],
-      "pricing": null,
-      "start_date": "2026-07-04",
-      "end_date": "2026-07-05",
+      "pricing": {
+        "text": "5,00 EUR",
+        "currency": "EUR"
+      },
+      "start_date": "2026-08-01",
+      "end_date": "2026-08-02",
       "images": [
         "https://tango-calendar.de/wp-content/uploads/2023/11/ronda-del-sabado01-1.jpg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/la-ronda-del-sabado/2026-07-04/"
+        "website": "https://tango-calendar.de/event/la-ronda-del-sabado/2026-08-01/"
       },
       "organizer": {
         "name": "Tango Querido, Susanne &amp; Amir Helalat",
@@ -10134,7 +10153,7 @@
           }
         }
       },
-      "status": "archived",
+      "status": "active",
       "locked_fields": [],
       "sources": [
         {
@@ -10142,11 +10161,11 @@
           "ref": "la-ronda-del-sabado",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-03T08:49:08Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "8e589235-21db-4125-b70c-c45fb9d0cc09",
@@ -10418,7 +10437,7 @@
         "https://tango-calendar.de/wp-content/uploads/2025/11/Monday-Lesson.png"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/beginner-tango-lesson/2026-07-20/"
+        "website": "https://tango-calendar.de/event/beginner-tango-lesson/2026-07-27/"
       },
       "organizer": {
         "name": "Sepideh Saeb"
@@ -10505,11 +10524,11 @@
           "ref": "beginner-tango-lesson",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "70421544-0474-4898-8b55-5e85d94a8ff3",
@@ -10539,7 +10558,7 @@
         "https://tango-calendar.de/wp-content/uploads/2025/11/New-Flyer.jpg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/intermediate-advanced-tango-lesson/2026-07-21/"
+        "website": "https://tango-calendar.de/event/intermediate-advanced-tango-lesson/2026-07-28/"
       },
       "organizer": {
         "name": "Sepideh Saeb"
@@ -10626,11 +10645,11 @@
           "ref": "intermediate-advanced-tango-lesson",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "21e69b68-d90f-4c6e-9341-a31d7c217877",
@@ -10657,7 +10676,7 @@
         "https://tango-calendar.de/wp-content/uploads/2025/11/Darmstadt-scaled.jpg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/darmstadt-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino/2026-07-14/"
+        "website": "https://tango-calendar.de/event/darmstadt-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino/2026-07-28/"
       },
       "organizer": {
         "name": "Blanco y Negro Tango",
@@ -10745,11 +10764,11 @@
           "ref": "darmstadt-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "74084fce-f45d-43e9-9617-7582604d73a8",
@@ -10779,7 +10798,7 @@
         "https://tango-calendar.de/wp-content/uploads/2026/05/1000098168.jpg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/open-air-tango-frankfurt/2026-07-14/"
+        "website": "https://tango-calendar.de/event/open-air-tango-frankfurt/2026-07-28/"
       },
       "organizer": {
         "name": "Heinz Lovetinsky"
@@ -10866,11 +10885,11 @@
           "ref": "open-air-tango-frankfurt",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "b41289fb-1ca7-44ec-83c0-7f371eeeca26",
@@ -11015,7 +11034,7 @@
         "https://tango-calendar.de/wp-content/uploads/2025/11/Mannheim.png"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/mannheim-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino/2026-07-15/"
+        "website": "https://tango-calendar.de/event/mannheim-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino/2026-07-29/"
       },
       "organizer": {
         "name": "Blanco y Negro Tango",
@@ -11103,11 +11122,11 @@
           "ref": "mannheim-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "b73c8a17-40ae-4451-bc48-c6fd723e69bd",
@@ -11376,7 +11395,7 @@
         "https://tango-calendar.de/wp-content/uploads/2025/10/IMG_5369-scaled.jpg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/frankfurt-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino/2026-07-16/"
+        "website": "https://tango-calendar.de/event/frankfurt-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino/2026-07-30/"
       },
       "organizer": {
         "name": "Blanco y Negro Tango",
@@ -11464,11 +11483,11 @@
           "ref": "frankfurt-tauche-ein-in-die-leidenschaft-und-eleganz-des-tango-argentino",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "61abd6f6-92f3-4971-b8ee-06d07339013a",
@@ -11479,7 +11498,7 @@
       "categories": [
         "social"
       ],
-      "description": "&lt;p&gt;Die Milonga auf dem Neroberg als DJ: Achim traditionellen Tangos 🎹🪗🎻 in Tanda Folge und außergewöhnliche tanzbare Cortinas aus dem Non-Neo Genre. 🎷🎸🎺🪈🥁🪕... 🕺💃Wir (Annette und Achim) freuen uns auf Euch 🕺💃💃🕺🌹 und auch wenn es warm 🌞wird - wir sind auf dem Neroberg wo auch fast immer ein frischen Lüftchen 🌬️weht... Diese Milonga ist [&hellip;]&lt;/p&gt;\\n",
+      "description": "&lt;p&gt;💃🏻Milonga Gypsy Night um 19:30 h am Neroberg statt. Django, Rosenberg &amp; Friends nehmen uns mit auf eine temperamentvolle Reise in die 30er und 40er Jahre, in denen parallel das Goldene Zeitalter des Tango erblühte. Der Treffpunkt wird final am Donnerstag bekannt gegeben. Wir freuen uns auf einen gefühlvollen Abend mit euch. 💋Eure DJane Giza [&hellip;]&lt;/p&gt;\\n",
       "summary": null,
       "lat": 50.0947414,
       "lng": 8.2254791,
@@ -11487,15 +11506,17 @@
       "city": "Wiesbaden",
       "country": "Germany",
       "schedule": null,
-      "days_of_week": [],
+      "days_of_week": [
+        "thu"
+      ],
       "pricing": null,
       "start_date": null,
       "end_date": null,
       "images": [
-        "https://tango-calendar.de/wp-content/uploads/2026/04/neroberg-wiesbaden.jpeg"
+        "https://tango-calendar.de/wp-content/uploads/2026/04/neroberg-wiesbaden-1.jpeg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/%e2%ad%90%e2%ad%90%e2%ad%90%f0%9f%8e%b6%f0%9f%8e%b5%f0%9f%95%ba%f0%9f%92%83%f0%9f%92%83%f0%9f%95%ba%f0%9f%8e%b5%f0%9f%8e%b6tango-auf-dem-neroberg-%f0%9f%8e%b6%f0%9f%8e%b5%f0%9f%95%ba%f0%9f%92%83/2026-07-09/"
+        "website": "https://tango-calendar.de/event/%e2%ad%90%e2%ad%90%e2%ad%90%f0%9f%8e%b6%f0%9f%8e%b5%f0%9f%95%ba%f0%9f%92%83%f0%9f%92%83%f0%9f%95%ba%f0%9f%8e%b5%f0%9f%8e%b6tango-auf-dem-neroberg-%f0%9f%8e%b6%f0%9f%8e%b5%f0%9f%95%ba%f0%9f%92%83-2/2026-07-30/"
       },
       "organizer": {
         "name": "DJ Pasión"
@@ -11574,7 +11595,7 @@
           }
         }
       },
-      "status": "archived",
+      "status": "active",
       "locked_fields": [],
       "sources": [
         {
@@ -11582,11 +11603,11 @@
           "ref": "tango-auf-dem-neroberg",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-03T08:49:08Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "59576171-0a00-4aef-bf26-d0114303da92",
@@ -11619,7 +11640,7 @@
         "https://tango-calendar.de/wp-content/uploads/2025/09/Tango-Argentino.jpg"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/tango-argentino-kurs-in-eschborn/2026-07-16/"
+        "website": "https://tango-calendar.de/event/tango-argentino-kurs-in-eschborn/2026-07-30/"
       },
       "organizer": {
         "name": "TC Varia Schwarz Gold Friedrichsdorf e.V.",
@@ -11707,11 +11728,11 @@
           "ref": "tango-argentino-kurs-in-usingen",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "296cfbc3-a6f7-4399-9fbe-b074d8a34a7e",
@@ -11744,7 +11765,7 @@
         "https://tango-calendar.de/wp-content/uploads/2026/05/Bluesky-text-Milonga-Noche-Azul-yx.png"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/noche-azul-die-donnerstagsmilonga-in-der-academis-de-tango-2/2026-07-16/"
+        "website": "https://tango-calendar.de/event/noche-azul-die-donnerstagsmilonga-in-der-academis-de-tango-2/2026-07-30/"
       },
       "organizer": {
         "name": "Frankfurt Tango eV"
@@ -11831,11 +11852,11 @@
           "ref": "noche-azul-8211-die-donnerstagsmilonga-in-der-academia-de-tango",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "78083d05-62ba-492c-a8c8-f35ddaf7bb94",
@@ -11957,11 +11978,11 @@
           "ref": "latin-party-fridays-la-pachanga",
           "url": "https://www.danceus.org/events/salsa/paris-france-salsa-calendar/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "c756f38c-74e5-4cc5-b411-f50bd4349183",
@@ -11985,8 +12006,8 @@
       "schedule": null,
       "days_of_week": [],
       "pricing": null,
-      "start_date": "2026-07-17",
-      "end_date": "2026-07-18",
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-25",
       "images": [
         "https://www.danceus.org/events/images/166915148583116/latinbox-puerto-rican-salsa-party-cover.jpg"
       ],
@@ -12079,11 +12100,11 @@
           "ref": "latinbox-puerto-rican-salsa-party",
           "url": "https://www.danceus.org/events/salsa/paris-france-salsa-calendar/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "784ca291-dc77-4a5b-95db-70b36197039f",
@@ -12107,8 +12128,8 @@
       "schedule": null,
       "days_of_week": [],
       "pricing": null,
-      "start_date": "2026-07-17",
-      "end_date": "2026-07-18",
+      "start_date": "2026-07-24",
+      "end_date": "2026-07-25",
       "images": [
         "https://www.danceus.org/events/images/166915147997032/fiesta-latina-fridays-cubana-cafe-cover.jpg"
       ],
@@ -12201,11 +12222,11 @@
           "ref": "fiesta-latina-fridays-cubana-cafe",
           "url": "https://www.danceus.org/events/salsa/paris-france-salsa-calendar/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "c0aa5fd0-3680-423a-8200-a808efb4a484",
@@ -12328,7 +12349,7 @@
           "ref": "latino-caribbean-saturdays-la-pachanga",
           "url": "https://www.danceus.org/events/salsa/paris-france-salsa-calendar/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -12336,7 +12357,7 @@
     },
     {
       "id": "4832d56f-5cd2-440b-9b80-d592d273adfa",
-      "name": "Fiesta Latina Thursdays @ Cubana Cafe",
+      "name": "Fiesta Latina Saturdays @ Cubana Cafe",
       "dances": [
         "salsa",
         "bachata"
@@ -12346,7 +12367,7 @@
         "festival",
         "class"
       ],
-      "description": "Every Thursday, a taste of the weekend! DJ for a purely Latin evening. Come party at Cubana Caf. Our DJ will have you dancing to Latin rhythms until the end of the night. We welcome you until 4 am!",
+      "description": "It&#39;s the weekend and we&#39;re chilling Cuba welcomes you to frenzied rhythms with our DJs from 10:00 p.m., a good meal like There, a glass of Rum, a good cigar and the music. The unmissable Saturdays in",
       "summary": null,
       "lat": 48.8426412,
       "lng": 2.3289213,
@@ -12355,16 +12376,16 @@
       "country": "France",
       "schedule": null,
       "days_of_week": [
-        "thu"
+        "sat"
       ],
       "pricing": null,
-      "start_date": "2026-07-23",
-      "end_date": "2026-07-24",
+      "start_date": "2026-07-25",
+      "end_date": "2026-07-26",
       "images": [
-        "https://www.danceus.org/events/images/166915147775932/fiesta-latina-thursdays-cubana-cafe-cover.jpg"
+        "https://www.danceus.org/events/images/166915148164632/fiesta-latina-saturdays-cubana-cafe-cover.jpg"
       ],
       "socials": {
-        "website": "https://www.danceus.org/event/16691514790178/fiesta-latina-thursdays-cubana-cafe-paris-france/"
+        "website": "https://www.danceus.org/event/16691514824488/fiesta-latina-saturdays-cubana-cafe-paris-france/"
       },
       "organizer": {
         "name": "Cubana Cafe",
@@ -12452,11 +12473,11 @@
           "ref": "fiesta-latina-saturdays-cubana-cafe",
           "url": "https://www.danceus.org/events/salsa/paris-france-salsa-calendar/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "96aaa228-5274-402d-bff3-caaa52c5a5ba",
@@ -12574,7 +12595,7 @@
           "ref": "salsa-o-39-sulli-party-sundays",
           "url": "https://www.danceus.org/events/salsa/paris-france-salsa-calendar/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -12604,8 +12625,8 @@
         "wed"
       ],
       "pricing": null,
-      "start_date": "2026-07-22",
-      "end_date": "2026-07-23",
+      "start_date": "2026-07-29",
+      "end_date": "2026-07-30",
       "images": [
         "https://www.danceus.org/images/17640385765280/Salsa_Gemini_Generated_Image_7w702e7w702e7w70.jpg"
       ],
@@ -12698,11 +12719,11 @@
           "ref": "afterwork-salsabor-at-havanita",
           "url": "https://www.danceus.org/events/salsa/paris-france-salsa-calendar/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "727372aa-7404-44c7-927d-9bb1db4cb43f",
@@ -12733,7 +12754,7 @@
         "https://londonsalsaevents.uk/wp-content/uploads/2025/09/AISelect_20250902_000405_Instagram.webp"
       ],
       "socials": {
-        "website": "https://londonsalsaevents.uk/event/super-mario-saturday-socials-7/2026-07-18/"
+        "website": "https://londonsalsaevents.uk/event/super-mario-saturday-socials-7/2026-08-15/"
       },
       "organizer": {
         "name": "salsa 4 fun",
@@ -12821,11 +12842,11 @@
           "ref": "super-mario-saturday-socials",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "25f9e090-fec9-43f3-9173-c1495710d3a1",
@@ -12944,7 +12965,7 @@
           "ref": "mambocity-saturdays-and-llb",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -12981,7 +13002,7 @@
         "https://londonsalsaevents.uk/wp-content/uploads/2026/03/FB_IMG_1773875998664.jpg"
       ],
       "socials": {
-        "website": "https://londonsalsaevents.uk/event/salsa-mondays-6/2026-07-20/"
+        "website": "https://londonsalsaevents.uk/event/salsa-mondays-6/2026-07-27/"
       },
       "organizer": {
         "name": "Tony Crossbody"
@@ -13068,11 +13089,11 @@
           "ref": "salsa-mondays",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "72de7f69-9f94-4903-af99-503851281bdd",
@@ -13103,7 +13124,7 @@
         "https://londonsalsaevents.uk/wp-content/uploads/2025/08/Funky-mambo.webp"
       ],
       "socials": {
-        "website": "https://londonsalsaevents.uk/event/funky-mambo/2026-07-21/"
+        "website": "https://londonsalsaevents.uk/event/funky-mambo/2026-07-28/"
       },
       "organizer": {
         "name": "Funky Mambo",
@@ -13191,11 +13212,11 @@
           "ref": "funky-mambo",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "9d0c151c-e314-4a06-8f91-a4822d19b245",
@@ -13228,7 +13249,7 @@
         "https://londonsalsaevents.uk/wp-content/uploads/2025/08/530192021_1343827354416456_4663724851107003111_n.jpg"
       ],
       "socials": {
-        "website": "https://londonsalsaevents.uk/event/todo-latino-2/2026-07-21/"
+        "website": "https://londonsalsaevents.uk/event/todo-latino-2/2026-07-28/"
       },
       "organizer": null,
       "music": [],
@@ -13313,11 +13334,11 @@
           "ref": "todo-latino",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "c2845b5a-1dac-4978-aab3-86c8039bbae2",
@@ -13566,7 +13587,7 @@
           "ref": "pexava",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -13601,7 +13622,7 @@
         "https://londonsalsaevents.uk/wp-content/uploads/2025/10/AISelect_20251008_232100_Instagram.webp"
       ],
       "socials": {
-        "website": "https://londonsalsaevents.uk/event/chango-3/2026-07-18/"
+        "website": "https://londonsalsaevents.uk/event/chango-4/"
       },
       "organizer": {
         "name": "Cali Beat dance"
@@ -13688,11 +13709,11 @@
           "ref": "chango",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "c2777ad0-eb65-4393-987b-d5c4a88abbab",
@@ -13812,7 +13833,7 @@
           "ref": "mambolicious-8211-with-super-mario",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -13974,7 +13995,7 @@
         "https://londonsalsaevents.uk/wp-content/uploads/2026/05/FB_IMG_1776364489341111.jpg"
       ],
       "socials": {
-        "website": "https://londonsalsaevents.uk/event/pexava-sundays/2026-07-19/"
+        "website": "https://londonsalsaevents.uk/event/pexava-sundays/2026-08-16/"
       },
       "organizer": {
         "name": "pexava"
@@ -14061,11 +14082,11 @@
           "ref": "pexava-sundays",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "fb47f6ff-27f7-4df6-83a8-85c25a1ab95e",
@@ -14185,7 +14206,7 @@
           "ref": "leaf-and-cane-8211-funky-mambo",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -14312,7 +14333,7 @@
           "ref": "incognito-dance-putney-salsa-and-bachata-dance",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -14439,7 +14460,7 @@
           "ref": "pexava-monthly-thursdays",
           "url": "https://londonsalsaevents.uk/",
           "first_seen": "2026-07-03T01:27:16Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-03T01:27:16Z",
@@ -15769,7 +15790,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP424714.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476612/Tango-Cafe-im-Maxixe---SOMMERPAUSE"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/476613/Tango-Cafe-im-Maxixe---SOMMERPAUSE"
       },
       "organizer": {
         "name": "Tanzschule Maxixe"
@@ -15790,11 +15811,11 @@
           "ref": "tango-cafe-im-maxixe-sommerpause",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-10T14:53:56Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-10T14:53:56Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "09ecf7c6-5656-40b2-803d-72924d09551f",
@@ -15805,7 +15826,7 @@
       "categories": [
         "social"
       ],
-      "description": "milonga: Das Tango Café El Gato findet regelmäßig alle zwei Wochen statt. Tanzen auf hervorragendem Tanzparkett bei traditioneller Tangomusik mit Tandas & Cortinas, bei Kaffee & Kuchen sowie mit einer Tausch-Tanda zum Kennenlernen. Alle sind herzlich willkommen! - Veranstalter: weRK36 - DJ: Torsten Moebis - Eintritt: € 10 - Tanzzeit 16.00 – 20.00 Uhr ---------- Quelle: https://www.facebook.com/elgatotangoberlin",
+      "description": "milonga: !!! HINWEIS: Wegen Sanierungsarbeiten git es im August 2026 kein Tango Café !!! =============== Das Tango Café El Gato findet regelmäßig alle zwei Wochen statt. Tanzen auf hervorragendem Tanzparkett bei traditioneller Tangomusik mit Tandas & Cortinas, bei Kaffee & Kuchen sowie mit einer Tausch-Tanda zum Kennenlernen. Alle sind herzlich willkommen! - Veranstalter: weRK36 - DJ: Torsten Moebis - Eintritt: € 10 - Tanzzeit 16.00 – 20.00 Uhr ---------- Quelle: https://www.facebook.com/elgato…",
       "summary": null,
       "lat": 52.4791163,
       "lng": 13.3548431,
@@ -15825,7 +15846,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP388795.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/477510/El-Gato"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/478807/El-Gato"
       },
       "organizer": {
         "name": "weRK36"
@@ -15841,11 +15862,11 @@
           "ref": "el-gato",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-10T14:53:56Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-10T14:53:56Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "6bbe2a1b-25c4-41c9-ad41-e70b0e7f174e",
@@ -15923,7 +15944,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP764.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/482579/After-Work-Milonga---La-Berlinesa---SOMMERPAUSE"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/482580/After-Work-Milonga---La-Berlinesa---SOMMERPAUSE"
       },
       "organizer": {
         "name": "LA BERLINESA Milonga und events"
@@ -15939,11 +15960,11 @@
           "ref": "after-work-milonga-la-berlinesa-sommerpause",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-10T14:53:56Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-10T14:53:56Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "dc43aed4-84c1-4e54-9a73-956f1c7652d4",
@@ -15973,7 +15994,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP167278.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483092/Milonga-Coqueta---OPEN-AIR"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483094/Milonga-Coqueta---OPEN-AIR"
       },
       "organizer": {
         "name": "DJ Elisabetta"
@@ -15998,11 +16019,11 @@
           "ref": "milonga-coqueta-open-air",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-10T14:53:56Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-10T14:53:56Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "0842886b-7054-4f1a-a07e-790c671586f3",
@@ -16030,7 +16051,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP781.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474913/TangoArt---SOMMERPAUSE"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/474914/TangoArt---SOMMERPAUSE"
       },
       "organizer": {
         "name": "Angelika Fischer"
@@ -16046,11 +16067,11 @@
           "ref": "tangoart-sommerpause",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-10T14:53:56Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-10T14:53:56Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "b8df7a5a-7763-45f8-8045-f54e74fd3724",
@@ -16456,7 +16477,7 @@
         "https://tango-calendar.de/wp-content/uploads/2025/10/cropped-Logo-CI-2-1.png"
       ],
       "socials": {
-        "website": "https://tango-calendar.de/event/la-cuerda-gran-milonga-2-und-4-sonntag-exilonga-in-der-conexion-2/2026-07-12/"
+        "website": "https://tango-calendar.de/event/la-cuerda-gran-milonga-2-und-4-sonntag-exilonga-in-der-conexion/2026-07-26/"
       },
       "organizer": {
         "name": "Frankfurt Tango eV"
@@ -16472,11 +16493,11 @@
           "ref": "la-cuerda-gran-milonga-8211-2-und-4-sonntag-8211-exilonga-in-der-conexion",
           "url": "https://tango-calendar.de/events/",
           "first_seen": "2026-07-10T14:53:56Z",
-          "last_seen": "2026-07-10T14:53:56Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-10T14:53:56Z",
-      "updated_at": "2026-07-10T14:53:56Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "fbac9a0b-a558-4f3e-b5c2-9bda5861fc7f",
@@ -17002,7 +17023,7 @@
           "ref": "san-francisco-s-hello-bachata-salsa-zouk-kizomba-dance-festival",
           "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
           "first_seen": "2026-07-10T14:53:56Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-10T14:53:56Z",
@@ -17056,7 +17077,7 @@
           "ref": "paris-kizomba-summer-9e-ed",
           "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
           "first_seen": "2026-07-10T14:53:56Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-10T14:53:56Z",
@@ -17095,7 +17116,7 @@
         "https://www.hoy-milonga.com/data_images/event/photo/MP399045.jpg"
       ],
       "socials": {
-        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483038/Clarchens-Ballhaus---SPECIAL-MILONGA"
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483036/Clarchens-Ballhaus---SPECIAL-MILONGA"
       },
       "organizer": {
         "name": "Tango Berlin"
@@ -17111,11 +17132,11 @@
           "ref": "clarchens-ballhaus-special-milonga",
           "url": "https://www.hoy-milonga.com/berlin/es",
           "first_seen": "2026-07-17T13:49:38Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-17T13:49:38Z",
-      "updated_at": "2026-07-17T13:49:38Z"
+      "updated_at": "2026-07-24T14:11:11Z"
     },
     {
       "id": "9473eb57-db96-4e81-a29a-5abb8add89dd",
@@ -18229,7 +18250,7 @@
           "ref": "bcn-dance-life-hot-weekend",
           "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
           "first_seen": "2026-07-17T13:49:38Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-17T13:49:38Z",
@@ -18285,7 +18306,7 @@
           "ref": "indonesian-international-latin-festival-asia-pacific-salsa-summit-2026",
           "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
           "first_seen": "2026-07-17T13:49:38Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-17T13:49:38Z",
@@ -18341,7 +18362,7 @@
           "ref": "lions-alicante-xix-2026",
           "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
           "first_seen": "2026-07-17T13:49:38Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-17T13:49:38Z",
@@ -18397,11 +18418,1061 @@
           "ref": "viva-latin-summer-2026",
           "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
           "first_seen": "2026-07-17T13:49:38Z",
-          "last_seen": "2026-07-17T13:49:38Z"
+          "last_seen": "2026-07-24T14:11:11Z"
         }
       ],
       "created_at": "2026-07-17T13:49:38Z",
       "updated_at": "2026-07-17T13:49:38Z"
+    },
+    {
+      "id": "056f5e3b-0ced-4707-a6fa-679a6077352c",
+      "name": "Milonga de la tarde y noche",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "milonga: Milonga !!! wetterabhängig !!! ---------- Open-Air-Milonga am PLH (Spreeufer) (Milonga de la tarde) - 16:00 Uhr - 24:00 Uhr DJs Nora & Mika (Preis: Spendenbasis) ---------- Quelle: https://www.facebook.com/norajensen24",
+      "summary": null,
+      "lat": 52.5201476,
+      "lng": 13.3748004,
+      "address": "Konrad-Adenauer-Straße 1",
+      "city": "Berlin",
+      "country": "Deutschland",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://www.hoy-milonga.com/data_images/event/logo/ML174516.png",
+        "https://www.hoy-milonga.com/data_images/event/photo/MP174516.jpg"
+      ],
+      "socials": {
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/473773/Milonga-de-la-tarde-y-noche"
+      },
+      "organizer": {
+        "name": "CTB - Colectivo de Tango Berlinés"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:hoy-milonga.com",
+          "ref": "milonga-de-la-tarde-y-noche",
+          "url": "https://www.hoy-milonga.com/berlin/es",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "3825c3a7-cedc-45c5-b181-96a9f9d1c85a",
+      "name": "La Milonguita im Rosengarten - OUTDOOR",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "milonga: OUTDOOR - Milonga - wetterbedingt! ---------- Wir möchten den Einstieg in die faszinierende Welt der Milongas erleichtern und uns allen gemeinsam einen zauberhaften und tanzreichen Abend bescheren. Die Milonguita wird von Tangoschüler*innen des Nou organisiert und vorbereitet. Eingeladen sind alle Tangobegeisterten, ganz gleich ob Anfänger*innen oder erfahrene Tänzer*innen. In der diesjährigen \"Sommeredition\" möchten wir den Sommer mit Euch feiern und draußen tanzen. Im \"Rosengarten\" M…",
+      "summary": null,
+      "lat": 52.5476464,
+      "lng": 13.4011426,
+      "address": "Schwedter Straße 79",
+      "city": "Berlin",
+      "country": "Deutschland",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://www.hoy-milonga.com/data_images/event/logo/ML355290.png",
+        "https://www.hoy-milonga.com/data_images/event/photo/MP355290.jpg"
+      ],
+      "socials": {
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483247/La-Milonguita-im-Rosengarten---OUTDOOR"
+      },
+      "organizer": {
+        "name": "Luisa Fernanda Palma"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:hoy-milonga.com",
+          "ref": "la-milonguita-im-rosengarten-outdoor",
+          "url": "https://www.hoy-milonga.com/berlin/es",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "f81a7388-fd7a-4102-b4ca-7eb61801dcea",
+      "name": "Tango am Rand",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social",
+        "class"
+      ],
+      "description": "milonga: Das Theater am Rand ist eine außergewöhnliche, unkonventionelle, deutschlandweit renommierte Bühne im kleinen Ort Zollbrücke direkt an der Oder! Gemeinsam mit dem Theater am Rand laden wir euch zu einem sommerlichen zweitägigen Tango- und Ausflugswochenende am 25.–26. Juli ein. Wir freuen uns sehr auf diese erste gemeinsame Veranstaltung von Theater am Rand und Haus der Sinne! Tagsüber finden verschiedene Workshops mit Janine Lange statt. Samstagabend spielt das renommierte Cuarteto Ro…",
+      "summary": null,
+      "lat": 52.787256,
+      "lng": 14.2475559,
+      "address": "Zollbrücke 16",
+      "city": "Oderaue",
+      "country": "Deutschland",
+      "schedule": null,
+      "days_of_week": [
+        "sun"
+      ],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://www.hoy-milonga.com/data_images/event/logo/ML477878.png",
+        "https://www.hoy-milonga.com/data_images/event/photo/MP477878.jpg"
+      ],
+      "socials": {
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/477879/Tango-am-Rand"
+      },
+      "organizer": {
+        "name": "Haus der Sinne und Theater am Rand"
+      },
+      "music": [
+        {
+          "name": "DJ Juliana",
+          "type": "dj"
+        }
+      ],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:hoy-milonga.com",
+          "ref": "tango-am-rand",
+          "url": "https://www.hoy-milonga.com/berlin/es",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "e6ff1465-24de-4833-ac18-505e4d5fcf55",
+      "name": "SUBTE",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "milonga: Subte Milonga – 25.07. ---------- Join us for a special summer night from 22:00 to 03:00 with wonderful music by - DJ Oliver I'm sure there will be some tasty snacks, a classy bar, and, most importantly, air conditioning. SUBTE - don't mind the gap! - Entrance: 12 € ---------- Quelle: https://www.facebook.com/events/36188921407373608/",
+      "summary": null,
+      "lat": 52.4838275,
+      "lng": 13.4226831,
+      "address": "Lucy-Lameck-Straße 32",
+      "city": "Berlin",
+      "country": "Deutschland",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://www.hoy-milonga.com/data_images/event/logo/ML2504.png",
+        "https://www.hoy-milonga.com/data_images/event/photo/MP2504.jpg"
+      ],
+      "socials": {
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483147/SUBTE"
+      },
+      "organizer": {
+        "name": "Waldemar Tango und Coco Mi Hee Kim"
+      },
+      "music": [
+        {
+          "name": "DJ Oliver I'm",
+          "type": "dj"
+        }
+      ],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:hoy-milonga.com",
+          "ref": "subte",
+          "url": "https://www.hoy-milonga.com/berlin/es",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "12534297-933f-4a4e-9973-80f5fbbd8a40",
+      "name": "Spreefeld Inklusions Tango Café",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "milonga: Inklusions Tango Café ---------- Wir laden auch in diesem Jahr wieder zum tanzen und sich treffen beim Inklusions-Tango-Café auf dem Spreefeld ein. Alle sind herzlich willkommen, Menschen mit und ohne Beeinträchtigung, Tangotänzer:innen und Freunde und Bekannte. Der Einstieg ist jederzeit möglich. Eine wichtige Grundlage von Spreefeld Tango ist die ehrenamtliche Mitarbeit, alle an den Tanz- und Musikveranstaltungen Beteiligten tun dies aus persönlichem Engagement. Der Einstieg ist jede…",
+      "summary": null,
+      "lat": 52.5101722,
+      "lng": 13.4239294,
+      "address": "Wilhelmine-Gemberg-Weg 10-14",
+      "city": "Berlin",
+      "country": "Deutschland",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://www.hoy-milonga.com/data_images/event/logo/ML1585.png",
+        "https://www.hoy-milonga.com/data_images/event/photo/MP1585.jpg"
+      ],
+      "socials": {
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483691/Spreefeld-Inklusions-Tango-Cafe"
+      },
+      "organizer": {
+        "name": "Ule Kamal Mägdefrau Thomas Rieser"
+      },
+      "music": [
+        {
+          "name": "DJ Oskar Schmitt",
+          "type": "dj"
+        },
+        {
+          "name": "DJ Ule",
+          "type": "dj"
+        },
+        {
+          "name": "DJ Gökçe Ceren Haznedar",
+          "type": "dj"
+        }
+      ],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:hoy-milonga.com",
+          "ref": "spreefeld-inklusions-tango-cafe",
+          "url": "https://www.hoy-milonga.com/berlin/es",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "b5849ce2-aa65-49a4-8246-fc9fae7a70f8",
+      "name": "Tango 4 ALL - Every Last Sunday",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social",
+        "class"
+      ],
+      "description": "práctica de tango: Tango 4 All- PRACTICA & Classes w/ Rafa Last Sonntag 26.7./ 18:30 SOLID, Graefestr. 18, Berlin Kreuzberg. Tango üben im schönen Graefekiez. Kommt alleine oder mit Partner/in, probiert etwas aus, übt, bis es für die Milonga passt. Tanzt in der Rolle, in der Ihr Euch wohlfühlt, wechselt oder probiert etwas Neues. Deine Gastgeber sind Davide, Nacho, Pietro und Rafa. UKB Vorschlag: 5-20 Euro. Limonade, Bier, Wein sind vorhanden.Wasser frei. DE/EN ​18:30 - Technique Deep Dive: Wir…",
+      "summary": null,
+      "lat": 52.4929561,
+      "lng": 13.417489,
+      "address": "Graefestraße 18",
+      "city": "Berlin",
+      "country": "Deutschland",
+      "schedule": null,
+      "days_of_week": [
+        "sun"
+      ],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://www.hoy-milonga.com/data_images/event/logo/ML467385.png",
+        "https://www.hoy-milonga.com/data_images/event/photo/MP467385.jpg"
+      ],
+      "socials": {
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/475830/Tango-4-ALL---Every-Last-Sunday"
+      },
+      "organizer": {
+        "name": "queerkultural, Davide, Nacho, Pietro und Rafa"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:hoy-milonga.com",
+          "ref": "tango-4-all-every-last-sunday",
+          "url": "https://www.hoy-milonga.com/berlin/es",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "f446563b-9433-4dcf-8386-c2a6c44de903",
+      "name": "Cafetín de Buenos Aires",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "milonga: Milonga ---------- CAFETÍN DE BUENOS AIRES @dorfberlin • 20:00 Uhr – DJ ZAP & DJ HART (Tango Vinyl Set) • 22:30 Uhr – Live-Musik mit \"Las Primas\", Gustavo Colmenarejo und Damián DAlessandro Wo? im Dorf, Sanderstr. 11, 12047 Berlin Eintritt: auf Spendenbasis (10€ suggested) ---------- Veranstalter: - Damian DAlessandro, - Lea Hart ---------- Quelle: Veranstalter e-mail",
+      "summary": null,
+      "lat": 52.4923371,
+      "lng": 13.4259409,
+      "address": "Sanderstraße 11",
+      "city": "Berlin",
+      "country": "Germany",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://www.hoy-milonga.com/data_images/event/logo/ML414849.png",
+        "https://www.hoy-milonga.com/data_images/event/photo/MP414849.jpg"
+      ],
+      "socials": {
+        "website": "https://www.hoy-milonga.com/berlin/es/milonga/483167/Cafetin-de-Buenos-Aires"
+      },
+      "organizer": {
+        "name": "Damian DAlessandro, Lea Hart"
+      },
+      "music": [
+        {
+          "name": "DJ ZAP",
+          "type": "dj"
+        },
+        {
+          "name": "DJ HART",
+          "type": "dj"
+        }
+      ],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:hoy-milonga.com",
+          "ref": "cafetin-de-buenos-aires",
+          "url": "https://www.hoy-milonga.com/berlin/es",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "9964b3ea-7c0d-409b-b0a0-96c6111a3ce5",
+      "name": "Abrázame – Milonga im Forum Kohlheck",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "&lt;p&gt;Herzliche Einladung zur 3. Ausgabe der Milonga im Forum Kohlheck Wann? Am 24. Juli 2026, von 20 - 24 Uhr. DJ wird Sascha Weinberger sein. Der Rahmen: Ein Saal mit Kopffreiheit, 120 qm Holzboden, Küche, Garderobe und Platz zum Schuhe wechseln/lassen, gepflegte WCs und in den umliegenden Straßen Platz genug zum Parken. Das Forum wird [&hellip;]&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 50.0805102,
+      "lng": 8.1912489,
+      "address": "Kohlheckstr. 28",
+      "city": "Wiesbaden",
+      "country": "Germany",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": {
+        "text": "10 EUR",
+        "currency": "EUR"
+      },
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://tango-calendar.de/wp-content/uploads/2026/04/webpic-Mil-Kohlheck.jpg"
+      ],
+      "socials": {
+        "website": "https://tango-calendar.de/event/abrazame-milonga-im-forum-kohlheck-6/2026-07-24/"
+      },
+      "organizer": {
+        "name": "Isabelita"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:tango-calendar.de",
+          "ref": "abrazame-milonga-im-forum-kohlheck",
+          "url": "https://tango-calendar.de/events/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "01033627-5871-4d4a-913c-64348b60aa76",
+      "name": "RheinuferTango",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social",
+        "festival",
+        "class"
+      ],
+      "description": "&lt;p&gt;&quot;bailar tango es caminar con firulete&quot; RheinuferTango &nbsp; Ort: 55116 Mainz, Rheinallee 1 Zeit: 20:00 bis 24:00 Uhr Am Rheinufer unterhalb des Eingangs zum Parkhaus Rheinufer und des Raimunditors. Sitzgelegenheiten gibt es auf den Treppenstufen, die zur Rheinpromenade führen. Sie laden ein zum Picknicken und Verweilen. Sitzkissen oder ähnliches sind zu empfehlen. Für Essen und [&hellip;]&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 50.00429,
+      "lng": 8.2697,
+      "address": null,
+      "city": null,
+      "country": null,
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": "2026-07-25",
+      "end_date": "2026-07-26",
+      "images": [
+        "https://tango-calendar.de/wp-content/uploads/2025/12/logo.png"
+      ],
+      "socials": {
+        "website": "https://tango-calendar.de/event/rheinufertango/2026-07-25/"
+      },
+      "organizer": {
+        "name": "Tango Argentino in Mainz e. V.",
+        "url": "https://www.tvmz.de/"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:tango-calendar.de",
+          "ref": "rheinufertango",
+          "url": "https://tango-calendar.de/events/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "50c3745e-f91b-4a02-b28f-42fbd01c6f3b",
+      "name": "Milonga Tango Armónico",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "&lt;p&gt;Liebe Tangueras &amp; Tangueros, Fast immer am 4. Sonntag, im Monat veranstalten wir die Milonga Tango Armónico: Tangos- und Non-Tangos in einer harmonischen Zusammenstellung und entspannter Atmosphäre. Hier die Details: Zeit: 16:30-20:30 Uhr TJ: Martina VJ: Marcus Ort: Agora -Haus, Erbacher Straße 89 · 64287 Darmstadt, im Seminarraum im UG (Eingang auf der Haus-Rückseite). Nähe [&hellip;]&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 49.8740563,
+      "lng": 8.6750466,
+      "address": "Erbacher Straße 89",
+      "city": "Darmstadt,",
+      "country": "Deutschland",
+      "schedule": null,
+      "days_of_week": [
+        "sun"
+      ],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://tango-calendar.de/wp-content/uploads/2024/07/2024_Tango_Armonico_Darmstadt_allgemein_mit_Adresse.png"
+      ],
+      "socials": {
+        "website": "https://tango-calendar.de/event/milonga-tango-armonico-in-darmstadt-2/2026-07-26/"
+      },
+      "organizer": {
+        "name": "Tango Arm&oacute;nico",
+        "url": "http://blog.neunmalsechs.de/tango-argentino/milonga-armonico/"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:tango-calendar.de",
+          "ref": "milonga-tango-armonico",
+          "url": "https://tango-calendar.de/events/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "0cc764e3-39e5-4ff3-8ec6-6217cad0b241",
+      "name": "ContacTango Jamilonga mit Intro @ tabeko Frankfurt",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social",
+        "festival",
+        "class"
+      ],
+      "description": "&lt;p&gt;Alle Levels. Intro/Warmup &amp; dann tanzen … 17 Uhr Jamilonga, anschließend um 19 Uhr Contact-Jam im Haus der Jugend / Deutschherrnufer / Frankfurt am Main Nächste Termine wenn nicht anders angekündigt – bitte schaut auf der tabeko-Website – meist am letzten Sonntag im Monat, jeweils um 17 Uhr. Mehr Details, aktuelle Termine, Mini- und Maxiworkshops [&hellip;]&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 50.1070341,
+      "lng": 8.6893984,
+      "address": "Deutschherrnufer 12",
+      "city": "Frankfurt am Main / Sachsenhausen",
+      "country": "Germany",
+      "schedule": null,
+      "days_of_week": [
+        "sun"
+      ],
+      "pricing": null,
+      "start_date": "2026-07-26",
+      "end_date": "2026-07-26",
+      "images": [],
+      "socials": {
+        "website": "https://tango-calendar.de/event/contactango-jamilonga-mit-intro-tabeko-frankfurt-10/"
+      },
+      "organizer": {
+        "name": "tabeko eV",
+        "url": "https://www.tabeko.de/"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:tango-calendar.de",
+          "ref": "contactango-jamilonga-mit-intro-tabeko-frankfurt",
+          "url": "https://tango-calendar.de/events/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "e78adb80-413a-460d-bd7a-2e206a95f31c",
+      "name": "Practilonga Milonguera",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social",
+        "class"
+      ],
+      "description": "&lt;p&gt;An opportunity to practice after the tango course to practice, dance and have fun! Depending on the number of people, the internship might be extended to more than two hours! Class + Practica -- 25 Euros Practica only -- 8 Euros (includes 5euro drink voucher)&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 50.0768625,
+      "lng": 8.2396374,
+      "address": "Adolfstraße 3",
+      "city": "Wiesbaden",
+      "country": "Deutschland",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": {
+        "text": "8 EUR",
+        "currency": "EUR"
+      },
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://tango-calendar.de/wp-content/uploads/2024/05/Practica-Milonguera-21.png"
+      ],
+      "socials": {
+        "website": "https://tango-calendar.de/event/practica-milonguera/2026-07-27/"
+      },
+      "organizer": {
+        "name": "Sepideh Saeb"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:tango-calendar.de",
+          "ref": "practilonga-milonguera",
+          "url": "https://tango-calendar.de/events/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "632606e0-bb2c-43c7-a200-27f69ea8c216",
+      "name": "Milonga &#8216;si tu quieres&#8217;",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "social"
+      ],
+      "description": "&lt;p&gt;Am 29. Juli öffnet die DENKBAR bereits um 18h ihre Türen für den Tango argentino und du bist willkommen bereits zu tanzen, zu genießen und Tangomusik zu hören - \\'si tu quieres\\'. Die Milonga \\'si tu quieres\\' mit LOZITA am DJPult 🎶 startet um 19h! Es gibt einen tollen Tanzboden und natürlich wieder Selbstgebackenes und [&hellip;]&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 50.1295295,
+      "lng": 8.6905962,
+      "address": "Spohrstr. 46a",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": {
+        "text": "0 EUR",
+        "currency": "EUR"
+      },
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://tango-calendar.de/wp-content/uploads/2026/07/20260711_202806-scaled.jpg"
+      ],
+      "socials": {
+        "website": "https://tango-calendar.de/event/milonga-si-tu-quieres-2/"
+      },
+      "organizer": null,
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:tango-calendar.de",
+          "ref": "milonga-8216-si-tu-quieres-8217",
+          "url": "https://tango-calendar.de/events/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "332632ab-e596-485d-b3c6-25180b6e45f7",
+      "name": "🕺🏾💃🏾🪭Tango im Park 🪭💃🏾🕺🏾",
+      "dances": [
+        "tango"
+      ],
+      "categories": [
+        "class"
+      ],
+      "description": "&lt;p&gt;Der Sommer 2026 soll in Bad Sobernheim ein ganz besonderer werden: Mit „Kultur im Park“ schaffen wir offene, niedrigschwellige Kulturangebote im Marum-Park. Orte, an denen Menschen zusammenkommen, sich begegnen und Gemeinschaft erleben können. Der Milongaabend beginnt mit einer kurzen Sow von Diana und Holger mit einem Grundlagen-Crash Kurs im Tango Argentino bis ca. 19h00. Danach [&hellip;]&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 49.7836476,
+      "lng": 7.6500426,
+      "address": "Bahnhofstraße 8",
+      "city": "Bad Sobernheim",
+      "country": "Germany",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": null,
+      "end_date": null,
+      "images": [
+        "https://tango-calendar.de/wp-content/uploads/2026/07/Kultur-im-Park-20260429-16.jpeg"
+      ],
+      "socials": {
+        "website": "https://tango-calendar.de/event/tango-im-park/"
+      },
+      "organizer": {
+        "name": "DJ Pasión"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:tango-calendar.de",
+          "ref": "tango-im-park",
+          "url": "https://tango-calendar.de/events/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "407ae3ea-28c6-4215-851a-5fc2effd671a",
+      "name": "Salsa fundraising",
+      "dances": [
+        "salsa",
+        "bachata"
+      ],
+      "categories": [
+        "social",
+        "marathon",
+        "festival",
+        "class"
+      ],
+      "description": "&lt;p&gt;A fund raising event hosted by SuperMario and Fadi K&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 51.5344824,
+      "lng": -0.1378475,
+      "address": "65 Crowndale Road,",
+      "city": "London",
+      "country": "United Kingdom",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": {
+        "text": "13.70 GBP",
+        "currency": "GBP"
+      },
+      "start_date": "2026-08-14",
+      "end_date": "2026-08-14",
+      "images": [
+        "https://londonsalsaevents.uk/wp-content/uploads/2026/07/AISelect_20260724_115048_Chrome.jpg"
+      ],
+      "socials": {
+        "website": "https://londonsalsaevents.uk/event/salsa-fundraising/"
+      },
+      "organizer": {
+        "name": "Fadi K",
+        "url": "http://www.fkdance.com/"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:londonsalsaevents.uk",
+          "ref": "salsa-fundraising",
+          "url": "https://londonsalsaevents.uk/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "9e4291c9-dc84-4d8e-9c32-c6707ab1db63",
+      "name": "Unity",
+      "dances": [
+        "salsa",
+        "bachata"
+      ],
+      "categories": [
+        "social",
+        "marathon",
+        "festival",
+        "class"
+      ],
+      "description": "&lt;p&gt;An early evening of Salsa and Mambo hosted by Funky mambo and Adamski at the Green Rooms with Djs Ajad and Jo&lt;/p&gt;\\n",
+      "summary": null,
+      "lat": 51.3439433,
+      "lng": -0.2000726,
+      "address": "13 Station Road",
+      "city": "LONDON",
+      "country": "United Kingdom",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": {
+        "text": "15 GBP",
+        "currency": "GBP"
+      },
+      "start_date": "2026-08-23",
+      "end_date": "2026-08-23",
+      "images": [
+        "https://londonsalsaevents.uk/wp-content/uploads/2025/08/AISelect_20250825_173608_Facebook.webp"
+      ],
+      "socials": {
+        "website": "https://londonsalsaevents.uk/event/unity-2/"
+      },
+      "organizer": {
+        "name": "Funky Mambo",
+        "url": "https://www.funkymambo.com/"
+      },
+      "music": [],
+      "artists": [],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:londonsalsaevents.uk",
+          "ref": "unity",
+          "url": "https://londonsalsaevents.uk/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "6c0452f5-931e-4e1b-8766-9d5d22dc6a62",
+      "name": "KizConnect Evolution",
+      "dances": [
+        "kizomba"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "kizomba dance festival in Kuala Lumpur, Malaysia",
+      "summary": null,
+      "lat": 3.1517,
+      "lng": 101.6942,
+      "address": null,
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": "2026-07-31",
+      "end_date": "2026-08-02",
+      "images": [
+        "https://wxjpomxdwxnsmqctrtfb.supabase.co/storage/v1/object/public/festival-images/140f7dc3-896b-4129-81c1-354a20da8c40_hero.webp"
+      ],
+      "socials": {
+        "website": "https://where-to-dance-salsa.com/festivals/kuala-lumpur/kizconnect-evolution/"
+      },
+      "organizer": {
+        "name": "KL Tower, Kuala Lumpur",
+        "url": "https://www.dizizid.com/events-registration/index.html?officeId=269"
+      },
+      "music": [],
+      "artists": [
+        {
+          "name": "KL Tower, Kuala Lumpur",
+          "role": "performer",
+          "url": "https://www.dizizid.com/events-registration/index.html?officeId=269"
+        }
+      ],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:where-to-dance-salsa.com",
+          "ref": "kizconnect-evolution",
+          "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "8c7f50bb-be27-4727-90d6-298a3b3280f8",
+      "name": "Swiss National Day Urban Kiz Weekender 8 edition",
+      "dances": [
+        "kizomba"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "kizomba, zouk dance festival in Zurich, Switzerland",
+      "summary": null,
+      "lat": 47.3744489,
+      "lng": 8.5410422,
+      "address": null,
+      "city": "Zurich",
+      "country": "Switzerland",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": "2026-07-31",
+      "end_date": "2026-08-02",
+      "images": [
+        "https://wxjpomxdwxnsmqctrtfb.supabase.co/storage/v1/object/public/festival-images/87656028-ac77-4802-b86d-7d6083e0e403_hero.webp"
+      ],
+      "socials": {
+        "website": "https://where-to-dance-salsa.com/festivals/zurich/swiss-national-day-urban-kiz-weekender-8-edition/"
+      },
+      "organizer": {
+        "name": "Iron Mams Dance School",
+        "url": "https://www.ironmams.ch/festival"
+      },
+      "music": [],
+      "artists": [
+        {
+          "name": "Iron Mams Dance School",
+          "role": "performer",
+          "url": "https://www.ironmams.ch/festival"
+        }
+      ],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:where-to-dance-salsa.com",
+          "ref": "swiss-national-day-urban-kiz-weekender-8-edition",
+          "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "85d95223-93ab-47a6-a277-2ce1eef57ef6",
+      "name": "I Love Kizomba Sensual Festival - Amsterdam 11th Ed",
+      "dances": [
+        "salsa",
+        "bachata",
+        "kizomba"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "salsa, bachata, kizomba, zouk dance festival in Amsterdam, Netherlands",
+      "summary": null,
+      "lat": 52.3730796,
+      "lng": 4.8924534,
+      "address": null,
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-10",
+      "images": [
+        "https://wxjpomxdwxnsmqctrtfb.supabase.co/storage/v1/object/public/festival-images/831e4c91-5a06-4379-91ef-98bb04723514_hero.webp"
+      ],
+      "socials": {
+        "website": "https://where-to-dance-salsa.com/festivals/amsterdam/i-love-kizomba-sensual-festival-amsterdam-11th-ed/"
+      },
+      "organizer": {
+        "name": "Novotel Amsterdam Schiphol Airport",
+        "url": "https://ilksf.com/"
+      },
+      "music": [],
+      "artists": [
+        {
+          "name": "Novotel Amsterdam Schiphol Airport",
+          "role": "performer",
+          "url": "https://ilksf.com/"
+        }
+      ],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:where-to-dance-salsa.com",
+          "ref": "i-love-kizomba-sensual-festival-amsterdam-11th-ed",
+          "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
+    },
+    {
+      "id": "ce0e3339-4909-4bf2-860c-91a4f67a2eee",
+      "name": "LATINA ISTRIANA Festival 2026 - NEW ERA (22º Edition)",
+      "dances": [
+        "salsa",
+        "bachata",
+        "kizomba"
+      ],
+      "categories": [
+        "festival"
+      ],
+      "description": "bachata, kizomba, salsa dance festival in Pula, Croatia Use promo code WTDS2026 at checkout for up to 10% discount.",
+      "summary": null,
+      "lat": 44.8672349,
+      "lng": 13.8455686,
+      "address": null,
+      "city": "Pula",
+      "country": "Croatia",
+      "schedule": null,
+      "days_of_week": [],
+      "pricing": null,
+      "start_date": "2026-08-06",
+      "end_date": "2026-08-11",
+      "images": [
+        "https://wxjpomxdwxnsmqctrtfb.supabase.co/storage/v1/object/public/festival-images/77153dc0-a3a0-429f-8d3f-35d7926d1024_hero.webp"
+      ],
+      "socials": {
+        "website": "https://where-to-dance-salsa.com/festivals/pula/latina-istriana-festival-2026-new-era-22-edition/"
+      },
+      "organizer": {
+        "name": "Dom Hrvatskih Branitelja, Leharova 1, 52100 Pula",
+        "url": "https://www.goandance.com/en/event/9144/latina-istriana-festival-2026-new-era-22o-edition?promoter=WTDS2026"
+      },
+      "music": [],
+      "artists": [
+        {
+          "name": "Dom Hrvatskih Branitelja, Leharova 1, 52100 Pula",
+          "role": "performer",
+          "url": "https://www.goandance.com/en/event/9144/latina-istriana-festival-2026-new-era-22o-edition?promoter=WTDS2026"
+        }
+      ],
+      "translations": {},
+      "status": "active",
+      "locked_fields": [],
+      "sources": [
+        {
+          "source": "scraper:site:where-to-dance-salsa.com",
+          "ref": "latina-istriana-festival-2026-new-era-22-edition",
+          "url": "https://where-to-dance-salsa.com/festivals/kizomba/",
+          "first_seen": "2026-07-24T14:11:11Z",
+          "last_seen": "2026-07-24T14:11:11Z"
+        }
+      ],
+      "created_at": "2026-07-24T14:11:11Z",
+      "updated_at": "2026-07-24T14:11:11Z"
     }
   ]
 }

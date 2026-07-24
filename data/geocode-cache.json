@@ -316,5 +316,47 @@
     "lng": 13.3855858,
     "display": "Alt-Tempelhof, Tempelhof, Tempelhof-Schöneberg, Berlin, 12099, Deutschland",
     "ts": "2026-07-17T13:49:38Z"
+  },
+  "zollbrücke 16, oderaue, deutschland": {
+    "lat": 52.787256,
+    "lng": 14.2475559,
+    "display": "Theater am Rand, 16, Zollbrücke, Zäckericker Loose, Oderaue, Märkisch-Oderland, Brandenburg, 16259, Deutschland",
+    "ts": "2026-07-24T14:11:04Z"
+  },
+  "lucy-lameck-straße 32, berlin, deutschland": {
+    "lat": 52.4838275,
+    "lng": 13.4226831,
+    "display": "Oyoun, 32, Lucy-Lameck-Straße, Schillerkiez, Neukölln, Berlin, 12049, Deutschland",
+    "ts": "2026-07-24T14:11:05Z"
+  },
+  "wilhelmine-gemberg-weg 10-14, berlin, deutschland": {
+    "lat": 52.5101722,
+    "lng": 13.4239294,
+    "display": "Wilhelmine-Gemberg-Weg, Luisenstadt, Mitte, Berlin, 10179, Deutschland",
+    "ts": "2026-07-24T14:11:06Z"
+  },
+  "graefestraße 18, berlin, deutschland": {
+    "lat": 52.4929561,
+    "lng": 13.417489,
+    "display": "SOLID, 18, Graefestraße, Graefekiez, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10967, Deutschland",
+    "ts": "2026-07-24T14:11:07Z"
+  },
+  "sanderstraße 11, berlin, germany": {
+    "lat": 52.4923371,
+    "lng": 13.4259409,
+    "display": "Zum böhmischen Dorf, 11, Sanderstraße, Reuterkiez, Neukölln, Berlin, 12047, Deutschland",
+    "ts": "2026-07-24T14:11:09Z"
+  },
+  "65 crowndale road,, london, united kingdom": {
+    "lat": 51.5344824,
+    "lng": -0.1378475,
+    "display": "The Purple Turtle, 65, Crowndale Road, Somers Town, London Borough of Camden, Greater London, England, NW1 1TN, United Kingdom",
+    "ts": "2026-07-24T14:11:09Z"
+  },
+  "13 station road, london, united kingdom": {
+    "lat": 51.3439433,
+    "lng": -0.2000726,
+    "display": "Curryzma, 13, Station Road, Carshalton Beeches, London Borough of Sutton, Greater London, England, SM2 6BG, United Kingdom",
+    "ts": "2026-07-24T14:11:11Z"
   }
 }
